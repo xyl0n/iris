@@ -189,7 +189,7 @@ GtkAssistant .sidebar {
     -GtkWidget-focus-padding: 1;
     -GtkWidget-focus-line-width: 0;
 
-    padding: 3px 15px;
+    padding: 4px 15px;
 }
 
 .button {
@@ -547,7 +547,7 @@ GtkCalendar.highlight {
 }
 
 /******************
- * combobox entry *
+ * combobox * 
  ******************/
 .primary-toolbar GtkComboBox.combobox-entry .entry,
 .primary-toolbar GtkComboBox.combobox-entry .entry:active,
@@ -583,9 +583,9 @@ GtkComboBox .cell {
  * entry *
  *********/
 .entry {
-    padding: 4px 10px;
+    padding: 4px 5px;
     border-style: solid;
-    border-radius: 15px;
+    border-radius: 0px;
     background-color: shade(@theme_bg_color, 1.05);
     background-image: none;
     border-color: shade(@theme_bg_color, 0.9);
