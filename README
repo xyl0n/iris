@@ -1,0 +1,16 @@
+Numix WHite cis a modern looking flat theme for Gnome. It supports Gnome, Unity, Pantheon, XFCE and Openbox. The theme is compatible with GTK 3.6. It also includes a GTK 2.0 theme using Murrine engine.
+
+It is based of the original Numix theme, but has a whiter, cleaner look.
+
+---
+
+Installation Instructions:
+
+Extract the zip file to the themes directory i.e. "/usr/share/themes/"
+Alternatively, extract it to the ".themes" directory in your home folder if you want the theme to be applied only to you user.
+
+Use a theme changer such as Gnome Tweak Tool, Ubuntu Tweak or LXappearance to change the the theme to Numix White
+
+---
+
+License: GPL-3.0+
