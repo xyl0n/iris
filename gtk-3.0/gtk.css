@@ -44,7 +44,7 @@
 @define-color menu_fg_color @theme_fg_color;
 @define-color panel_bg_color #f2f2f2;
 @define-color panel_fg_color #555;
-@define-color button_bg_color #646464;
+@define-color button_bg_color #464646;
 @define-color menu_item_selected shade(#d64937, 1.05);
 
 @define-color plum #ae1253;
