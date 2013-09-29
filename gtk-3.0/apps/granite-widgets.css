@@ -22,6 +22,7 @@
 }
 
 .dynamic-notebook .notebook tab {
+    box-shadow: inset 0 2px 2px #555;
     padding: 6px;
     border-color: transparent;
     border-radius: 0;
@@ -92,23 +93,24 @@
 }
 
 .content-view .button {
-    border-style: solid;
+    border-style: none;
     border-color: shade(@theme_bg_color, 0.8);
-    border-radius: 2px;
-    background-color: shade(@theme_bg_color, 1.08);
+    border-radius: 0;
+    background-color: shade(@theme_bg_color, 0.97);
     background-image: none;
     color: @theme_fg_color;
 }
 
 .content-view .button:hover {
     border-color: shade(@theme_bg_color, 0.7);
-    background-color: shade(@theme_bg_color, 1.10);
+    background-color: shade(@theme_bg_color, 1.02);
     background-image: none;
+    color: @theme_selected_bg_color;
 }
 
 .content-view .button:active {
-    border-color: shade(@theme_bg_color, 0.8);
-    background-color: shade(@theme_bg_color, 0.95);
+    border-color: shade(@button_bg_color, 0.8);
+    background-color: shade(@button_bg_color, 0.95);
     background-image: none;
 }
 
@@ -158,7 +160,7 @@
 .source-list.view:prelight:selected {
     background-color: shade(@button_bg_color, 0.95);
     color: @theme_selected_fg_color;
-    box-shadow: inset 2 0 @menu_item_selected;
+    box-shadow: inset 2 0 shade(@theme_selected_bg_color, 1.2);
     text-shadow: 0 -1 #333;
 }
 
@@ -174,7 +176,7 @@
     padding: 0 6px;
     border-width: 0;
     border-radius: 10px;
-    background-color: @theme_selected_bg_color;
+    background-color: shade(@theme_selected_bg_color, 1.2);
     background-image: none;
     color: @theme_selected_fg_color;
 }
@@ -272,24 +274,25 @@ GraniteWidgetsPopOver *.separator {
     color: transparent;
 }
 
-.button.app {
+/*.button.app {
     border-width: 0;
-    border-radius: 2px;
+    border-radius: 0;
     background-color: transparent;
 }
 
 .button.app:hover {
-    border-color: shade(@theme_selected_bg_color, 0.9);
-    background-color: @theme_selected_bg_color;
+    transition: 150ms linear;
+    border-color: shade(@theme_bg_color, 0.9);
+    background-color: shade(@theme_bg_color 0.85);
     background-image: none;
     color: @theme_selected_fg_color;
 }
 
 .button.app:focus {
-    border-color: shade(@theme_selected_bg_color, 0.9);
-    background-color: @theme_selected_bg_color;
+    border-color: shade(@theme_bg_color, 0.9);
+    background-color: shade(@theme_bg_color 0.85);
     background-image: none;
-    color: @theme_selected_fg_color;
+    color: @theme_selected_fg_color;*/
 }
 
 /********
@@ -405,10 +408,15 @@ GraniteWidgetsPopOver *.separator {
     color: @panel_fg_color;
 }
 
-.composited-indicator:hover,
-.wingpanel-app-button:hover,
-.wingpanel-indicator-button:hover{
+.composited-indicator {
+    background-color: transparent;
+}
 
+.composited-indicator.menuitem:active,
+.composited-indicator.menuitem:prelight{
+    background-image: none;
+    background-color: transparent;
+    box-shadow: inset 0 -2 @theme_selected_bg_color;
 }
 
 .modebutton {
