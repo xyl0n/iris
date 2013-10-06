@@ -135,26 +135,7 @@ GtkWindow {
 }
 
 /* draw borders using box shadow */
-GtkScale.slider {
-    box-shadow: inset 1px 0 shade(@theme_bg_color, 0.8),
-                inset 0 1px shade(@theme_bg_color, 0.8),
-                inset -1px 0 shade(@theme_bg_color, 0.8),
-                inset 0 -1px shade(@theme_bg_color, 0.8);
-}
 
-GtkScale.slider:hover {
-    box-shadow: inset 1px 0 shade(@theme_bg_color, 0.7),
-                inset 0 1px shade(@theme_bg_color, 0.7),
-                inset -1px 0 shade(@theme_bg_color, 0.7),
-                inset 0 -1px shade(@theme_bg_color, 0.7);
-}
-
-GtkScale.slider:insensitive {
-    box-shadow: inset 1px 0 shade(@theme_bg_color, 0.9),
-                inset 0 1px shade(@theme_bg_color, 0.9),
-                inset -1px 0 shade(@theme_bg_color, 0.9),
-                inset 0 -1px shade(@theme_bg_color, 0.9);
-}
 
 /*************
  * assistant *
@@ -929,13 +910,12 @@ GtkTreeMenu .menuitem * {
 .menuitem,
 .menu .menuitem {
     padding: 4px 3px;
-    border-style: none;s
+    border-style: none;
     border-radius: 0;
 }
 
 .menu .menuitem:active,
 .menu .menuitem:hover {
-    transition: 100ms ease-in-out;
     border-radius: 0;
     background-color: @menu_bg_color;
     background-image: none;
@@ -946,7 +926,6 @@ GtkTreeMenu .menuitem * {
 .menu .menuitem:hover,
 .menu .menuitem *:hover {
     transition: 200ms linear;
-    background-image: @menu_bg_color;
     color:  @theme_selected_bg_color;/*shade(mix(@plum, @theme_selected_bg_color, 0.5), 1.45);/*@menu_item_selected;*/
 }
 
@@ -963,6 +942,7 @@ GtkTreeMenu .menuitem * {
 .menuitem.radio:insensitive {
     border-style: none;
     background-color: transparent;
+    color: @theme_selected_bg_color;
     background-image: none;
 }
 
@@ -1208,20 +1188,24 @@ GtkLevelBar.vertical {
 }
 
 GtkScale {
-    -GtkRange-slider-width: 15;
+    -GtkRange-slider-width: 12;
     -GtkRange-trough-border: 1;
     -GtkScale-slider-length: 15;
 }
 
 GtkScale.vertical {
-    -GtkScale-slider-length: 15;
+    -GtkScale-slider-length: 12;
 }
 
-GtkScale.slider {
-    /* we will draw the border using box shadow for now */
-    border-radius: 15px; /*Slider handle*/
-    background-color: shade(@theme_bg_color, 1.08);
+GtkScale.slider {    
+
+    border-radius: 0; /*Slider handle*/
+    background-color: shade(@theme_selected_bg_color, 1.0);
     background-image: none;
+}
+
+GtkScale.slider:hover {
+    background-color: shade(@theme_selected_bg_color, 1.09);
 }
 
 GtkScale.slider:insensitive {
@@ -1230,7 +1214,7 @@ GtkScale.slider:insensitive {
 }
 
 GtkScale.slider.vertical {
-    background-color: shade(@theme_bg_color, 1.08);
+    background-color: shade(@theme_selected_bg_color, 1.0);
     background-image: none;
 }
 
@@ -1303,13 +1287,14 @@ GtkScale.trough.vertical:insensitive,
 .scrollbar.trough {
     border-width: 0;
     border-radius: 0;
-    background-color: @theme_bg_color;
+    background-color: transparent;
     background-image: none;
 }
 
 .scrollbar.button,
 .scrollbar.button:active,
 .scrollbar.button:active:hover {
+    transition: 100ms ease-in;
     border-width: 0;
     border-color: transparent;
     border-radius: 0;
@@ -1319,7 +1304,7 @@ GtkScale.trough.vertical:insensitive,
 }
 
 .scrollbar.slider {
-    border-width: 1px;
+    border-width: 0;
     border-color: shade(@theme_bg_color, 0.8);
     border-radius: 0;
     background-color: shade(@theme_bg_color, 0.9);
@@ -1831,12 +1816,9 @@ GtkTextView {
     padding: 4px;
     border-width: 1px;
     border-style: none;
-    border-color: shade(@theme_bg_color, 0.8);
     border-radius: 0;
-    background-color: shade(@theme_bg_color, 0.75);
+    background-color: alpha(shade(@theme_bg_color, 0.5), 0.75);
     background-image: none;
-    
-    box-shadow: inset 0 1 shade(@theme_bg_color, 0.65);
 }
 
 .inline-toolbar.toolbar:last-child {
@@ -1941,7 +1923,7 @@ GtkTextView {
 .inline-toolbar.toolbar GtkToolButton:first-child .button:insensitive {
     border-width: 1px;
     border-right-width: 0;
-    border-radius: 2px;
+    border-radius: 0;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
@@ -1968,7 +1950,7 @@ GtkTextView {
 .inline-toolbar.toolbar GtkToolButton:last-child .button:focus:active,
 .inline-toolbar.toolbar GtkToolButton:last-child .button:insensitive {
     border-width: 1px;
-    border-radius: 2px;
+    border-radius: 0;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
 }
@@ -1995,7 +1977,7 @@ GtkTextView {
 .inline-toolbar.toolbar GtkToolButton:only-child .button:focus:active,
 .inline-toolbar.toolbar GtkToolButton:only-child .button:insensitive {
     border-width: 1px;
-    border-radius: 2px;
+    border-radius: 0;
 }
 
 /***********
