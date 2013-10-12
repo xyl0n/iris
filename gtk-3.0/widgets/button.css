@@ -1,0 +1,178 @@
+/**********
+ * button *
+ **********/
+
+.button {
+    -GtkWidget-focus-padding: 1;
+    -GtkWidget-focus-line-width: 0;
+
+    padding: 4px 25px;
+}
+
+.button {
+    border-style: none;
+    border-radius: 0;
+    background-color: @button_bg_color;
+    background-image: none;
+    color: @theme_selected_fg_color;
+}
+
+.button:hover {
+    transition: 200ms ease-in;
+    background-color: shade(@button_bg_color, 1.17);
+    background-image: none;
+    color: @theme_selected_fg_color;
+}
+
+.button:active {
+    background-color: shade(@button_bg_color, 0.9); /*also controls "on" state of toggle button*/
+    background-image: none;
+    color: shade(mix(#ff0000, @theme_selected_bg_color, 0.75), 1.35);
+}
+
+.button:active:hover {
+    background-color: shade(@button_bg_color, 1.07);
+    background-image: none;
+    color: @theme_selected_fg_color;
+}
+
+.button:active:insensitive {
+    color: shade (@button_bg_color, 1.15);
+}
+
+/* default button */
+.button.default {
+    border-color: shade(@theme_selected_bg_color, 0.8);
+    background-color: shade(@theme_selected_bg_color, 1.08);
+    color: @theme_selected_fg_color;
+}
+
+.button.default:hover {
+    border-color: shade(@theme_selected_bg_color, 0.7);
+    background-color: @theme_selected_bg_color;
+    color: shade(@theme_selected_fg_color, 0.9);
+}
+
+.button.default:active {
+    border-color: shade(@theme_selected_bg_color, 0.8);
+    background-color: shade(@theme_selected_bg_color, 0.95);
+    color: @theme_selected_fg_color;
+}
+
+.button.default:active:hover {
+    border-color: shade(@theme_selected_bg_color, 0.7);
+    background-color: shade(@theme_selected_bg_color, 0.97);
+    color: shade(@theme_selected_fg_color, 0.9);
+}
+
+/****************
+* linked button *
+*****************/
+
+* middle button */
+.linked .entry,
+.linked .button,
+.linked .button:active,
+.linked .button:active:hover,
+.linked .button:focus,
+.linked .button:focus:active,
+.linked .button:insensitive {
+    border-width: 1px;
+    border-right-width: 0;
+    border-radius: 0;
+}
+
+/* leftmost button */
+.linked .entry:first-child,
+.linked .button:first-child,
+.linked .button:active:first-child,
+.linked .button:active:hover:first-child,
+.linked .button:focus:first-child,
+.linked .button:focus:active:first-child,
+.linked .button:insensitive:first-child {
+    border-width: 1px;
+    border-right-width: 0;
+    border-radius: 2px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* rightmost button */
+.linked .entry:last-child,
+.linked .button:last-child,
+.linked .button:active:last-child,
+.linked .button:active:hover:last-child,
+.linked .button:focus:last-child,
+.linked .button:focus:active:last-child,
+.linked .button:insensitive:last-child {
+    border-width: 1px;
+    border-radius: 2px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+/* linked single button */
+.linked .entry:only-child,
+.linked .button:only-child,
+.linked .button:active:only-child,
+.linked .button:active:hover:only-child,
+.linked .button:focus:only-child,
+.linked .button:focus:active:only-child,
+.linked .button:insensitive:only-child {
+    border-width: 1px;
+    border-radius: 2px;
+}
+
+/* middle button (vertical) */
+.linked.vertical .entry,
+.linked.vertical .button,
+.linked.vertical .button:active,
+.linked.vertical .button:active:hover,
+.linked.vertical .button:focus,
+.linked.vertical .button:focus:active,
+.linked.vertical .button:insensitive {
+    border-width: 1px;
+    border-bottom-width: 0;
+    border-radius: 0;
+}
+
+/* leftmost button (vertical) */
+.linked.vertical .entry:first-child,
+.linked.vertical .button:first-child,
+.linked.vertical .button:active:first-child,
+.linked.vertical .button:active:hover:first-child,
+.linked.vertical .button:focus:first-child,
+.linked.vertical .button:focus:active:first-child,
+.linked.vertical .button:insensitive:first-child {
+    border-width: 1px;
+    border-bottom-width: 0;
+    border-radius: 2px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* rightmost button (vertical) */
+.linked.vertical .entry:last-child,
+.linked.vertical .button:last-child,
+.linked.vertical .button:active:last-child,
+.linked.vertical .button:active:hover:last-child,
+.linked.vertical .button:focus:last-child,
+.linked.vertical .button:focus:active:last-child,
+.linked.vertical .button:insensitive:last-child {
+    border-width: 1px;
+    border-radius: 2px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+/* linked single button (vertical) */
+.linked.vertical .entry:only-child,
+.linked.vertical .button:only-child,
+.linked.vertical .button:active:only-child,
+.linked.vertical .button:active:hover:only-child,
+.linked.vertical .button:focus:only-child,
+.linked.vertical .button:focus:active:only-child,
+.linked.vertical .button:insensitive:only-child {
+    border-width: 1px;
+    border-radius: 2px;
+}

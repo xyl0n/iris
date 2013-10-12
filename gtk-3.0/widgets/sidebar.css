@@ -1,0 +1,19 @@
+/***********
+ * sidebar *
+ ***********/
+.sidebar,
+.sidebar.view,
+.sidebar .view {
+    background-color: @theme_bg_color;
+    /*color: mix(@theme_fg_color, @theme_bg_color, 0.1);*/
+    color: @theme_text_color;
+}
+
+.sidebar.column-header,
+.sidebar .column-header {
+    background-color: shade(@theme_bg_color, 0.97);
+}
+
+.sidebar .frame {
+    border-width: 0;
+}

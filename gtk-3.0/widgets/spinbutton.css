@@ -1,0 +1,76 @@
+/**************
+ * spinbutton *
+ **************/
+.spinbutton.entry {
+    padding: 3px 8px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right-width: transparent;
+}
+
+.spinbutton.button {
+    border-style: none;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.spinbutton.button:active {
+    transition: 500ms linear;
+    border-style: none;
+    border-radius: 0;
+    background-color: transparent;
+    color: shade(@theme_selected_bg_color, 0.85);
+}
+
+.spinbutton.button:hover {
+    transition: 500ms linear;
+    border-style: none;
+    border-radius: 0;
+    color: @theme_selected_bg_color;
+}
+
+.spinbutton.button:insensitive {
+    border-color: shade(@theme_bg_color, 0.9);
+    color: mix(@theme_fg_color, @theme_bg_color, 0.5);
+}
+
+.spinbutton.button {
+    border-width: 0;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-radius: 0;
+}
+
+.spinbutton.button:first-child {
+    border-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.spinbutton.button:last-child {
+    border-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.spinbutton.vertical .button:first-child {
+    border-width: 1px;
+    border-bottom-width: 0;
+    border-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.spinbutton.vertical .button:last-child {
+    border-width: 1px;
+    border-top-width: 0;
+    border-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.spinbutton.vertical.entry {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0;
+}

@@ -36,15 +36,15 @@
 @define-color error_color #cc0000;
 
 /* widget colors */
-@define-color menubar_bg_color rgb(245, 245, 245);
-@define-color menubar_fg_color @theme_fg_color;
-@define-color toolbar_bg_color rgb(254, 254, 254);
-@define-color toolbar_fg_color @theme_fg_color;
+@define-color button_bg_color #464646;
+@define-color menubar_bg_color shade(@button_bg_color, 1.15);
+@define-color menubar_fg_color @theme_bg_color;
+@define-color toolbar_bg_color shade(@button_bg_color, 1.15);
+@define-color toolbar_fg_color @theme_bg_color;
 @define-color menu_bg_color rgb(245, 245, 245);
 @define-color menu_fg_color @theme_fg_color;
 @define-color panel_bg_color alpha(#000, 0.5);
-@define-color panel_fg_color #f2f2f2011;
-@define-color button_bg_color #404040;
+@define-color panel_fg_color #f2f2f2;
 @define-color menu_item_selected shade(#d64937, 1.05);
 
 @define-color plum #ae1253;
@@ -66,3 +66,17 @@
 @import url("apps/gnome-applications.css");
 @import url("apps/granite-widgets.css");
 @import url("apps/unity.css");
+@import url("widgets/button.css");
+@import url("widgets/entry.css");
+@import url("widgets/assistant.css");
+@import url("widgets/cell-row.css");
+@import url("widgets/column-header.css");
+@import url("widgets/calendar.css");
+@import url("widgets/toolbar.css");
+@import url("widgets/infobar.css");
+@import url("widgets/menu.css");
+@import url("widgets/notebook.css");
+@import url("widgets/scrollbar.css");
+@import url("widgets/progress-scale.css");
+@import url("widgets/sidebar.css");
+@import url("widgets/spinbutton.css");

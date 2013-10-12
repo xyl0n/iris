@@ -1,0 +1,36 @@
+/*****************
+ * column-header *
+ *****************/
+column-header .button,
+column-header .button:active {
+    border-width: 0 1px 1px 0;
+    border-radius: 0;
+    padding: 6px;
+    color: @theme_text_color;
+    
+    background-color: shade(@theme_base_color, 0.95):
+}
+
+column-header .button:active:hover {
+    background-color: shade(@theme, 1.90);
+    background-image: none;
+    color: @theme_selected_fg_color;
+    transition: 150ms ease-in-out;
+}
+
+column-header .button {
+    border-color: shade(@theme_base_color, 0.8);
+    background-color: shade(@theme_base_color, 0.95);
+    background-image: none;
+}
+
+column-header .button:hover {
+    color: @theme_selected_bg_color;
+    border-color: shade(@theme_base_color, 0.8);
+    background-color: shade(@theme_base_color, 0.95);
+    background-image: none;
+}
+
+column-header:last-child .button {
+    border-width: 0 0 1px 0;
+}

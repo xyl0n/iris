@@ -1,0 +1,43 @@
+/***********
+ * infobar *
+ ***********/
+GtkInfoBar {
+    border-width: 0;
+    border-style: none;
+}
+
+.info {
+    border-width: 1px;
+    border-style: solid;
+    border-color: shade(@info_bg_color, 0.9);
+    background-color: @info_bg_color;
+    background-image: none;
+    color: @info_fg_color;
+}
+
+.warning {
+    border-width: 1px;
+    border-style: solid;
+    border-color: shade(@warning_bg_color, 0.9);
+    background-color: @warning_bg_color;
+    background-image: none;
+    color: @warning_fg_color;
+}
+
+.question {
+    border-width: 1px;
+    border-style: solid;
+    border-color: shade(@question_bg_color, 0.9);
+    background-color: @question_bg_color;
+    background-image: none;
+    color: @question_fg_color;
+}
+
+.error {
+    border-width: 1px;
+    border-style: solid;
+    border-color: shade(@error_bg_color, 0.9);
+    background-color: @error_bg_color;
+    background-image: none;
+    color: @error_fg_color;
+}
