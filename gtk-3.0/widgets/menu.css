@@ -8,6 +8,11 @@ GtkComboBox .menu {
     color: @menu_fg_color;
 }
 
+
+GtkTreeMenu.menu:active {
+    background-color: @menu_bg_color; 
+}
+
 .primary-toolbar .button .menu,
 .toolbar .menu,
 .toolbar .primary-toolbar .menu,
@@ -27,7 +32,7 @@ GtkComboBox .menu {
 .menu.button {
     border-width: 0;
     background-color: @menu_bg_color;
-    color: @menu_fg_color;
+    color: @theme_dark_selected;
     background-image: none;
 }
 
@@ -50,6 +55,8 @@ GtkComboBox .menu {
 .menubar .menuitem {
     padding: 6px 6px; /*Item on menubar*/
     border-width: 1px 1px 0 1px;
+    background-color: @menubar_bg_color;
+    color: @menubar_fg_color;
 }
 
 .panel .menubar.menuitem,
@@ -66,15 +73,17 @@ GtkComboBox .menu {
 }
 
 .menubar .menuitem *:hover {
-    color: shade(@theme_fg_color, 1.08);
+    color: @theme_dark_selected;
 }
 
 /************
  * menuitem *
  ************/
 GtkTreeMenu .menuitem {
+    color: @menu_fg_color;
     padding: 6px 6px;
     border-width: 0;
+    background-color: @menu_bg_color;
 }
 
 GtkTreeMenu .menuitem * {
@@ -86,6 +95,7 @@ GtkTreeMenu .menuitem * {
     padding: 6px 3px;
     border-style: none;
     border-radius: 0;
+    background-color: @menu_bg_color;
 }
 
 .menu .menuitem:active,
@@ -102,6 +112,7 @@ GtkTreeMenu .menuitem * {
 .menu .menuitem:hover,
 .menu .menuitem *:hover {
     transition: 200ms linear;
+    background-color: @menu_bg_color;
     color:  @theme_selected_bg_color;/*shade(mix(@plum, @theme_selected_bg_color, 0.5), 1.45);/*@menu_item_selected;*/
 }
 

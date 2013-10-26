@@ -118,7 +118,7 @@ style "murrine-default" {
 		colorize_scrollbar = FALSE		
 		comboboxstyle = 0 # 0 = normal combobox, 1 = colorized combobox below arrow
 		contrast = 0.8
-		focusstyle = 3 # 0 = none, 1 = grey dotted, 2 = colored with fill, 3 = colored glow
+		focusstyle = 2 # 0 = none, 1 = grey dotted, 2 = colored with fill, 3 = colored glow
 		glazestyle = 0 # 0 = flat highlight, 1 = curved highlight, 2 = concave, 3 = top curved highlight, 4 = beryl highlight
 		glowstyle = 0
 		gradient_shades = { 1.0, 1.0, 1.0, 1.0 }
@@ -133,7 +133,7 @@ style "murrine-default" {
 		menustyle = 0 # 0 = none, 1 = vertical striped
 		progressbarstyle = 0 # 0 = none, 1 = diagonal striped, 2 = vertical striped
 		reliefstyle = 0 # 0 = flat, 1 = inset, 2 = shadow, 3 = shadow with gradient, 4 = stronger shadow with gradient
-		roundness = 2
+		roundness = 0
 		scrollbarstyle = 0 # 0 = none, 1 = circles, 2 = handles, 3 = diagonal stripes, 4 = diagonal stripes and handles, 5 = horizontal stripes, 6 = horizontal stripes and handles
 		sliderstyle = 0	# 0 = none, 1 = handles
 		stepperstyle = 0 # 0 = standard, 1 = integrated stepper handles
@@ -173,7 +173,7 @@ style "murrine-notebook" = "murrine-notebook-bg" {
 
 # Various Standard Widgets
 
-style "murrine-button" = "murrine-wider" {
+style "button" {
 	bg[NORMAL] = shade (1.08, @bg_color)
 	bg[PRELIGHT] = shade (1.10, @bg_color)
 	bg[ACTIVE] = shade (0.95, @bg_color)
@@ -309,15 +309,15 @@ style "murrine-menu" {
 	xthickness = 0
 
 	bg[NORMAL] = @menu_bg_color
-	bg[PRELIGHT] = @selected_bg_color
-	bg[SELECTED] = @selected_bg_color
+	bg[PRELIGHT] = @menu_bg_color
+	bg[SELECTED] = @menu_bg_color
 	bg[ACTIVE] = @menu_bg_color
 	bg[INSENSITIVE] = @menu_bg_color
 
 	fg[NORMAL] = @menu_fg_color
-	fg[PRELIGHT] = @selected_fg_color
-	fg[SELECTED] = @selected_fg_color
-	fg[ACTIVE] = @selected_fg_color
+	fg[PRELIGHT] = @selected_bg_color
+	fg[SELECTED] = @selected_bg_color
+	fg[ACTIVE] = @selected_bg_color
 	fg[INSENSITIVE] = mix (0.5, @menu_bg_color, @menu_fg_color)
 
 	text[NORMAL] = @menu_fg_color
@@ -332,14 +332,14 @@ style "murrine-menu" {
 }
 
 style "murrine-menu-item" = "murrine-wider" {
-	bg[PRELIGHT] = @selected_bg_color
-	bg[SELECTED] = @selected_bg_color
-	bg[ACTIVE] = @selected_bg_color
+	bg[PRELIGHT] = @menu_bg_color
+	bg[SELECTED] = @menu_bg_color
+	bg[ACTIVE] = @menu_bg_color
 
 	fg[NORMAL] = @menu_fg_color # Fix for XFCE menu text
-	fg[PRELIGHT] = @selected_fg_color
-	fg[SELECTED] = @selected_fg_color
-	fg[ACTIVE] = @selected_fg_color
+	fg[PRELIGHT] = @selected_bg_color
+	fg[SELECTED] = @selected_bg_color
+	fg[ACTIVE] = @selected_bg_color
 	fg[INSENSITIVE] = mix (0.5, @menu_bg_color, @menu_fg_color)
 
 	engine "murrine" {
@@ -621,7 +621,7 @@ widget_class "*<GtkNotebook>*<GtkDrawingArea>" style "murrine-notebook-bg"
 widget_class "*<GtkNotebook>*<GtkLayout>" style "murrine-notebook-bg"
 widget_class "*.GtkNotebook.*.GtkViewport" style "murrine-notebook"
 
-widget_class "*<GtkButton>" style "murrine-button"
+widget_class "*<GtkButton>" style "button"
 widget_class "*<GtkStatusbar>*" style "murrine-statusbar"
 widget_class "*<GtkProgress>" style "murrine-progressbar"
 widget_class "*<GtkProgressBar>" style "murrine-progressbar"

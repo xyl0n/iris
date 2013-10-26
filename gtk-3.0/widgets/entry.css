@@ -23,6 +23,7 @@
 .entry:focus {
     transition: 200ms linear;
     background-color: @theme_base_color;
+    border-style: none;
     border-color: @theme_selected_bg_color;
     box-shadow: 1px 1px 1px @theme_selected_bg_color inset,
                 -1px -1px 1px @theme_selected_bg_color inset;

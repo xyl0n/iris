@@ -1,7 +1,6 @@
 /***********************
  * fallback mode panel *
  ***********************/
- @define toolbar_bg_color @theme_bg_color
  
 PanelWidget,
 PanelApplet,
@@ -172,8 +171,17 @@ NautilusNotebook.notebook NautilusQueryEditor .primary-toolbar.toolbar:only-chil
 TerminalScreen {
     -TerminalScreen-background-darkness: 0.9;
 
-    background-color: @theme_bg_color;
-    color: @theme_fg_color;
+    background-color: @theme_dark_color;
+    color: @theme_dark_text;
+}
+
+TerminalWindow .menubar .menuitem {
+    color: @theme_dark_text;
+}
+
+TerminalWindow .menubar .menuitem:hover {
+    color: @theme_dark_selected;
+    background-color: @theme_dark_color;
 }
 
 TerminalWindow GtkNotebook.notebook {
@@ -190,7 +198,8 @@ TerminalWindow .scrollbar.trough {
 TerminalWindow .scrollbar.button,
 TerminalWindow .scrollbar.button:active,
 TerminalWindow .scrollbar.button:active:hover {
-    color: shade(@menubar_bg_color, 0.6);
+    color: shade(#222, 0.85);
+    background-color: shade(#222, 0.85);
 }
 
 TerminalWindow .scrollbar.slider {

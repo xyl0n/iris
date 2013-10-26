@@ -39,6 +39,7 @@
     padding: 4px;
     border-radius: 0px;
     icon-shadow: none;
+    color: @toolbar_fg_color;
 }
 
 .primary-toolbar .raised .button,
@@ -49,6 +50,7 @@
     border-color: shade(@toolbar_bg_color, 0.97); /*Themes toolbars in Scratch etc.*/
     background-color: shade(@toolbar_bg_color, 1.08);
     background-image: none;
+    color: @toolbar_fg_color;
 }
 
 .primary-toolbar .raised .button:hover,
@@ -59,7 +61,19 @@
     border-color: shade(@toolbar_bg_color, 0.85);
     background-color: @toolbar_bg_color;
     background-image: none;
-    color: transparent;
+    color: @theme_selected_bg_color;
+}
+
+
+.primary-toolbar .raised .button:active,
+.primary-toolbar .raised.button:active,
+{
+    transition: 200ms linear;
+    border-radius: 0px;
+    border-color: shade(@toolbar_bg_color, 0.75);
+    background-color: shade(@toolbar_bg_color, 1.15);
+    color: @theme_dark_selected;
+    background-image: none;
 }
 
 .primary-toolbar .button:active,
@@ -68,7 +82,7 @@
     border-radius: 0px;
     border-color: shade(@toolbar_bg_color, 0.75);
     background-color: shade(@toolbar_bg_color, 1.15);
-    color: shade(@theme_bg_color, 0.8);
+    color: @theme_dark_selected;
     background-image: none;
 }
 
@@ -106,7 +120,10 @@
 }
 
 .primary-toolbar .entry {
-    border-color: shade(@toolbar_bg_color, 0.8);
+    border-style: none;
+    border-color: @toolbar_bg_color;
+    box-shadow: -1px -1px 1px shade(@theme_bg_color, 0.95) inset,
+                1px 1px 1px shade(@theme_bg_color, 0.95) inset;
 }
 
 .primary-toolbar .entry:active,
@@ -126,9 +143,10 @@
 
     padding: 4px;
     border-width: 1px;
-    border-style: none;
+    border-style: solid;
+    border-color: shade(@theme_bg_color, 0.93);
     border-radius: 0;
-    background-color: alpha(shade(@theme_bg_color, 0.5), 0.75);
+    background-color: shade(@theme_bg_color, 1.07);
     background-image: none;
 }
 
@@ -209,6 +227,7 @@
     border-width: 0`;
     border-right-width: 0;
     border-radius: 0;
+    background-color: transparent;
 }
 
 /* leftmost button */

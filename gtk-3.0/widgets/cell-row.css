@@ -11,7 +11,7 @@
 .cell:selected:focus {
     /*background-color: @theme_selected_bg_color;
     color: @theme_selected_fg_color;*/
-    background-color: transparent;
+    background-color: inherit;
     color: @theme_selected_bg_color;
     background-image: none;
 }
