@@ -856,13 +856,13 @@ GtkViewport.frame {
 .titlebar .titlebutton:hover,
 .titlebar .titlebutton:hover:focus {
     background: none;
-    color: @theme_selected_bg_color;
+    color: @theme_dark_selected;
 }
 
 .titlebar .titlebutton:active,
 .titlebar .titlebutton:active:hover {
     background: none;
-    color: shade(@theme_selected_bg_color, 0.9);
+    color: @theme_dark_selected;
     box-shadow: none;
 }
 
@@ -896,12 +896,12 @@ GtkViewport.frame {
 .titlebar .button:hover,
 .titlebar .button:active:hover {
     background-color: @theme_dark_color;
-    color: @theme_selected_bg_color;
+    color: @theme_dark_selected;
 }
 
 .titlebar .button:active {
     background-color: @theme_dark_color;
-    color: @theme_selected_bg_color;
+    color: @theme_dark_selected;
 }
 
 
