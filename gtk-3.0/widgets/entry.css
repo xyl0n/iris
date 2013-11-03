@@ -32,8 +32,7 @@
 
 .entry:selected,
 .entry:selected:focus {
-    background-color: @theme_bg_color;
-    color: @theme_selected_bg_color;
+    background-color: shade(@theme_bg_color, 0.9);
 }
 
 .entry:insensitive {

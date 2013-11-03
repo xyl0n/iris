@@ -113,7 +113,7 @@ GtkTreeMenu .menuitem * {
 .menu .menuitem *:hover {
     transition: 200ms linear;
     background-color: @menu_bg_color;
-    color:  @theme_selected_bg_color;/*shade(mix(@plum, @theme_selected_bg_color, 0.5), 1.45);/*@menu_item_selected;*/
+    color:  @theme_selected_bg_color; /*shade(mix(@plum, @theme_selected_bg_color, 0.5), 1.45);/*@menu_item_selected;*/
 }
 
 .menu .menuitem:insensitive,

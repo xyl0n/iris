@@ -65,3 +65,12 @@
 
 .notebook tab.left:active {
 }
+
+.notebook tab .button:hover {
+    color: shade(@theme_selected_bg_color, 1.12);
+}
+
+.notebook tab .button:active {
+    color: shade(@theme_selected_bg_color, 1.0);
+    background-color: @theme_bg_color;
+}

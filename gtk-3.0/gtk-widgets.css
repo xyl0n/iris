@@ -769,16 +769,10 @@ GtkViewport.frame {
 	border-style: solid;
 	border-color: shade(@toolbar_bg_color, 0.90);
 
-	background-color: @toolbar_fg_color;
-    color: @toolbar_bg_color;
+	background-color: @toolbar_bg_color;
+    color: @toolbar_fg_color;
 
 	padding: 6px 6px 5px 6px;
-}
-
-
-.header-bar .button,
-.header-bar.button {
-    background-color: #ff0000;
 }
 
 .header-bar .button.text-button {
@@ -849,7 +843,7 @@ GtkViewport.frame {
     padding: 11px 11px;
     border-style: none;
     background: none;
-    color: mix(@toolbar_fg_color, @toolbar_bg_color, 0.1);
+    color: @toolbar_fg_color;
     icon-shadow: none;
 }
 
@@ -890,7 +884,7 @@ GtkViewport.frame {
 
 .titlebar .button {
     background-color: @theme_dark_color; /*makes it practically transparent*/
-    color: @toolbar_dark_text;
+    color: @theme_dark_text;
 }
 
 .titlebar .button:hover,
@@ -918,7 +912,7 @@ GtkViewport.frame {
 
     this is used for the resize cursor area */
 
-    box-shadow: 0 2px 8px 3px @theme_dark_color;
+    box-shadow: 0 2px 8px 3px alpha(@dark_shadow, 0.5);
 
     margin: 10px;
 }
