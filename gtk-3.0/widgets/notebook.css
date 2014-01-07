@@ -2,8 +2,8 @@
  * notebook *
  ************/
 .notebook {
-    padding: 0;
     border-style: solid;
+    border-width: 1px;
     border-color: shade(@theme_bg_color, 0.85);
     border-radius: 0;
     background-color: @theme_base_color;
@@ -19,7 +19,6 @@
 }
 
 .notebook tab:active {
-    transition: 100ms ease-in-out;
     border-color: shade(@theme_bg_color, 0.85);
     background-color: @theme_base_color;
     background-image: none;
@@ -28,15 +27,30 @@
 
 .notebook tab GtkLabel {
     color: @theme_text_color;
+    padding-top: 5px;
+}
+
+.notebook tab GtkImage {
+    padding-top: 5px;
 }
 
 .notebook tab.top {
-    border-width: 1px 1px 0 1px;
+    border-width: 1px;
+    border-top-width: 3px;
+    border-bottom-width: 0px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
 }
 
 .notebook tab.top:active {
+    border-width: 0px;
+    border-top-width: 5px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-color: @theme_bg_color;
+    box-shadow: 0px 1px shade(@theme_bg_color, 0.85) inset,
+		1px 0px shade(@theme_bg_color, 0.85) inset,
+		-1px 0px shade(@theme_bg_color, 0.85) inset;
 }
 
 .notebook tab.right {
@@ -66,11 +80,18 @@
 .notebook tab.left:active {
 }
 
+.notebook tab .button {
+    background-color: @theme_bg_color;
+    color: @theme_fg_color;
+}
+
 .notebook tab .button:hover {
-    color: shade(@theme_selected_bg_color, 1.12);
+    transition: none;
+    color: shade(@theme_selected_fg_color, 1.12);
+    background-color: inherit;
 }
 
 .notebook tab .button:active {
-    color: shade(@theme_selected_bg_color, 1.0);
+    color: shade(@theme_selected_fg_color, 1.0);
     background-color: @theme_bg_color;
 }

@@ -2,15 +2,18 @@
  * entry *
  *********/
 
-.entry {
-    box-shadow: inset 1px 0 alpha(@dark_shadow, 0.10),
-                inset 0 1px alpha(@dark_shadow, 0.12),
-                inset -1px 0 alpha(@dark_shadow, 0.10),
-                inset 0 -1px alpha(@dark_shadow, 0.05);
+.entry,
+.primary-toolbar .entry {
+    box-shadow: inset 1px 0 alpha(@dark_shadow, 0.15),
+                inset 0 1px alpha(@dark_shadow, 0.15),
+                inset -1px 0 alpha(@dark_shadow, 0.15),
+                inset 0 -1px alpha(@dark_shadow, 0.15);
 }
 
 .entry,
-.entry *{
+.primary-toolbar .entry,
+.entry *,
+.primary-toolbar .entry *{
     padding: 4px 5px;
     border-style: solid;
     border-radius: 0px;
@@ -20,22 +23,26 @@
     color: @theme_text_color;
 }
 
-.entry:focus {
+.entry:focus,
+.primary-toolbar .entry:focus {
     transition: 200ms linear;
     background-color: @theme_base_color;
     border-style: none;
-    border-color: @theme_selected_bg_color;
-    box-shadow: 1px 1px 1px @theme_selected_bg_color inset,
-                -1px -1px 1px @theme_selected_bg_color inset;
+    border-color: @theme_selected_fg_color;
+    box-shadow: 1px 1px 1px @theme_selected_fg_color inset,
+                -1px -1px 1px @theme_selected_fg_color inset;
     color: @theme_text_color;
 }
 
 .entry:selected,
-.entry:selected:focus {
+.primary-toolbar .entry:selected,
+.entry:selected:focus
+.primary-toolbar .entry:selected:focus {
     background-color: shade(@theme_bg_color, 0.9);
 }
 
-.entry:insensitive {
+.entry:insensitive,
+.primary-toolbar .entry:insensitive {
     background-color: shade(@theme_bg_color, 0.95);
     background-image: none;
     color: mix(@theme_text_color, @theme_base_color, 0.5);
@@ -44,8 +51,8 @@
 .entry.progressbar {
     border-width: 0;
     border-radius: 0;
-    background-color: @theme_selected_bg_color;
+    background-color: @theme_selected_fg_color;
     background-image: none;
-    color: @theme_selected_fg_color;
-    border-color: @theme_selected_bg_color;
+    color: @theme_base_color;
+    border-color: @theme_selected_fg_color;
 }

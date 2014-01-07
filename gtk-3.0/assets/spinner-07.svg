@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="16"
+   height="16"
+   id="svg3315"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="spinner-07.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1440"
+     inkscape:window-height="846"
+     id="namedview3075"
+     showgrid="false"
+     inkscape:zoom="5.2149125"
+     inkscape:cx="-22.925819"
+     inkscape:cy="-16.632554"
+     inkscape:window-x="0"
+     inkscape:window-y="28"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3315" />
+  <metadata
+     id="metadata25">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3317" />
+  <path
+     sodipodi:type="arc"
+     style="fill:none;stroke:#df253f;stroke-width:3.69230175;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     id="path3379"
+     sodipodi:cx="8.0427046"
+     sodipodi:cy="8.0427046"
+     sodipodi:rx="8.0142345"
+     sodipodi:ry="7.985765"
+     d="M 0.02847004,8.0427042 A 8.0142345,7.985765 0 0 1 8.0427047,0.0569396"
+     transform="matrix(-0.11008337,-0.80355143,0.80641611,-0.1104758,2.579148,15.35047)"
+     sodipodi:start="3.1415927"
+     sodipodi:end="4.712389"
+     sodipodi:open="true" />
+</svg>

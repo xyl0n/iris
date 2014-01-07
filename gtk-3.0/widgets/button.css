@@ -6,7 +6,28 @@
     -GtkWidget-focus-padding: 1;
     -GtkWidget-focus-line-width: 0;
 
-    padding: 4px 25px;
+    padding: 4px 20px;
+    font: bold;
+}
+
+BackgroundBox .button {
+    color: @theme_text_color;
+    border-style: solid;
+    border-width: 1px;
+}
+
+BackgroundBox .button:hover {
+    transition: none; /*stop weird glitchiness*/
+    color: shade(@theme_selected_fg_color, 1.15);
+    border-color: shade(@theme_bg_color, 0.87);
+    background-color: @theme_bg_color;
+}
+
+BackgroundBox .button:active {
+    transition: 100px linear;
+    color: shade(@theme_selected_fg_color, 1.0);
+    background-color: @theme_bg_color;
+    border-color: @theme_fg_color;
 }
 
 .button {
@@ -14,26 +35,25 @@
     border-radius: 0;
     background-color: @button_bg_color;
     background-image: none;
-    color: @theme_selected_fg_color;
+    color: @theme_base_color;
 }
 
 .button:hover {
-    transition: 200ms ease-in;
+    transition: 150ms ease-in;
     background-color: shade(@button_bg_color, 1.17);
     background-image: none;
-    color: @theme_selected_fg_color;
 }
 
 .button:active {
-    background-color: shade(@button_bg_color, 0.9); /*also controls "on" state of toggle button*/
+    background-color: shade(@button_bg_color, 0.9);
     background-image: none;
-    color: shade(mix(#ff0000, @theme_selected_bg_color, 0.75), 1.35);
+    color: shade(mix(#ff0000, @theme_selected_fg_color, 0.75), 1.35);
 }
 
 .button:active:hover {
     background-color: shade(@button_bg_color, 1.07);
     background-image: none;
-    color: @theme_selected_fg_color;
+    color: @theme_base_color;
 }
 
 .button:active:insensitive {
@@ -42,34 +62,52 @@
 
 /* default button */
 .button.default {
-    border-color: shade(@theme_selected_bg_color, 0.8);
-    background-color: shade(@theme_selected_bg_color, 1.08);
-    color: @theme_selected_fg_color;
+    border-color: shade(@theme_selected_fg_color, 0.8);
+    background-color: shade(@theme_selected_fg_color, 1.08);
+    color: @theme_base_color;
 }
 
 .button.default:hover {
-    border-color: shade(@theme_selected_bg_color, 0.7);
-    background-color: @theme_selected_bg_color;
-    color: shade(@theme_selected_fg_color, 0.9);
+    border-color: shade(@theme_selected_fg_color, 0.7);
+    background-color: @theme_selected_fg_color;
+    color: shade(@theme_base_color, 0.9);
 }
 
 .button.default:active {
-    border-color: shade(@theme_selected_bg_color, 0.8);
-    background-color: shade(@theme_selected_bg_color, 0.95);
-    color: @theme_selected_fg_color;
+    border-color: shade(@theme_selected_fg_color, 0.8);
+    background-color: shade(@theme_selected_fg_color, 0.95);
+    color: @theme_base_color;
 }
 
 .button.default:active:hover {
-    border-color: shade(@theme_selected_bg_color, 0.7);
-    background-color: shade(@theme_selected_bg_color, 0.97);
-    color: shade(@theme_selected_fg_color, 0.9);
+    border-color: shade(@theme_selected_fg_color, 0.7);
+    background-color: shade(@theme_selected_fg_color, 0.97);
+    color: shade(@theme_base_color, 0.9);
+}
+
+/*Fix for Evince*/
+
+EvSidebar GtkToggleButton.button { 
+    color: @theme_fg_color;
+    background-color: @theme_bg_color;
+}
+
+
+EvSidebar GtkToggleButton.button:hover {
+    color: shade(@theme_selected_fg_color, 1.15);
+    background-color: @theme_bg_color;
+}
+
+EvSidebar GtkToggleButton.button:active {
+    color: @theme_selected_fg_color;
+    background-color: @theme_bg_color;
 }
 
 /****************
 * linked button *
 *****************/
 
-* middle button */
+/* middle button */
 .linked .entry,
 .linked .button,
 .linked .button:active,
@@ -92,7 +130,7 @@
 .linked .button:insensitive:first-child {
     border-width: 1px;
     border-right-width: 0;
-    border-radius: 2px;
+    border-radius: 0px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
@@ -106,7 +144,7 @@
 .linked .button:focus:active:last-child,
 .linked .button:insensitive:last-child {
     border-width: 1px;
-    border-radius: 2px;
+    border-radius: 0px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
 }
@@ -120,7 +158,7 @@
 .linked .button:focus:active:only-child,
 .linked .button:insensitive:only-child {
     border-width: 1px;
-    border-radius: 2px;
+    border-radius: 0px;
 }
 
 /* middle button (vertical) */
@@ -146,7 +184,7 @@
 .linked.vertical .button:insensitive:first-child {
     border-width: 1px;
     border-bottom-width: 0;
-    border-radius: 2px;
+    border-radius: 0px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
 }
@@ -160,7 +198,7 @@
 .linked.vertical .button:focus:active:last-child,
 .linked.vertical .button:insensitive:last-child {
     border-width: 1px;
-    border-radius: 2px;
+    border-radius: 0px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
@@ -174,5 +212,5 @@
 .linked.vertical .button:focus:active:only-child,
 .linked.vertical .button:insensitive:only-child {
     border-width: 1px;
-    border-radius: 2px;
+    border-radius: 0px;
 }

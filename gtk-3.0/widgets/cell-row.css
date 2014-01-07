@@ -2,26 +2,35 @@
  * cell and row *
  ****************/
 .cell {
-    color: @theme_text_color;
     border-width: 0;
     border-radius: 0;
 }
 
 .cell:selected,
 .cell:selected:focus {
-    /*background-color: @theme_selected_bg_color;
-    color: @theme_selected_fg_color;*/
     background-color: inherit;
-    color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
     background-image: none;
 }
 
+.cell:selected.image:hover {
+    color: shade(@theme_selected_fg_color, 1.15);
+}
+
+GtkTreeView.cell.button {
+    color: @theme_fg_color;
+}
+
+GtkTreeView.cell.button:hover {
+    color: @theme_selected_fg_color;
+}
+
 row:selected,
+row:selected:hover,
 row:selected:focus {
-    border-width: 1px 0;
     border-style: none;
-    border-color: shade(@theme_selected_bg_color, 0.9);
+    border-color: shade(@theme_selected_fg_color, 0.9);
     background-color: transparent;
-    color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
     background-image: none;
 }

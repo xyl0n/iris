@@ -8,32 +8,38 @@ GtkComboBox .menu {
     color: @menu_fg_color;
 }
 
-
-GtkTreeMenu.menu:active {
-    background-color: @menu_bg_color; 
-}
-
+.primary-toolbar .menu,
 .primary-toolbar .button .menu,
 .toolbar .menu,
 .toolbar .primary-toolbar .menu,
+.header-bar .menu,
+.header-bar .primary-toolbar .menu,
 .menu {
     padding: 0;
-    border-width: 0;
     border-radius: 0;
+    border-style: none;
     background-color: @menu_bg_color;
     color: @menu_fg_color;
 }
 
-.primary-toolbar .button .menu:hover,
 .menu.button:hover,
 .menu.button:active,
-.menu.button:active:insensitive,
+.menu.button:active *:insensitive,
 .menu.button:insensitive,
 .menu.button {
     border-width: 0;
     background-color: @menu_bg_color;
-    color: @theme_dark_selected;
     background-image: none;
+}
+
+.context-menu {
+    font: initial;
+}
+
+/* ubuntu software center menu */
+#toolbar-popup {
+    background-color: @menu_bg_color;
+    color: @menu_fg_color;
 }
 
 /***********
@@ -42,7 +48,7 @@ GtkTreeMenu.menu:active {
 .menubar {
     -GtkWidget-window-dragging: true;
 
-    border-width: 0;
+    border-style: none;
     background-color: @menubar_bg_color;
     background-image: none;
     color: @menubar_fg_color;
@@ -53,27 +59,25 @@ GtkTreeMenu.menu:active {
  ***************/
 .menubar.menuitem,
 .menubar .menuitem {
-    padding: 6px 6px; /*Item on menubar*/
-    border-width: 1px 1px 0 1px;
-    background-color: @menubar_bg_color;
-    color: @menubar_fg_color;
-}
-
-.panel .menubar.menuitem,
-.panel .menubar .menuitem {
     padding: 3px 6px;
+    border-width: 1px 1px 0 1px;
+    border-style: solid;
+    border-color: transparent;
+    background-color: transparent;
+    background-image: none;
+    color: @menubar_fg_color;
 }
 
 .menubar.menuitem:hover,
 .menubar .menuitem:hover {
-    transition: 100ms ease-in-out;
-    border-color: mix(@theme_bg_color, @theme_fg_color, 0.23);
-    background-color: mix(@theme_bg_color, @theme_fg_color, 0.21);
+    border-color: alpha(@theme_fg_color, 0.15);
+    background-color: alpha(@theme_fg_color, 0.15);
     background-image: none;
+    color: shade(@menubar_fg_color, 0.95);
 }
 
 .menubar .menuitem *:hover {
-    color: @theme_dark_selected;
+    color: shade(@theme_selected_fg_color, 1.15);
 }
 
 /************
@@ -81,29 +85,32 @@ GtkTreeMenu.menu:active {
  ************/
 GtkTreeMenu .menuitem {
     color: @menu_fg_color;
-    padding: 6px 6px;
+    padding: 4px 6px;
     border-width: 0;
     background-color: @menu_bg_color;
 }
 
-GtkTreeMenu .menuitem * {
-    color: @menu_fg_color;
-}
-
 .menuitem,
 .menu .menuitem {
-    padding: 6px 3px;
-    border-style: none;
+    padding: 4px 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
     border-radius: 0;
-    background-color: @menu_bg_color;
+    background-color: transparent;
+    background-image: none;
+    color: @menu_fg_color;
+
+    -GtkMenuItem-arrow-scaling: 0.5;
 }
 
 .menu .menuitem:active,
 .menu .menuitem:hover {
+    transition: 100ms linear;
     border-style: none;
-    background-color: shade(@menu_bg_color, 0.97);
+    background-color: transparent;
     border-radius: 0;
-    color: @theme_selected_bg_color;
+    color: shade(@theme_selected_fg_color, 1.2);
     background-image: none;
 }
 
@@ -111,14 +118,14 @@ GtkTreeMenu .menuitem * {
 .menu .menuitem *:active,
 .menu .menuitem:hover,
 .menu .menuitem *:hover {
-    transition: 200ms linear;
-    background-color: @menu_bg_color;
-    color:  @theme_selected_bg_color; /*shade(mix(@plum, @theme_selected_bg_color, 0.5), 1.45);/*@menu_item_selected;*/
+    transition: 100ms linear;
+    background-color: transparent;
+    color: shade(@theme_selected_fg_color, 1.2);
 }
 
 .menu .menuitem:insensitive,
 .menu .menuitem *:insensitive {
-    color: mix(@theme_fg_color, @theme_bg_color, 0.5);
+    color: shade(@menu_bg_color, 1.5);
 }
 
 .menuitem.check,
@@ -129,7 +136,6 @@ GtkTreeMenu .menuitem * {
 .menuitem.radio:insensitive {
     border-style: none;
     background-color: transparent;
-    color: @theme_selected_bg_color;
     background-image: none;
 }
 
@@ -137,6 +143,10 @@ GtkTreeMenu .menuitem * {
 .menuitem.radio:active {
     border-style: none;
     background-color: transparent;
+}
+
+.menuitem.arrow {
+    color: alpha(@menu_fg_color, 0.6);
 }
 
 .menuitem GtkCalendar:inconsistent {
@@ -166,9 +176,17 @@ GtkTreeMenu .menuitem * {
 }
 
 .menuitem .accelerator:hover {
-    color: alpha(@theme_selected_fg_color, 0.8);
+    color: alpha(@theme_base_color, 0.8);
 }
 
 .menuitem .accelerator:insensitive {
     color: alpha(mix(@menu_fg_color, @menu_bg_color, 0.5), 0.6);
+}
+
+GtkModelMenuItem GtkBox GtkImage {
+    padding-right: 4px;
+}
+
+.button .menu *{
+    font-weight: normal;
 }
