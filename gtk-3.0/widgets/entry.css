@@ -4,22 +4,22 @@
 
 .entry,
 .primary-toolbar .entry {
-    box-shadow: inset 1px 0 alpha(@dark_shadow, 0.15),
+   /* box-shadow: inset 1px 0 alpha(@dark_shadow, 0.15),
                 inset 0 1px alpha(@dark_shadow, 0.15),
                 inset -1px 0 alpha(@dark_shadow, 0.15),
-                inset 0 -1px alpha(@dark_shadow, 0.15);
+                inset 0 -1px alpha(@dark_shadow, 0.15);*/
 }
 
 .entry,
-.primary-toolbar .entry,
-.entry *,
-.primary-toolbar .entry *{
+.primary-toolbar .entry {
+    transition: 200ms linear;
     padding: 4px 5px;
     border-style: solid;
     border-radius: 0px;
-    background-color: shade(@theme_bg_color, 1.05);
+    border-width: 1px;
+    background-color: shade(@theme_bg_color, 0.96);
     background-image: none;
-    border-color: shade(@theme_bg_color, 0.9);
+    border-color: shade(@theme_bg_color, 0.87);
     color: @theme_text_color;
 }
 
@@ -27,10 +27,8 @@
 .primary-toolbar .entry:focus {
     transition: 200ms linear;
     background-color: @theme_base_color;
-    border-style: none;
-    border-color: @theme_selected_fg_color;
-    box-shadow: 1px 1px 1px @theme_selected_fg_color inset,
-                -1px -1px 1px @theme_selected_fg_color inset;
+    border-style: solid;
+    border-color: shade(@theme_bg_color, 0.87);
     color: @theme_text_color;
 }
 

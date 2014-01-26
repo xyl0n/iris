@@ -4,16 +4,16 @@
 .titlebar {
     border-radius: 0 0 0 0;
     background-image: none;
-    background-color: @toolbar_bg_color;
-    color: @toolbar_fg_color;
+    background-color: @menubar_bg_color;
+    color: @menubar_fg_color;
     text-shadow: none;
 }
 
 .titlebar:insensitive {
     border-radius: 0 0 0 0;
     background-image: none;
-    background-color: @toolbar_bg_color;
-    color: @toolbar_fg_color;
+    background-color: @menubar_bg_color;
+    color: @menubar_fg_color;
     text-shadow: none;
 }
 
@@ -32,15 +32,15 @@
 
 .titlebar:backdrop {
     background-image: none;
-    background-color: @toolbar_bg_color;
-    color: mix(@toolbar_fg_color, @toolbar_bg_color, 0.4);
+    background-color: @menubar_bg_color;
+    color: mix(@menubar_fg_color, @wm_bg, 0.4);
     text-shadow: none;
 }
 
 .titlebar:backdrop:insensitive {
     background-image: none;
-    background-color: @toolbar_bg_color;
-    color: mix(@toolbar_fg_color, @toolbar_bg_color, 0.4);
+    background-color: @menubar_bg_color;
+    color: mix(@menubar_fg_color, @wm_bg, 0.4);
     text-shadow: none;
 }
 
@@ -48,33 +48,33 @@
     padding: 6px 6px;
     border-style: none;
     background: none;
-    color: @toolbar_fg_color;
+    color: @menubar_fg_color;
     icon-shadow: none;
 }
 
 .titlebar .titlebutton:hover,
 .titlebar .titlebutton:hover:focus {
     background: none;
-    color: shade(@theme_selected_fg_color, 1.15)
+    color: @menu_selected_fg_color;
 }
 
 .titlebar .titlebutton:active,
 .titlebar .titlebutton:active:hover {
     background: none;
-    color: shade(@theme_selected_fg_color, 1.2)
+    color: @menu_selected_fg_color;
     box-shadow: none;
 }
 
 /*
 .titlebar .right .titlebutton:first-child {
-    border-left: 1px solid shade(@toolbar_bg_color, 0.9);
+    border-left: 1px solid shade(wm_bg, 0.9);
 }
 
 .titlebar .right .titlebutton:last-child {
 }
 
 .titlebar .left .titlebutton:last-child {
-    border-right: 1px solid shade(@toolbar_bg_color, 0.9);
+    border-right: 1px solid shade(wm_bg, 0.9);
 }
 
 .titlebar .left .titlebutton:first-child {
@@ -83,38 +83,42 @@
 
 .titlebar .titlebutton:backdrop {
     background-image: none;
-    color: shade(@toolbar_fg_color, 1.75);
+    color: shade(@menubar_fg_color, 1.75);
     icon-shadow: none;
 }
 
 .titlebar .button {
     padding: 6px 6px;
-    background-color: @toolbar_bg_color; /*makes it practically transparent*/
-    color: @toolbar_fg_color;
+    background-color: @wm_bg; /*makes it practically transparent*/
+    color: @wm_title_focused;
 }
 
-.titlebar .button:hover,
+.titlebar .button:hover {
+    background-color: @wm_bg;
+    color: @menu_selected_fg_color;
+}
+
 .titlebar .button:active:hover {
-    background-color: @toolbar_bg_color;
-    color: shade(@theme_selected_fg_color, 1.2)
+    background-color: @wm_bg;
+    color: shade(@menu_selected_fg_color, 0.87);
 }
 
 .titlebar .button:active {
-    background-color: @toolbar_bg_color;
-    color: @theme_selected_fg_color;
+    background-color: wm_bg;
+    color: @menu_selected_fg_color;
 }
 
-
 .titlebar .separator {
-    color: shade(@toolbar_bg_color, 0.87);
+    border-color: shade(@menubar_bg_color, 0.87);
+    color: shade(@menubar_bg_color, 0.87);
 }
 
 .window-frame {
     border-style: none;
     border-radius: 0 0 0 0;
-    border-color: @toolbar_bg_color;
+    border-color: @menubar_bg_color;
     /*box-shadow: 0 3px 7px 1px alpha(black, 0.7),
-                0 0 0 1px mix(shade(@toolbar_bg_color, 0.7), @toolbar_fg_color, 0.21);
+                0 0 0 1px mix(shade(wm_bg, 0.7), @wm_title_focused, 0.21);
 
     this is used for the resize cursor area */
 
@@ -125,6 +129,5 @@
 
 .window-frame:backdrop {
     box-shadow: 0 3px 5px 1px alpha(black, 0.5),
-                0 0 0 1px mix(shade(@toolbar_bg_color, 0.7), @toolbar_fg_color, 0.12);
+                0 0 0 1px mix(shade(@menubar_bg_color, 0.7), @menubar_fg_color, 0.12);
 }
-

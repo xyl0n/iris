@@ -39,14 +39,15 @@
 
 /* widget colors */
 @define-color button_bg_color #464646;
-@define-color menubar_bg_color #343434;
-@define-color menubar_fg_color @theme_base_color;
-@define-color toolbar_bg_color #343434;
-@define-color toolbar_fg_color @theme_base_color;
-@define-color menu_bg_color #343434;
-@define-color menu_fg_color @theme_base_color_color;
+@define-color menubar_bg_color @theme_text_color;
+@define-color menubar_fg_color @theme_bg_color;
+@define-color toolbar_bg_color @theme_bg_color;
+@define-color toolbar_fg_color @theme_text_color;
+@define-color menu_bg_color @theme_text_color;
+@define-color menu_fg_color @theme_bg_color;
 @define-color panel_bg_color alpha(#000, 0.5);
 @define-color panel_fg_color #f2f2f2;
+@define-color menu_selected_fg_color shade(mix(#ff0000, @theme_selected_fg_color, 0.75), 1.35);
 
 /* osd */
 @define-color osd_base #fafafa;
@@ -54,15 +55,15 @@
 @define-color osd_bg #fafafa;
 
 /* window manager colors */
-@define-color wm_bg @menu_bg_color;
-@define-color wm_border_focused @menu_bg_color;
-@define-color wm_border_unfocused shade(@menu_bg_color, 0.92);
-@define-color wm_title_focused @menu_fg_color;
-@define-color wm_title_unfocused alpha(@menu_fg_color, 0.95);
-@define-color wm_icons_focused @menu_fg_color;
-@define-color wm_icons_focused_prelight shade(@theme_selected_bg_color, 1.15);
+@define-color wm_bg @menubar_bg_color;
+@define-color wm_border_focused @menubar_bg_color;
+@define-color wm_border_unfocused shade(@menubar_bg_color, 1.0);
+@define-color wm_title_focused @menubar_fg_color;
+@define-color wm_title_unfocused alpha(@menubar_fg_color, 0.95);
+@define-color wm_icons_focused @theme_fg_color;
+@define-color wm_icons_focused_prelight @theme_selected_bg_color;
 @define-color wm_icons_focused_pressed @theme_selected_bg_color;
-@define-color wm_icons_unfocused alpha(@menu_fg_color, 0.95);
+@define-color wm_icons_unfocused alpha(@theme_fg_color, 0.95);
 @define-color wm_icons_unfocused_prelight shade(@theme_selected_bg_color, 1.15);
 @define-color wm_icons_unfocused_pressed @theme_selected_bg_color;
 

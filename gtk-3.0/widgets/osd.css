@@ -62,7 +62,7 @@ GtkOverlay.osd {
 }
 
 .osd.toolbar {
-    -GtkToolbar-button-relief: normal;
+    -GtkToolbar-button-relief: none;
 
     padding: 4px;
     border-width: 1px;
@@ -80,9 +80,9 @@ GtkOverlay.osd {
     border-style: solid;
     border-color: shade(@osd_bg, 0.8);
     border-radius: 0px;
-    background-color: @osd_bg;
+    background-color: @theme_bg_color;
     background-image: none;
-    color: @osd_fg;
+    color: @theme_fg_color;
 }
 
 .osd.toolbar .button:hover {
@@ -93,7 +93,7 @@ GtkOverlay.osd {
 }
 
 .osd.toolbar .button:active {
-    border-color: shade(@osd_bg, 0.8);
+    border-color: shade(@osd_bg, 0.95);
     background-color: shade(@osd_bg, 0.95);
     background-image: none;
     color: @theme_selected_fg_color;

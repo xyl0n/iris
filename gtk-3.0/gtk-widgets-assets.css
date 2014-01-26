@@ -78,18 +78,18 @@
     background-image: url("assets/menuitem-checkbox-checked.svg");
 }
 
-.menuitem.check:active:hover {
+/*.menuitem.check:active:hover {
     background-image: url("assets/menuitem-checkbox-checked-hover.svg");
-}
+}*/
 
 .menuitem.check:active:insensitive {
     background-image: url("assets/menuitem-checkbox-checked-insensitive.svg");
 }
 
-.menuitem.check:inconsistent:hover,
+/*.menuitem.check:inconsistent:hover,
 .menuitem.radio:inconsistent:hover {
     background-image: url("assets/menuitem-checkbox-mixed-hover.svg");
-}
+}*/
 
 .menuitem.check:inconsistent,
 .menuitem.radio:inconsistent {
@@ -105,9 +105,9 @@
     background-image: url("assets/menuitem-radio-checked.svg");
 }
 
-.menuitem.radio:active:hover {
+/*.menuitem.radio:active:hover {
     background-image: url("assets/menuitem-radio-checked-hover.svg");
-}
+}*/
 
 .menuitem.radio:active:insensitive {
     background-image: url("assets/menuitem-radio-checked-insensitive.svg");
