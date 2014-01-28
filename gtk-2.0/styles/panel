@@ -1,16 +1,16 @@
 
 style "panel"
 {
-  fg[NORMAL] = "#aaaaaa"
-  fg[PRELIGHT] = "#bbbbbb"
-  fg[SELECTED] = "#cccccc"
-  fg[ACTIVE] = "#cccccc"
-  fg[INSENSITIVE] = "#666666"
-        bg[NORMAL]			= "#333333" 
-  	bg[PRELIGHT]			= "#333333"
-  	bg[ACTIVE]			= "#333333" 
-  	bg[SELECTED]			= "#3c3c3c"
-  	bg[INSENSITIVE]			= "#333333"
+  fg[NORMAL] = "#ABB4BD"
+  fg[PRELIGHT] = "#ffffff"
+  fg[SELECTED] = "#ffffff"
+  fg[ACTIVE] = "#ffffff"
+  fg[INSENSITIVE] = "#999999"
+        bg[NORMAL]			= "#434A54" 
+  	bg[PRELIGHT]			= "#434A54" 
+  	bg[ACTIVE]			= "#434A54" 
+  	bg[SELECTED]			= "#434A54" 
+  	bg[INSENSITIVE]			= "#434A54" 
 xthickness = 0
 ythickness = 0
 
@@ -19,6 +19,62 @@ ythickness = 0
 	bg_pixmap[SELECTED] 		= "Panel/panel-bg.png"
 	bg_pixmap[INSENSITIVE] 		= "Panel/panel-bg.png"
 	bg_pixmap[PRELIGHT] 		= "Panel/panel-bg.png"
+  engine "pixmap"
+  {
+    image
+    {
+      function			= SHADOW
+      shadow			= IN
+      recolorable		= FALSE
+      file				= "Shadows/shadow-none.png"
+      border			= { 4, 4, 4, 4 }
+      stretch			= TRUE
+    }
+    image
+    {
+       function		= SHADOW
+       shadow			= OUT
+       recolorable		= TRUE
+       file				= "Shadows/shadow-none.png"
+       border			= { 4, 4, 4, 4 }
+       stretch			= TRUE
+    }
+
+    image
+    {
+       function		= SHADOW
+       shadow			= ETCHED_IN
+       recolorable		= TRUE
+       file				= "Shadows/shadow-none.png"				
+       border			= { 4, 4, 4, 4 }
+       stretch			= TRUE
+    }
+    image
+    {
+       function		= SHADOW
+       shadow			= ETCHED_OUT
+       recolorable		= TRUE
+       file				= "Shadows/shadow-none.png"
+       border			= { 4, 4, 4, 4 }
+       stretch			= TRUE
+    }
+    image
+    {
+       function		= VLINE
+       recolorable		= TRUE
+       file				= "Lines/linep-v.png"
+       border			= { 0, 1, 0, 0 }
+       stretch			= TRUE
+    }
+    image
+    {
+      function			= HLINE
+      recolorable		= TRUE
+      file				= "Lines/linep-h.png"
+      border			= { 0, 0, 0, 1 }
+      stretch			= TRUE
+    }
+  }
 }
 
 
@@ -69,6 +125,11 @@ widget "*Xfce*Panel*" 		style "panel"
 
 style "panelbar"
 {
+	fg[NORMAL] = @fg_color
+	fg[ACTIVE] = @fg_color
+	fg[PRELIGHT] = @fg_color
+	fg[SELECTED] = @fg_color
+
 engine "pixmap"
 {
 	image
@@ -124,11 +185,7 @@ widget_class "*Panel*MenuBar*Item*" style:highest "panelbar"
 
 style "panelbuttons"
 { 
-        bg[NORMAL]			= "#333333" 
-  	bg[PRELIGHT]			= "#333333"
-  	bg[ACTIVE]			= "#333333" 
-  	bg[SELECTED]			= "#3c3c3c"
-  	bg[INSENSITIVE]			= "#333333"
+
  xthickness            			= 3
  ythickness            			= 3
 	GtkWidget::focus_padding = 2
@@ -222,11 +279,7 @@ widget_class "*Xfce*NetkTasklist*GtkToggleButton" style "panelbuttons"
 
 style "paneltogglebuttons"
 { 
-        bg[NORMAL]			= "#333333" 
-  	bg[PRELIGHT]			= "#333333"
-  	bg[ACTIVE]			= "#333333" 
-  	bg[SELECTED]			= "#3c3c3c"
-  	bg[INSENSITIVE]			= "#333333"
+
  xthickness            			= 2
  ythickness            			= 2
 	engine "pixmap" {
@@ -307,14 +360,10 @@ widget_class "*Tasklist*" style:highest "panelbuttons"
 
 style "switcher"
 {
-  fg[NORMAL] = "#aaaaaa"
-  fg[PRELIGHT] = "#cccccc"
-  fg[SELECTED] = "#cccccc"
-  fg[ACTIVE] = "#cccccc"
-  fg[INSENSITIVE] = "#666666"
-        bg[NORMAL]			= "#141414" 
-  	bg[PRELIGHT]			= "#262626"
-  	bg[SELECTED]			= "#3c3c3c"
+        fg[NORMAL]			= "#ffffff" 
+        bg[NORMAL]			= "#444444" 
+  	bg[PRELIGHT]			= "#666666" 
+  	bg[SELECTED]			= @selected_bg_color 
 
 xthickness = 5
 ythickness = 4

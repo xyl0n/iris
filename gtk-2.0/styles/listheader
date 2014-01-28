@@ -1,16 +1,18 @@
 style "list-header"
 {
-  fg[NORMAL] = "#666666"
-  fg[PRELIGHT] = "#555555"
-  fg[SELECTED] = @selected_fg_color
-
-
+	fg[NORMAL] = @fg_color
+	fg[PRELIGHT] = @fg_color
+	fg[SELECTED] = @selected_bg_color
+	fg[ACTIVE] = @fg_color
+	fg[INSENSITIVE] = mix (0.5, @bg_color, @fg_color)
+	text[SELECTED] = @selected_bg_color
+	text[ACTIVE] = @selected_bg_color
    #Comment out the ythickness setting below for thicker column headers.
- #ythickness = 3
-	GtkTreeView::odd_row_color  = @bg_color
-	GtkTreeView::even_row_color = @bg_color
-	GtkTreeView::odd_col_color = @bg_color
-	GtkTreeView::even_col_color = @bg_color	
+ ythickness = 5
+	GtkTreeView::odd_row_color  = "#ffffff"
+	GtkTreeView::even_row_color = "#ffffff"
+	GtkTreeView::odd_col_color = "#ffffff"
+	GtkTreeView::even_col_color = "#ffffff"	
 
    engine "pixmap" 
 	{
@@ -35,7 +37,7 @@ style "list-header"
 			recolorable    	= TRUE
 			state				= PRELIGHT
 			file            		= "ListHeaders/list_header-prelight.png"
-			border          	= { 10, 10, 10, 10 }
+			border          	= { 1, 1, 1, 1 }
 			stretch         	= TRUE
       		}
 
@@ -47,7 +49,7 @@ style "list-header"
 			recolorable    	= TRUE
 			state				= ACTIVE
 			file					= "ListHeaders/list_header-pressed.png"
-			border          	= { 10, 10, 10, 10 }
+			border          	= { 1, 1, 1, 1 }
 			stretch         	= TRUE
       		}
 	image
@@ -56,7 +58,7 @@ style "list-header"
 			recolorable    	= TRUE
 			state				= SELECTED
 			file					= "ListHeaders/list_header-prelight.png"
-			border          	= { 10, 10, 10, 10 }
+			border          	= { 1, 1, 1, 1 }
 			stretch         	= TRUE
       		}
 	image
@@ -68,6 +70,14 @@ style "list-header"
 			border          	= { 1, 1, 1, 1 }
 			stretch         	= TRUE
       	}
+	image
+	{
+		function 			= FLAT_BOX
+		state    			= NORMAL
+		border			= {2,2,2,2}
+                stretch         	= TRUE
+		file				= "Others/null.png"
+	}
 	image
 	{
 		function 			= FLAT_BOX

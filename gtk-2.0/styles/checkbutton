@@ -1,6 +1,6 @@
 style "checkbutton"="default"
 {
-  fg[ACTIVE] = @fg_color
+
   engine "pixmap" {
  image 
 	{

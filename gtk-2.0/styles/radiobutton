@@ -1,6 +1,6 @@
 style "radiobutton"="default"
 {
-  fg[ACTIVE] = @fg_color
+
   engine "pixmap" 
     {
  image 

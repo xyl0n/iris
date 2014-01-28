@@ -20,3 +20,4 @@ widget_class	"*<GtkToolbar>*<GtkButton>*<GtkLabel>*" style:highest "murrinestyle
 widget_class	"*<GtkToolbar>*<GtkLabel>*" style:highest "murrinestyle"
 widget_class	"*<GtkButton>*<GtkLabel>*" style:highest "murrinestyle"
 
+
