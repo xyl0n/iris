@@ -83,8 +83,10 @@ style "tearoffmenuitem"	= "menuitem"
 style "menubar"		
 
 {
+    text[NORMAL] = @bg_color
 	text[PRELIGHT] = @bg_color
 	text[SELECTED] = @bg_color
+	fg[NORMAL] = @bg_color
 	fg[PRELIGHT] = @bg_color
 	fg[SELECTED] = @bg_color
   xthickness			= 1
@@ -135,8 +137,10 @@ style "menubar"
 style "menubar-item"		
 
 {
+    text[NORMAL] = @bg_color
 	text[PRELIGHT] = @bg_color
 	text[SELECTED] = @bg_color
+	fg[NORMAL] = @bg_color
 	fg[PRELIGHT] = @bg_color
 	fg[SELECTED] = @bg_color
   xthickness			= 1
