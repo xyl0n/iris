@@ -93,5 +93,5 @@
 
 .notebook tab .button:active {
     color: shade(@theme_selected_fg_color, 1.0);
-    background-color: @theme_bg_color;
+    background-color: transparent;
 }
