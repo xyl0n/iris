@@ -11,6 +11,7 @@
     background-color: inherit;
     color: @theme_selected_fg_color;
     background-image: none;
+    font-weight: bold;
 }
 
 .cell:selected.image:hover {
@@ -33,4 +34,5 @@ row:selected:focus {
     background-color: transparent;
     color: @theme_selected_fg_color;
     background-image: none;
+    font-weight: bold;
 }

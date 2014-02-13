@@ -104,7 +104,7 @@
 }
 
 .titlebar .button:active {
-    background-color: wm_bg;
+    background-color: @wm_bg;
     color: @menu_selected_fg_color;
 }
 

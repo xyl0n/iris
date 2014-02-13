@@ -20,7 +20,7 @@
     -GtkMenu-horizontal-padding: 0;
     -GtkMenu-vertical-padding: 0;
     -GtkNotebook-initial-gap: 0;
-    -GtkPaned-handle-size: 4;
+    -GtkPaned-handle-size: 2;
     -GtkProgressBar-min-horizontal-bar-height: 12;
     -GtkProgressBar-min-vertical-bar-width: 12;
     -GtkRange-slider-width: 12;
@@ -336,8 +336,7 @@ GtkLabel:insensitive {
  * pane separator *
  ******************/
 .pane-separator {
-    background-color: @theme_bg_color;
-    color: transparent;
+    background-color: shade(@theme_bg_color, 0.87);
 }
 
 /*************

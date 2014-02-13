@@ -24,7 +24,7 @@ BackgroundBox .button:hover {
 }
 
 BackgroundBox .button:active {
-    transition: 100px linear;
+    transition: 100ms linear;
     color: shade(@theme_selected_fg_color, 1.0);
     background-color: @theme_bg_color;
     border-color: @theme_fg_color;

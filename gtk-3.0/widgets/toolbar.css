@@ -79,7 +79,7 @@ GthEmbeddedDialog .button:active:focus {
 }
 
 .primary-toolbar .raised .button:active,
-.primary-toolbar .raised.button:active,
+.primary-toolbar .raised.button:active
 {
     transition: 200ms linear;
     border-radius: 0px;

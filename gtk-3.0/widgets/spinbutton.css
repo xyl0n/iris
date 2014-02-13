@@ -5,7 +5,7 @@
     padding: 3px 8px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    border-right-width: transparent;
+    border-right-width: 0;
 }
 
 .spinbutton.button {
