@@ -10,7 +10,7 @@ style "range"			= "default"
   {
 		animation = FALSE
 		border_shades = { 0.747, 0.747 } # gradient to draw on border
-		contrast = 0.0 # overal contrast with borders
+		contrast = 0.6 # overal contrast with borders
 		focusstyle = 1 # 0 = none, 1 = grey dotted, 2 = colored with fill, 3 = colored glow
 		glazestyle = 0 # 0 = flat highlight, 1 = curved highlight, 2 = concave, 3 = top curved highlight, 4 = beryl highlight
 		glowstyle = 0 # 0 = glow on top, 1 = glow on bottom, 2 = glow on top and bottom, 3 = glow on middle vertically, 4 = glow on middle horizontally, 5 = glow on all sides
