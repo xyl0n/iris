@@ -1,6 +1,6 @@
 style "button" 
 {
-	xthickness = 10
+	xthickness = 4
 	ythickness = 4
 	fg[NORMAL] = @text_color
 	fg[PRELIGHT] = @text_color
