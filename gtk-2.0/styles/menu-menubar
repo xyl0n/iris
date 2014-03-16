@@ -148,6 +148,18 @@ style "menubar-item"
 }
 
 
+style "chrome_menu_item"
+{
+        bg[NORMAL] = @text_color
+        fg[NORMAL] = @bg_color
+        bg[SELECTED] = @text_color
+        bg[INSENSITIVE] = shade (1.08, @text_color)
+        fg[SELECTED] = @bg_color
+        fg[INSENSITIVE] = shade (1.08, @text_color)
+        xthickness			= 4
+        ythickness			= 4
+}
+
 widget_class "*<GtkSeparatorMenuItem>*" style "menuitem"
 class "GtkMenu"       			style "menu"
 widget_class "*<GtkMenu>*"              style "menu"
@@ -157,3 +169,4 @@ class "GtkTearoffMenuItem"		style "menuitem"
 class "GtkMenuBar*" 		     	style "menubar"
 widget_class "*<GtkMenuBar>*"		style "menubar"
 widget_class "*<GtkMenuBar>.<GtkMenuItem>*"	style "menubar-item"
+widget_class "*<GtkCustomMenu>*<GtkCustomMenuItem>*" style "chrome_menu_item"
