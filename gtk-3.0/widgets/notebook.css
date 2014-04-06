@@ -12,7 +12,7 @@
 
 .notebook tab {
     padding: 3px 15px;
-    border-color: transparent;
+    border-color: @theme_bg_color;;
     border-radius: 0;
     background-color: @theme_bg_color;
     background-image: none;
