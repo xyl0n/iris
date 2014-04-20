@@ -147,6 +147,10 @@ style "menubar-item"
   ythickness			= 1
 }
 
+style "chrome_menu"
+{
+        bg[NORMAL] = @text_color
+}
 
 style "chrome_menu_item"
 {
@@ -169,4 +173,5 @@ class "GtkTearoffMenuItem"		style "menuitem"
 class "GtkMenuBar*" 		     	style "menubar"
 widget_class "*<GtkMenuBar>*"		style "menubar"
 widget_class "*<GtkMenuBar>.<GtkMenuItem>*"	style "menubar-item"
+widget_class "*<GtkCustomMenu>*" style "chrome_menu"
 widget_class "*<GtkCustomMenu>*<GtkCustomMenuItem>*" style "chrome_menu_item"
