@@ -81,8 +81,9 @@
 }
 
 .notebook tab .button {
-    background-color: @theme_bg_color;
+    transition: none;
     color: @theme_fg_color;
+    background-color: inherit;
 }
 
 .notebook tab .button:hover {
