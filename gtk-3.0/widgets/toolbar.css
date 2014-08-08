@@ -30,7 +30,7 @@
     border-style: solid;
     border-color: transparent;
     border-radius: 0;
-    background-color: #efefef;
+    background-color: transparent;
     background-image: none;
     color: @toolbar_fg_color;
 }
