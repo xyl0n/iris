@@ -43,11 +43,11 @@
 @define-color menubar_fg_color @theme_bg_color;
 @define-color toolbar_bg_color @theme_bg_color;
 @define-color toolbar_fg_color @theme_text_color;
-@define-color menu_bg_color @theme_text_color;
+@define-color menu_bg_color shade(@theme_text_color, 0.87);
 @define-color menu_fg_color @theme_bg_color;
 @define-color panel_bg_color #222222;
 @define-color panel_fg_color #f2f2f2;
-@define-color menu_selected_fg_color shade(mix(#ff0000, @theme_selected_fg_color, 0.75), 1.35);
+@define-color menu_selected_fg_color shade(shade(mix(#ff0000, #df253f, 0.75), 1.35), 0.95);
 
 /* osd */
 @define-color osd_base #fafafa;

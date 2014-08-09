@@ -70,8 +70,8 @@ GtkComboBox .menu {
 
 .menubar.menuitem:hover,
 .menubar .menuitem:hover {
-    border-color: alpha(@theme_fg_color, 0.15);
-    background-color: alpha(@theme_fg_color, 0.15);
+    border-color: @menu_bg_color;
+    background-color: @menu_bg_color;
     background-image: none;
     color: shade(@menubar_fg_color, 0.95);
 }
