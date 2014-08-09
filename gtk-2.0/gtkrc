@@ -551,7 +551,13 @@ include"styles/range"
 include"styles/checkbutton"
 
 include"styles/radiobutton"
-
+widget_class "*List" style "treeview"
+widget_class "*GtkTree*" style "treeview"
+widget_class "*GtkCList*" style "treeview"
+widget_class "*GtkCTree*" style "treeview"
+widget_class "*GtkList*" style "treeview"
+widget_class "*.ETree.*" style "treeview"
+class "GtkTreeView" style "treeview"
 include"styles/entry"
 
 include"styles/spin"

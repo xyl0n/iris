@@ -164,6 +164,10 @@ style "chrome_menu_item"
         fg[INSENSITIVE] = shade (1.08, @text_color)
         xthickness			= 4
         ythickness			= 4
+
+        engine "murrine" {
+
+        }
 }
 
 widget_class "*<GtkSeparatorMenuItem>*" style "menuitem"
