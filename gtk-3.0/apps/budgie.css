@@ -15,3 +15,7 @@ GtkPopover .button:active {
     background-color: transparent;
     border: 1px solid shade(@theme_bg_color, 0.7);
 }
+
+.budgie-panel *:active {
+    background-color: transparent;
+}
