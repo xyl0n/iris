@@ -114,15 +114,13 @@
 }
 
 .window-frame {
-    border-style: none;
-    border-radius: 0 0 0 0;
-    border-color: @menubar_bg_color;
+    border: none;
     /*box-shadow: 0 3px 7px 1px alpha(black, 0.7),
                 0 0 0 1px mix(shade(wm_bg, 0.7), @wm_title_focused, 0.21);
 
     this is used for the resize cursor area */
 
-    box-shadow: 0 2px 8px 3px alpha(@dark_shadow, 0.5);
+    box-shadow: 0 2px 3px alpha(@dark_shadow, 0.75);
 
     margin: 10px;
 }

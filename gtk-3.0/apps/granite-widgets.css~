@@ -80,9 +80,9 @@
     background-color: transparent;
 }
 
-.dynamic-notebook .button:active,
-.dynamic-notebook .button:active:focus {
+.dynamic-notebook .button:active *{
     color: shade(@theme_selected_fg_color, 1.0);
+    background-color: #00f;
 } /*Fix this*/
 
 /**************
@@ -581,7 +581,7 @@ BirdieWidgetsTweetList * {
  * panel *
  *********/
 .panel {
-    background-color: shade (@menu_bg_color, 0.8);
+    background-color: @panel_bg_color;
     background-image: none;
     color: @panel_fg_color;
     font: bold;
@@ -589,8 +589,6 @@ BirdieWidgetsTweetList * {
 
 .panel .menubar .menuitem {
     padding: 1px 3px;
-    text-shadow: 0 1px alpha (@dark_shadow, 0.5);
-    icon-shadow: 0 1px alpha (@dark_shadow, 0.5);
 }
 
 .panel .menubar .menuitem:hover{
@@ -602,12 +600,6 @@ BirdieWidgetsTweetList * {
 .composited-indicator .menu .menuitem {
     color: @theme_fg_color;
     padding: 4px;
-    text-shadow: none;
-    icon-shadow: none;
-}
-
-.composited-indicator .menu .menuitem:hover {
-    color: @theme_selected_fg_color;+
 }
 
 .composited-indicator .menu .menuitem.separator {
@@ -628,50 +620,4 @@ BirdieWidgetsTweetList * {
 .composited-indicator.menuitem:prelight {
     border-style: none;
     background-image: none;
-}
-
-/*Welcome screen*/
-
-GraniteWidgetsWelcome .button {
-    transition: color 100ms ease-in;
-    transition: border 200ms ease-in;
-    color: @theme_fg_color;
-    border: 1px solid @theme_bg_color;
-}
-
-GraniteWidgetsWelcome .button:hover {
-    transition: color 100ms ease-in;
-    transition: border 200ms ease-in;
-
-    color: shade(@theme_selected_fg_color, 1.05);
-    background-color: transparent;
-    border: 1px solid shade(@theme_bg_color, 0.8);
-}
-
-GraniteWidgetsWelcome .button:active,
-GraniteWidgetsWelcome .button:active:focus {
-    transition: color 100ms ease-in;
-    transition: border 200ms ease-in;
-
-    color: shade(@theme_selected_fg_color, 0.97);
-    background-color: transparent;
-    border: 1px solid shade(@theme_bg_color, 0.7);
-}
-
-/*Header text*/
-GraniteWidgetsWelcome .h1 {
-    font-size: 200%;
-    font-weight: bold;
-}
-
-GraniteWidgetsWelcome .h2 {
-    color: shade (@theme_bg_color, 0.5);
-}
-
-/*Pantheon Files*/
-
-.pathbar,
-.marlin-pathbar {
-    border-color: shade(#333, 0.6);
-    background-color: shade(#333, 0.8);
 }

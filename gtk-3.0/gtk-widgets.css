@@ -530,7 +530,7 @@ EggListBox:selected {
 
 .list-row:selected {
     color: @theme_selected_fg_color;
-    background-color: @theme_bg_color;
+    background-color: @theme_base_color;
 }
 
 EggListBox.content-view:hover,
@@ -542,6 +542,6 @@ EggListBox.content-view:selected,
 EggListBox.content-view:active,
 .content-view.cell:selected,
 .content-view.cell:active {
-    background-color: @theme_selected_fg_color;
+    background-color: @theme_selected_bg_color;
     background-image: none;
 }
