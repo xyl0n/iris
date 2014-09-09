@@ -1,65 +1,6 @@
  /********************
  * dynamic notebook *
- ********************
-.dynamic-notebook {
-    background-color: shade(@theme_bg_color, 1.0);
-    background-image: none;
-}
-
-.dynamic-notebook GtkLabel {
-    color: alpha(@theme_fg_color, 0.5);
-}
-
-.dynamic-notebook GtkImage {
-    color: alpha(@theme_fg_color, 0.5);
-}
-
-.dynamic-notebook GtkImage:hover {
-    color: shade(@theme_selected_fg_color, 1.15);
-}
-
-.dynamic-notebook GtkImage:active {
-    color: @theme_selected_fg_color;
-}
-
-
-.dynamic-notebook .notebook {
-
-    border-width: 1px 0 0 0;
-    border-color: shade(@theme_bg_color, 0.8);
-    border-radius: 0;
-    padding: 0;
-}
-
-.dynamic-notebook .notebook tab {
-    padding: 3px;
-    border-color: @theme_bg_color;
-    border-radius: 0px;
-    background-color: @theme_bg_color;
-    background-image: none;
-    color: @theme_bg_color;
-}
-
-.dynamic-notebook .notebook tab:nth-child(first) {
-    border-width: 0 1px 0 1px;
-}
-
-.dynamic-notebook .notebook tab:active {
-    border-width: 1px;
-    border-color: shade(@theme_bg_color, 0.8);
-    background-color: shade(@theme_bg_color, 1.08);
-    background-image: none;
-    color: @theme_bg_color;
-}
-
-.dynamic-notebook .notebook tab .entry {
-    border-radius: 0px;
-    padding: 4px 3px;
-}
-
-.dynamic-notebook .menu GtkLabel {
-    color: @menu_fg_color;
-}*/
+ ********************/
 
 .dynamic-notebook .notebook.header {
     border-top: 1px solid shade(@theme_bg_color, 0.8);
@@ -83,7 +24,7 @@
 .dynamic-notebook .button:active,
 .dynamic-notebook .button:active:focus {
     color: shade(@theme_selected_fg_color, 1.0);
-} /*Fix this*/
+}
 
 /**************
  * sourcelist *
@@ -346,93 +287,60 @@ GraniteWidgetsPopOver .sidebar.view,
 GraniteWidgetsPopOver * {
     background-color: transparent;
     background-image: none;
-    color: @menu_fg_color;
+    color: @theme_fg_color;
 }
 
 GraniteWidgetsPopOver .sidebar.view:selected,
 GraniteWidgetsPopOver .sidebar.view:selected:focus,
 GraniteWidgetsPopOver *:selected,
 GraniteWidgetsPopOver *:selected:focus {
-    background-color: @theme_selected_fg_color;
+    background-color: @theme_selected_bg_color;
     background-image: none;
-    color: @theme_base_color;
+    color: @theme_selected_fg_color;
 }
 
-GraniteWidgetsPopOver .button {
-    border-color: shade(@menu_bg_color, 0.8);
-    background-color: shade(@menu_bg_color, 1.08);
-    background-image: none;
-    color: @menu_fg_color;
+/*BUTTON*/
 
+GraniteWidgetsPopOver .button {
+    border: 1px solid shade(@theme_bg_color, 0.8);
+    background-color: @theme_bg_color;
+    background-image: none;
+    color: @theme_fg_color;
+}
+
+GraniteWidgetsPopOver .button GtkImage {
+    color: @theme_fg_color;
+}
+
+
+GraniteWidgetsPopOver .button GtkLabel {
+    color: @theme_fg_color;
 }
 
 GraniteWidgetsPopOver .button:hover {
-    border-color: shade(@menu_bg_color, 0.7);
-    background-color: shade(@menu_bg_color, 1.10);
+    border-color: shade(@theme_bg_color, 0.7);
+    background-color: shade(@theme_bg_color, 1.10);
     background-image: none;
-    color: shade(@menu_fg_color, 0.7);
+    color: shade(@theme_selected_fg_color, 1.0);
 }
 
-GraniteWidgetsPopOver .button:active {
-    border-color: shade(@menu_bg_color, 0.8);
-    background-color: shade(@menu_bg_color, 0.95);
+GraniteWidgetsPopOver .button:active,
+GraniteWidgetsPopOver .button:active:focus {
+    border-color: shade(@theme_bg_color, 0.8);
+    background-color: shade(@theme_bg_color, 0.95);
     background-image: none;
+    color: shade(@theme_selected_fg_color, 0.9);
 }
 
 GraniteWidgetsPopOver .button:active:hover {
-    border-color: shade(@menu_bg_color, 0.7);
-    color: shade(@menu_fg_color, 0.7);
-}
-
-/* linked buttons */
-GraniteWidgetsPopOver .linked .button {
-    box-shadow: inset -1px 0 shade(@menu_bg_color, 0.9);
-}
-
-GraniteWidgetsPopOver .linked .button:active {
-    box-shadow: inset -1px 0 shade(@menu_bg_color, 0.9),
-                inset 1px 0 alpha(@dark_shadow, 0.07),
-                inset 0 1px alpha(@dark_shadow, 0.08),
-                inset 0 -1px alpha(@dark_shadow, 0.05);
-}
-
-GraniteWidgetsPopOver .linked .button:insensitive {
-    box-shadow: inset -1px 0 shade(@menu_bg_color, 0.9);
-}
-
-/* remove box shadow from last-child and only-child */
-GraniteWidgetsPopOver .linked .button:last-child,
-GraniteWidgetsPopOver .linked .button:only-child,
-GraniteWidgetsPopOver .linked .button:insensitive:last-child,
-GraniteWidgetsPopOver .linked .button:insensitive:only-child,
-GraniteWidgetsPopOver .linked .button:active *:insensitive:last-child,
-GraniteWidgetsPopOver .linked .button:active *:insensitive:only-child {
-    box-shadow: none;
-}
-
-/* add back the inset shadow effect */
-GraniteWidgetsPopOver .linked .button:active:last-child,
-GraniteWidgetsPopOver .linked .button:active:only-child {
-    box-shadow: inset 1px 0 alpha(@dark_shadow, 0.07),
-                inset 0 1px alpha(@dark_shadow, 0.08),
-                inset -1px 0 alpha(@dark_shadow, 0.07);
-}
-
-GraniteWidgetsPopOver .entry {
-    border-color: shade(@menu_bg_color, 0.7);
-    background-color: @menu_bg_color;
+    border-color: shade(@theme_bg_color, 0.8);
+    background-color: shade(@theme_bg_color, 0.95);
     background-image: none;
-    color: @menu_fg_color;
-}
-
-GraniteWidgetsPopOver .entry:active,
-GraniteWidgetsPopOver .entry:focus {
-    border-color: shade(@menu_bg_color, 0.7);
 }
 
 GraniteWidgetsPopOver *.separator {
-    border-color: shade(@menu_bg_color, 0.9);
-    color: transparent;
+    border-color: shade(@theme_bg_color, 0.9);
+    color: shade(@theme_bg_color, 0.9);
 }
 
 .button.app {
@@ -447,7 +355,7 @@ GraniteWidgetsPopOver *.separator {
 }
 
 .button.app:hover {
-    transition: none;
+    transition: border 300ms linear;
     border: 1px solid shade(@theme_bg_color, 0.8);
     background-color: transparent;
 }

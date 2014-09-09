@@ -29,7 +29,7 @@
     -GtkRange-trough-under-steppers: 1;
     -GtkScrollbar-has-backward-stepper: false;
     -GtkScrollbar-has-forward-stepper: false;
-    -GtkScrollbar-min-slider-length: 80;
+    -GtkScrollbar-min-slider-length: 80;z
     -GtkScrolledWindow-scrollbar-spacing: 0;
     -GtkScrolledWindow-scrollbars-within-bevel: 1;
     -GtkStatusbar-shadow-type: none;
@@ -212,11 +212,11 @@ GtkIconView.view.cell:selected,
 GtkIconView.view.cell:selected:focus {
     border-width: 1px;
     border-style: solid;
-    border-color: shade(@theme_selected_fg_color, 0.9);
+    border-color: shade(@theme_bg_color, 0.8);
     border-radius: 0px;
-    background-color: @theme_selected_fg_color;
+    background-color: shade(@theme_bg_color, 0.8);
     background-image: none;
-    color: @theme_base_color;
+    color: @theme_selected_fg_color;
 }
 
 .content-view.view.rubberband,
