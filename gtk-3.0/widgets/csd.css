@@ -103,7 +103,8 @@
     color: shade(@menu_selected_fg_color, 0.87);
 }
 
-.titlebar .button:active {
+.titlebar .button:active,
+.titlebar .button:checked {
     background-color: @wm_bg;
     color: @menu_selected_fg_color;
 }

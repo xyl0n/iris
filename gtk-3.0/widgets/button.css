@@ -44,7 +44,8 @@ BackgroundBox .button:active {
     background-image: none;
 }
 
-.button:active {
+.button:active,
+.button:checked {
     background-color: shade(@button_bg_color, 0.9);
     background-image: none;
     color: shade(mix(#ff0000, @theme_selected_fg_color, 0.75), 1.35);
@@ -101,6 +102,50 @@ EvSidebar GtkToggleButton.button:hover {
 EvSidebar GtkToggleButton.button:active {
     color: @theme_selected_fg_color;
     background-color: @theme_bg_color;
+}
+
+/****************
+* "flat" button *
+*****************/
+
+.button.flat,
+.toolbar .button.flat {
+    border: none;
+    background-color: @theme_base_color;
+    background-image: none;
+    color: @theme_fg_color;
+}
+
+.button.flat:hover {
+    transition: color 150ms ease-in;
+    border: none;
+    color: shade(@theme_selected_fg_color, 1.15);
+}
+
+.toolbar .button.flat:hover {
+    background-color: @toolbar_bg_color; 
+}
+
+.button.flat:active,
+.button.flat:active:focus,
+.button.flat:active:checked,
+.toolbar .button.flat:active,
+.toolbar .button.flat:active:focus,
+.toolbar .button.flat:checked {
+    border: none;
+    color: shade(@theme_selected_fg_color, 0.97);
+}
+
+.button.flat:active:hover,
+.toolbar .button.flat:active:hover {
+    border: none;
+    color: shade (@theme_selected_fg_color, 1.15);
+}
+
+.button.flat:insensitive,
+.toolbar .button.flat:insensitive {
+    border: none;
+    color: shade (@theme_bg_color, 0.5);
 }
 
 /****************

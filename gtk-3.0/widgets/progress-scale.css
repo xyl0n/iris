@@ -4,8 +4,9 @@
 GtkScale,
 GtkProgressBar {
     padding: 0;
-    border-width: 0;
+    border-width: 0px;
     border-radius: 0;
+    border-style: solid;
 }
 
 .progressbar,
@@ -13,7 +14,7 @@ GtkProgressBar {
 .progressbar row:hover,
 .progressbar row:selected,
 .progressbar row:selected:focus {
-    border-width: 3px;
+    border-width: 0px;
     border-style: solid;
     border-color: shade(@theme_base_color, 0.9);
     background-color: shade(@theme_selected_fg_color, 1.15);
@@ -30,7 +31,7 @@ GtkProgressBar {
 .trough row:hover,
 .trough row:selected,
 .trough row:selected:focus {
-    border-width: 1px;
+    border-width: 3px;
     border-style: solid;
     border-color: shade(@theme_base_color, 0.9);
     background-color: shade(@theme_base_color, 0.9);

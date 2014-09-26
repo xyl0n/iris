@@ -18,6 +18,11 @@ GtkPopover.osd {
     box-shadow: 0 2px 7px 3px alpha(black, 0.5);
 }
 
+.popover .button {
+    background-color: transparent;
+    border-color: shade(@theme_bg_color, 0.8);
+}
+
 GtkPopover > .list,
 GtkPopover > .view,
 GtkPopover > .toolbar {
