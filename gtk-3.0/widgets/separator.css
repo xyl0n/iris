@@ -5,9 +5,6 @@
 .sidebar.view.separator,
 .view.separator,
 .separator {
-    border-width: 1px;
-    border-style: solid;
-    border-color: shade(@theme_bg_color, 0.9);
     color: shade(@theme_bg_color, 0.9);
 }
 

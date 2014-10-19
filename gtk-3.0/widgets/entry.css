@@ -56,14 +56,12 @@
     background-color: shade(@menu_bg_color, 0.75);
 }
 
-.entry:insensitive,
-.primary-toolbar .entry:insensitive {
+.entry:insensitive {
     background-color: shade(@theme_bg_color, 0.95);
     background-image: none;
     color: mix(@theme_text_color, @theme_base_color, 0.5);
 }
 
-.entry:insensitive,
 .primary-toolbar .entry:insensitive {
     background-color: shade(@menu_bg_color, 0.95);
     background-image: none;

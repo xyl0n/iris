@@ -35,6 +35,7 @@ GtkComboBox .button {
 
 GtkComboBox .button:hover,
 GtkComboBox .button:active,
+GtkComboBox .button:checked,
 GtkComboBox .button:active:hover {
     background-color: shade(@theme_bg_color, 0.9);
     color: @theme_selected_fg_color; 
