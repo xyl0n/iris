@@ -554,25 +554,3 @@ GtkBubbleWindow .toolbar {
     color: @theme_selected_fg_color;
     background-color: shade(@theme_selected_bg_color, 0.97); 
 }
-
-.list-row:selected .button.flat {
-	color: @theme_selected_fg_color; 
-}
-.list-row:selected .button.flat:focus {
-	border-image: none; 
-}
-.list-row:selected .button.flat:hover {
-	color: @theme_fg_color; 
-}
-	
-.list-row:selected .button.flat:active {
-	color: @button_active_text; 
-}
-
-/******************
- * Places Sidebar *
- ******************/
- 
-GtkPlacesSidebar .separator {
-   color: shade (@theme_bg_color, 0.8);
-}

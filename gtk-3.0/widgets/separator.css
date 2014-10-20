@@ -4,7 +4,8 @@
  
 .sidebar.view.separator,
 .view.separator,
-.separator {
+.separator,
+.sidebar .view.separator {
     color: shade(@theme_bg_color, 0.9);
 }
 
