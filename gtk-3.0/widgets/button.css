@@ -10,6 +10,10 @@
     font: bold;
 }
 
+.button *{
+	transition: 150ms ease-in;
+}
+
 BackgroundBox .button {
     color: @theme_text_color;
     border-style: solid;

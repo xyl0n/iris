@@ -439,7 +439,8 @@ GtkViewport.frame {
     border-width: 1px;
     border-style: solid;
     border-color: shade(@theme_bg_color, 0.8);
-    background-color: shade(@theme_bg_color, 0.98);
+	background-color: shade(@theme_bg_color, 1.05);
+	padding: 6px;
 }
 
 .search-bar .button.close-button {
@@ -510,6 +511,10 @@ GtkBubbleWindow .toolbar {
  **************/
 
 /*Blatantly stolen code from Vertex theme*/
+
+.list-row {
+	font-weight: normal;
+}
 
 .list-row.button {
 	background-color: @theme_bg_color; 
