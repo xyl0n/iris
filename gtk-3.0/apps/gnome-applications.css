@@ -163,42 +163,59 @@ VteTerminal {
 }
 
 TerminalWindow GtkNotebook.notebook {
-    border-right-width: 0;
-    border-bottom-width: 0;
-    border-left-width: 0;
-    background-color: @theme_fg_color;
-    border-color: shade(@theme_text_color, 0.8);
+    border-color: shade(@theme_text_color, 0.7);
+    background-color: @theme_text_color;
 }
 
-TerminalWindow GtkNotebook.notebook tab {
-    padding: 6px 6px;
+TerminalWindow GtkNotebook.notebook tab,
+TerminalWindow GtkNotebook.notebook tab.top {
     border-color: @theme_text_color;
-    border-radius: 0;
+    border-style: solid;
+    border-width: 1px;
     background-color: @theme_text_color;
     background-image: none;
+    border-top: 1px solid shade(@theme_text_color, 0.78);
 }
 
-TerminalWindow GtkNotebook.notebook tab:active {
+TerminalWindow GtkNotebook.notebook tab:first-child.top {
+    border-left: 1px solid shade(@theme_text_color, 0.78);     
+}
+
+TerminalWindow GtkNotebook.notebook tab:first-child.top:active {
+    box-shadow: inset 0 -2px shade (@theme_selected_fg_color, 1.05),
+                inset 1px 0 shade(@theme_text_color, 0.87),
+                inset -1px 0 shade(@theme_text_color, 0.87);
+}
+
+TerminalWindow GtkNotebook.notebook tab:active,
+TerminalWindow GtkNotebook.notebook tab.top:active {
     border-color: @theme_text_color;
-    background-color: shade(@theme_text_color, 1.15);
+    background-color: @theme_text_color;
     background-image: none;
     color: transparent;
+    border: none;
+    
+    box-shadow: inset 0 -2px shade (@theme_selected_fg_color, 1.05),
+                inset 1px 0 shade(@theme_text_color, 0.87),
+                inset -1px 0 shade(@theme_text_color, 0.87);
 }
 
-TerminalWindow GtkNotebook.notebook tab.top:active {
-    border-width: 0px;
-    border-top-width: 5px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-    border-top-color: @theme_text_color;
-    box-shadow: 0px 1px shade(@theme_text_color, 0.8) inset,
-		        1px 0px shade(@theme_text_color, 0.8) inset,
-		        -1px 0px shade(@theme_text_color, 0.8) inset;
+TerminalWindow GtkNotebook.notebook .active-page,
+TerminalWindow GtkNotebook.notebook tab .active-page GtkLabel {
+    color: shade (@theme_selected_fg_color, 1.25);
+}
+
+TerminalWindow GtkNotebook.notebook .prelight-page,
+TerminalWindow GtkNotebook.notebook .prelight-page GtkLabel {
+    color: shade(@theme_selected_fg_color, 1.25);
 }
 
 TerminalWindow GtkNotebook.notebook tab GtkLabel {
     color: @theme_bg_color;
-    padding-top: 2px;
+}
+
+TerminalWindow GtkNotebook.notebook tab:hover {
+	background-color: shade(@theme_text_color, 0.92);
 }
 
 TerminalWindow .scrollbars-junction,
