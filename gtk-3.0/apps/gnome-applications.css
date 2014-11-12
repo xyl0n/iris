@@ -221,6 +221,7 @@ TerminalWindow GtkNotebook.notebook tab:hover {
 TerminalWindow .scrollbars-junction,
 TerminalWindow .scrollbar.trough {
     background-color: @theme_text_color;
+    border-color: @theme_text_color;
 }
 
 TerminalWindow .scrollbar.button,
@@ -230,19 +231,17 @@ TerminalWindow .scrollbar.button:active:hover {
 }
 
 TerminalWindow .scrollbar.slider {
-    border-color: shade(@theme_text_color, 1.25);
-    background-color:shade(@theme_text_color, 1.25);
+    border-color: @theme_text_color;
+    background-color:shade(@theme_text_color, 0.8);
 }
 
 TerminalWindow .scrollbar.slider:hover,
 TerminalWindow .scrollbar.slider.vertical:hover {
-    border-color: shade(@theme_text_color, 1.45);
-    background-color: shade(@theme_text_color, 1.45);
+    background-color: shade(@theme_text_color, 0.76);
 }
 
 TerminalWindow .scrollbar.slider:active,
 TerminalWindow .scrollbar.slider.vertical:active {
-    border-color: shade(@theme_selected_fg_color, 0.9);
     background-color: @theme_selected_fg_color;
 }
 
@@ -338,6 +337,9 @@ GeditFileBrowserWidget .primary-toolbar.toolbar  {
     background-image: none;
 }
 
+GdTaggedEntry *{
+	color: @theme_fg_color;
+}
 /***************
  * font-viewer *
  ***************/

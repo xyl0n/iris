@@ -9,9 +9,9 @@
 
 .scrollbars-junction,
 .scrollbar.trough {
-    border-width: 0;
+    border: solid 3px transparent;  
     border-radius: 0;
-    background-color: @theme_bg_color;
+    background-color:  shade(@theme_bg_color, 1.0);
     background-image: none;
 }
 
@@ -26,22 +26,22 @@
 }
 
 .scrollbar.slider {
-    border-width: 1px;
-    border-color: mix(shade(@theme_bg_color, 0.87), @theme_fg_color, 0.21);
+    padding: 10px;
+    border-width: 3px;
+    border-color: transparent;
     border-radius: 0;
-    background-color: mix(@theme_bg_color, @theme_fg_color, 0.21);
+    border-style: solid;
+    background-color: mix(@theme_bg_color, @theme_fg_color, 0.3);
 }
 
 .scrollbar.slider:hover,
 .scrollbar.slider.vertical:hover {
-    border-color: mix(shade(@theme_bg_color, 0.87), @theme_fg_color, 0.31);
-    background-color: mix(@theme_bg_color, @theme_fg_color, 0.31);
+    background-color: mix(@theme_bg_color, @theme_fg_color, 0.4);
 }
 
 .scrollbar.slider:active,
 .scrollbar.slider.vertical:active {
-    border-color: shade(@theme_selected_fg_color, 0.9);
-    background-color: @theme_selected_fg_color;
+    background-color: shade(@theme_selected_fg_color, 1.35);
 }
 
 .scrollbar.slider.fine-tune:prelight:active {
