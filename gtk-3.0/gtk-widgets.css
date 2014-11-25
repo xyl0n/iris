@@ -517,6 +517,8 @@ GtkBubbleWindow .toolbar {
 }
 
 .list-row.button {
+    
+    font-weight: normal;
 	background-color: @theme_bg_color; 
 	color: @theme_fg_color; 
 }
@@ -559,3 +561,4 @@ GtkBubbleWindow .toolbar {
     color: @theme_selected_fg_color;
     background-color: shade(@theme_selected_bg_color, 0.97); 
 }
+
