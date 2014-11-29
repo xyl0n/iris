@@ -562,3 +562,28 @@ GtkBubbleWindow .toolbar {
     background-color: shade(@theme_selected_bg_color, 0.97); 
 }
 
+/*************
+ * Path bars *
+ *************/
+ 
+.path-bar .button {
+    background-color: @theme_bg_color;
+    border: 1px solid shade (@theme_bg_color, 0.8);
+    color: @theme_fg_color;
+}
+
+.path-bar .button:first-child {
+    border-left: 1px solid shade (@theme_bg_color, 0.8);
+}
+
+.path-bar .button:hover {
+    background-color: @theme_base_color;
+    color: shade(@theme_selected_fg_color, 1.04);
+}
+
+.path-bar .button:active,
+.path-bar .button:active:hover,
+.path-bar .button:checked {
+    background-color: shade(@theme_bg_color, 0.95);
+    color: @theme_text_color;
+}
