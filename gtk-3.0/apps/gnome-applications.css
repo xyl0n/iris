@@ -431,13 +431,38 @@ GthToolbox .button:hover {
     color: @theme_selected_fg_color;
 }
 
-/*FileChooser*/
-
-GtkFileChooserWidget .action-bar {
-padding: 8px 6px;
-}
 
 GthToolbox .button:active {
     background-color: @theme_bg_color;
     color: shade(@theme_selected_fg_color, 0.87);
+}
+
+/****************
+ * File chooser *
+ ****************/
+
+GtkFileChooserWidget .action-bar {
+padding: 8px 6px;
+}
+ 
+GtkFileChooserWidget .path-bar .button {
+    background-color: @theme_bg_color;
+    border: 1px solid shade (@theme_bg_color, 0.8);
+    color: @theme_fg_color;
+}
+
+GtkFileChooserWidget .path-bar .button:first-child {
+    border-left: 1px solid shade (@theme_bg_color, 0.8);
+}
+
+GtkFileChooserWidget .path-bar .button:hover {
+    background-color: @theme_base_color;
+    color: shade(@theme_selected_fg_color, 1.04);
+}
+
+GtkFileChooserWidget .path-bar .button:active,
+GtkFileChooserWidget .path-bar .button:active:hover,
+GtkFileChooserWidget .path-bar .button:checked {
+    background-color: shade(@theme_bg_color, 0.95);
+    color: @theme_text_color;
 }
