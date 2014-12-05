@@ -515,7 +515,7 @@ BirdieWidgetsTweetList * {
 }
 
 .composited-indicator .menu .menuitem:hover {
-    color: @theme_selected_fg_color;+
+    color: @theme_selected_fg_color;
 }
 
 .composited-indicator .menu .menuitem.separator {

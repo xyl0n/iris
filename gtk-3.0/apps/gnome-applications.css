@@ -424,7 +424,7 @@ GthToolbox .button:focus {
     border-style: solid;
     border-width: 1px;
     border-color: alpha(@theme_fg_color, 0.25);
-}
+}   
 
 GthToolbox .button:hover {
     background-color: @theme_bg_color;
@@ -448,11 +448,12 @@ padding: 8px 6px;
 GtkFileChooserWidget .path-bar .button {
     background-color: @theme_bg_color;
     border: 1px solid shade (@theme_bg_color, 0.8);
+    border-left: none;
     color: @theme_fg_color;
 }
 
 GtkFileChooserWidget .path-bar .button:first-child {
-    border-left: 1px solid shade (@theme_bg_color, 0.8);
+    border: 1px solid shade (@theme_bg_color, 0.8);
 }
 
 GtkFileChooserWidget .path-bar .button:hover {

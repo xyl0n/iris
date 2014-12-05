@@ -58,7 +58,7 @@
 }
 
 .notebook tab:hover {
-    transition: ease-in 300ms
+    transition: ease-in 300ms;
     background-image: none;
 }
 
