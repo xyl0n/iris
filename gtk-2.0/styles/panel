@@ -1,7 +1,7 @@
 
 style "panel"
 {
-  fg[NORMAL] = "#ABB4BD"
+  fg[NORMAL] = "#fafafa"
   fg[PRELIGHT] = "#ffffff"
   fg[SELECTED] = "#ffffff"
   fg[ACTIVE] = "#ffffff"
@@ -125,10 +125,10 @@ widget "*Xfce*Panel*" 		style "panel"
 
 style "panelbar"
 {
-	fg[NORMAL] = @fg_color
-	fg[ACTIVE] = @fg_color
-	fg[PRELIGHT] = @fg_color
-	fg[SELECTED] = @fg_color
+	fg[NORMAL] = @bg_color
+	fg[ACTIVE] = @bg_color
+	fg[PRELIGHT] = @bg_color
+	fg[SELECTED] = @bg_color
 
 engine "pixmap"
 {
