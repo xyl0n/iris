@@ -4,7 +4,8 @@
 GtkSwitch {
     padding: 0px;
     border-radius: 0px;
-    font: bold;
+    font-weight: bold;
+    font-size: 0.8em;
 }
 
 GtkSwitch.slider {
