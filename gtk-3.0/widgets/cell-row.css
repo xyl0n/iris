@@ -18,6 +18,7 @@
     color: shade(@theme_selected_fg_color, 1.15);
 }
 
+
 GtkTreeView.cell.button {
     color: @theme_fg_color;
 }

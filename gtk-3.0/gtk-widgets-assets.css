@@ -3,9 +3,7 @@
  *******************/
 /* draw regular check and radio items using our assets */
 .check,
-.check:focus,
-.check row:selected,
-.check row:selected:focus {
+.check:focus {
     -gtk-icon-source: url("assets/checkbox-unchecked.svg");
 }
 
