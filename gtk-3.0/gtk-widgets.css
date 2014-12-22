@@ -131,44 +131,6 @@ GtkDrawingArea:insensitive {
 }
 
 /***********
- * Dialogs *
- ***********
- 
- [TODO]
- 
-.message-dialog .titlebar,
-.message-dialog .titlebar:backdrop {
-    background-color: @theme_bg_color;
-}
-
-.message-dialog.csd .dialog-action-area .button {
-    padding: 6px;
-    border-radius: 0;
-    color: @theme_fg_color;
-    border: 1px solid shade(@theme_bg_color, 0.82);
-    border-left: none;
-    border-bottom: none;
-    background-color: @theme_bg_color;
-}
-
-.message-dialog.csd .dialog-action-area .button:last-child {
-    border-right: none;
-}
-
-.message-dialog.csd .dialog-action-area .button:hover {
-    background-color: shade(@theme_bg_color, 0.92);
-}
-
-.message-dialog.csd .dialog-action-area .button:active {
-    background-color: shade(@theme_bg_color, 0.92);
-    color: shade(@theme_selected_bg_color, 0.97);
-    border: 1px solid shade(@theme_bg_color, 0.82);
-    border-left: none;
-    border-bottom: none;
-}
-*/
-
-/***********
  * gtkhtml *
  ***********/
 GtkHTML {

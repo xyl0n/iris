@@ -113,41 +113,71 @@ EvSidebar GtkToggleButton.button:active {
 *****************/
 
 .button.flat,
-.toolbar .button.flat {
+.action-bar .button,
+.osd .button,
+.osd.button {
     border: none;
     background-color: transparent;
     background-image: none;
     color: @theme_fg_color;
 }
 
-.button.flat:hover {
+.button.flat:hover,
+.action-bar .button:hover {
     transition: color 150ms ease-in;
     border: none;
     color: shade(@theme_selected_fg_color, 1.15);
+}
+
+.toolbar .button.flat,
+.toolbar .button.flat:focus {
+    transition: all 150ms linear;
+    border: 1px solid @toolbar_bg_color;
+    background-color: @toolbar_bg_color;
+}
+
+.toolbar .button.flat:hover {
+    transition: all 150ms linear;
+    border: 1px solid alpha(@theme_fg_color, 0.3);
+    background-color: shade(@toolbar_bg_color, 0.96);
+    color: @theme_text_color;
 }
 
 .button.flat:active,
 .button.flat:active:focus,
 .button.flat:active:checked,
 .button.flat:active:checked:focus,
-.toolbar .button.flat:active,
-.toolbar .button.flat:active:focus,
-.toolbar .button.flat:checked {
+.action-bar .button:active,
+.action-bar .button:active:focus,
+.action-bar .button:checked,
+.action-bar .button:checked:focus {
     transition: color 150ms ease-in;
     border: none;
     color: shade(@theme_selected_fg_color, 0.97);
     background-color: transparent;
 }
 
-.button.flat:active:hover,
+.toolbar .button.flat:active,
+.toolbar .button.flat:active:focus,
+.toolbar .button.flat:checked,
+.toolbar .button.flat:active:checked:focus,
 .toolbar .button.flat:active:hover {
+    transition: all 150ms linear;
+    border: 1px solid alpha(@theme_fg_color, 0.4);
+    background-color: shade(@toolbar_bg_color, 0.92);
+    color: @theme_text_color;
+}
+
+.button.flat:active:hover,
+.action-bar .button:active:hover {
     transition: color 150ms ease-in;
     border: none;
     color: shade (@theme_selected_fg_color, 1.15);
 }
 
 .button.flat:insensitive,
-.toolbar .button.flat:insensitive {
+.toolbar .button.flat:insensitive,
+.action-bar .button:insensitive {
     transition: color 150ms ease-in;
     border: none;
     color: shade (@theme_bg_color, 0.5);

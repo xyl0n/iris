@@ -467,3 +467,22 @@ GtkFileChooserWidget .path-bar .button:checked {
     background-color: shade(@theme_bg_color, 0.95);
     color: @theme_text_color;
 }
+
+/*********
+ * Totem *
+ *********/
+ 
+BaconVideoWidget .toolbar .button {
+    box-shadow: none;
+    border: solid 1px shade(@theme_bg_color, 0.81);
+    border-left: none;
+}
+
+BaconVideoWidget .toolbar .button:insensitive {
+    background-color: transparent;
+}
+
+BaconVideoWidget .toolbar .button:first-child {
+    border: solid 1px shade(@theme_bg_color, 0.81);
+    box-shadow: none;
+}

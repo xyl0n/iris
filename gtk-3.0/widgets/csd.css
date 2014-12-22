@@ -87,29 +87,35 @@
     icon-shadow: none;
 }
 
-.titlebar .button {
+.titlebar .button,
+.maximized .header-bar .button {
     padding: 6px 6px;
     background-color: @wm_bg; /*makes it practically transparent*/
     color: @wm_title_focused;
 }
 
-.titlebar .button:hover {
+.titlebar .button:hover,
+.maximized .header-bar .button:hover {
     background-color: @wm_bg;
     color: @menu_selected_fg_color;
 }
 
-.titlebar .button:active:hover {
+.titlebar .button:active:hover,
+.maximized .header-bar .button:active:hover {
     background-color: @wm_bg;
     color: shade(@menu_selected_fg_color, 0.87);
 }
 
 .titlebar .button:active,
-.titlebar .button:checked {
+.titlebar .button:checked,
+.maximized .header-bar .button:active,
+.maximized .header-bar .button:checked {
     background-color: @wm_bg;
     color: @menu_selected_fg_color;
 }
 
-.titlebar .separator {
+.titlebar .separator,
+.maximized .header-bar .separator {
     border-color: shade(@menubar_bg_color, 0.87);
     color: shade(@menubar_bg_color, 0.87);
 }

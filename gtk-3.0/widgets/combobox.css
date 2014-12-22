@@ -1,6 +1,6 @@
-/******************
+/************
  * combobox * 
- ******************/
+ ************/
 .primary-toolbar GtkComboBox.combobox-entry .entry,
 .primary-toolbar GtkComboBox.combobox-entry .entry:active,
 .primary-toolbar GtkComboBox.combobox-entry .entry:focus,
@@ -27,7 +27,8 @@ GtkComboBox.combobox-entry .button:insensitive {
     border-top-left-radius: 0;
 }
 
-GtkComboBox .button {
+GtkComboBox .button,
+.action-bar GtkComboBox .button {
     padding: 4px 10px;
     background-color: shade(@theme_bg_color, 0.87);
     color: shade(@theme_text_color, 1.10);
@@ -36,7 +37,11 @@ GtkComboBox .button {
 GtkComboBox .button:hover,
 GtkComboBox .button:active,
 GtkComboBox .button:checked,
-GtkComboBox .button:active:hover {
+GtkComboBox .button:active:hover,
+.action-bar GtkComboBox .button:hover,
+.action-bar GtkComboBox .button:active,
+.action-bar GtkComboBox .button:checked,
+.action-bar GtkComboBox .button:active:hover  {
     background-color: shade(@theme_bg_color, 0.9);
     color: shade(@theme_text_color, 0.92); 
 }

@@ -7,10 +7,14 @@
     -gtk-icon-source: url("assets/checkbox-unchecked.svg");
 }
 
+.check:hover {
+    -gtk-icon-source: url("assets/checkbox-unchecked-hover.svg");
+}
+
 .check:insensitive,
 .check row:selected:insensitive,
 .check row:selected:focus:insensitive {
-    -gtk-icon-source: url("assets/checkbox-unchecked-insensitive.svg");
+    -gtk-image-effect: dim;
 }
 
 .check:active,
