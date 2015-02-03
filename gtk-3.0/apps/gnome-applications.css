@@ -452,8 +452,12 @@ GtkFileChooserWidget .path-bar .button {
     color: @theme_fg_color;
 }
 
-GtkFileChooserWidget .path-bar .button:first-child {
+GtkFileChooserWidget .path-bar .button:first-child,
+GtkFileChooserWidget .path-bar .button:first-child:active,
+GtkFileChooserWidget .path-bar .button:first-child:active:hover,
+GtkFileChooserWidget .path-bar .button:first-child:checked  {
     border: 1px solid shade (@theme_bg_color, 0.8);
+    border-left: 1px solid shade (@theme_bg_color, 0.8);
 }
 
 GtkFileChooserWidget .path-bar .button:hover {
@@ -466,11 +470,15 @@ GtkFileChooserWidget .path-bar .button:active:hover,
 GtkFileChooserWidget .path-bar .button:checked {
     background-color: shade(@theme_bg_color, 0.95);
     color: @theme_text_color;
+    border: 1px solid shade (@theme_bg_color, 0.8);
+    border-left: none;
 }
 
 /*********
  * Totem *
  *********/
+ 
+/*NEEDS FIXING*/
  
 BaconVideoWidget .toolbar .button {
     box-shadow: none;
@@ -486,3 +494,5 @@ BaconVideoWidget .toolbar .button:first-child {
     border: solid 1px shade(@theme_bg_color, 0.81);
     box-shadow: none;
 }
+
+

@@ -10,7 +10,7 @@
    viewBox="0 0 16 16"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r13725"
    width="100%"
    height="100%"
    sodipodi:docname="radio-unselected-insensitive.svg">
@@ -37,27 +37,19 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1440"
-     inkscape:window-height="840"
+     inkscape:window-height="839"
      id="namedview10"
      showgrid="false"
-     inkscape:zoom="38.142578"
-     inkscape:cx="3.7265605"
-     inkscape:cy="8"
+     inkscape:zoom="25.850536"
+     inkscape:cx="0.96188301"
+     inkscape:cy="6.3731692"
      inkscape:window-x="0"
-     inkscape:window-y="26"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2" />
-  <g
-     transform="translate(0 -1036.3622)"
-     id="g4">
-    <path
-       style="fill:#ebebeb;fill-opacity:1"
-       d="m 7.9368654,1036.9834 c 4.1798076,0 7.5682106,3.3036 7.5682106,7.3788 0,4.0752 -3.388403,7.3788 -7.5682106,7.3788 -4.1798073,0 -7.56821074,-3.3036 -7.56821074,-7.3788 0,-4.0752 3.38840344,-7.3788 7.56821074,-7.3788 z"
-       id="path6" />
-    <path
-       style="fill:#c8c8c8;fill-opacity:1"
-       d="M 8 0 C 3.581722 8.8817842e-16 -3.006854e-17 3.581722 0 8 C 0 12.418278 3.581722 16 8 16 C 12.418278 16 16 12.418278 16 8 C 16 3.581722 12.418278 -1.8064254e-15 8 0 z M 8 1 C 11.865993 1 15 4.1340068 15 8 C 15 11.865993 11.865993 15 8 15 C 4.1340068 15 1 11.865993 1 8 C 1 4.1340068 4.1340068 1 8 1 z "
-       transform="translate(0 1036.3622)"
-       id="path8" />
-  </g>
+  <path
+     inkscape:connector-curvature="0"
+     style="opacity:0.26;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 8,-9.9999999e-8 a 8,8 0 0 0 -8,8 A 8,8 0 0 0 8,16 a 8,8 0 0 0 8,-8.0000001 8,8 0 0 0 -8,-8 z M 8,1.9999999 a 6,6 0 0 1 6,6 A 6,6 0 0 1 8,14 6,6 0 0 1 2,7.9999999 a 6,6 0 0 1 6,-6 z"
+     id="path4181" />
 </svg>

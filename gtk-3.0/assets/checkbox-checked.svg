@@ -14,9 +14,9 @@
    width="100%"
    height="100%"
    sodipodi:docname="checkbox-checked.svg"
-   inkscape:export-filename="/home/xylon/.themes/iris-light/gtk-3.0/assets/checkbox-checked.png"
-   inkscape:export-xdpi="720"
-   inkscape:export-ydpi="720">
+   inkscape:export-filename="/home/xyl0n/.themes/iris/gtk-3.0/assets/checkbox-checked.png"
+   inkscape:export-xdpi="768"
+   inkscape:export-ydpi="768">
   <metadata
      id="metadata16">
     <rdf:RDF>
@@ -40,26 +40,26 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1440"
-     inkscape:window-height="841"
+     inkscape:window-width="1366"
+     inkscape:window-height="768"
      id="namedview12"
      showgrid="false"
-     inkscape:zoom="22.627417"
-     inkscape:cx="7.3049002"
-     inkscape:cy="1.5883257"
-     inkscape:window-x="0"
-     inkscape:window-y="27"
+     inkscape:zoom="19.125"
+     inkscape:cx="8.4739885"
+     inkscape:cy="8.3658518"
+     inkscape:window-x="1440"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2" />
   <rect
-     style="fill:#f2535e;fill-opacity:1;stroke:none;stroke-width:0.93526953;stroke-opacity:1"
-     id="rect2993"
-     width="16"
-     height="16.000002"
-     x="0"
-     y="-9.5367432e-07"
-     rx="8"
-     ry="8" />
+     style="opacity:1;fill:#f2535e;fill-opacity:1;stroke:#f2535e;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="rect4717"
+     width="15"
+     height="15"
+     x="0.5"
+     y="0.5"
+     rx="0.98922724"
+     ry="0.98922724" />
   <path
      sodipodi:nodetypes="ccc"
      inkscape:connector-curvature="0"

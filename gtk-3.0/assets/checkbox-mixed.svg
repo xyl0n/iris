@@ -10,7 +10,7 @@
    viewBox="0 0 16 16"
    id="svg5232"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91+devel r13718 custom"
    width="100%"
    height="100%"
    sodipodi:docname="checkbox-mixed.svg">
@@ -37,41 +37,37 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1440"
-     inkscape:window-height="840"
+     inkscape:window-height="841"
      id="namedview5242"
      showgrid="false"
-     inkscape:zoom="25.707889"
-     inkscape:cx="11.199245"
-     inkscape:cy="7.5634153"
+     inkscape:zoom="24.320474"
+     inkscape:cx="-2.7576929"
+     inkscape:cy="2.5415785"
      inkscape:window-x="0"
-     inkscape:window-y="26"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg5232" />
-  <g
-     transform="translate(0 -1036.3622)"
-     id="g5234">
-    <rect
-       width="14"
-       x="1"
-       y="1"
-       rx="1"
-       height="14"
-       style="fill:#f9f9f9"
-       transform="translate(0 1036.3622)"
-       id="rect5236" />
-    <rect
-       width="8"
-       x="4"
-       y="1043.362"
-       height="2"
-       style="fill:#df253f;fill-opacity:1"
-       id="rect5240" />
-  </g>
   <rect
-     style="fill:none;stroke:#c8c8c8;stroke-width:0.93818742;stroke-opacity:1"
-     id="rect2993"
-     width="15.061811"
-     height="15.161813"
-     x="0.46909371"
-     y="0.36909351" />
+     style="opacity:1;fill:#f2535e;fill-opacity:1;stroke:#f2535e;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="rect4717"
+     width="15"
+     height="15"
+     x="0.5"
+     y="0.5"
+     rx="0.98922724"
+     ry="0.98922724" />
+  <rect
+     id="rect4157"
+     style="fill:#000000;fill-opacity:0.22745098"
+     height="2"
+     y="7.4000001"
+     x="4"
+     width="8" />
+  <rect
+     width="8"
+     x="4"
+     y="7"
+     height="2"
+     style="fill:#ffffff;fill-opacity:1"
+     id="rect5240" />
 </svg>

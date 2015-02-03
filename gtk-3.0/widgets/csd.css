@@ -127,7 +127,7 @@
 
     this is used for the resize cursor area */
 
-    box-shadow: 0 3px 9px alpha(@dark_shadow, 0.75);
+    box-shadow: 0 2px 6px alpha(@dark_shadow, 0.75);
 
     margin: 10px;
 }

@@ -10,7 +10,7 @@
    viewBox="0 0 40 40"
    id="svg5278"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91+devel r13718 custom"
    width="100%"
    height="100%"
    sodipodi:docname="grid-selection-unchecked.svg">
@@ -37,33 +37,23 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1440"
-     inkscape:window-height="840"
+     inkscape:window-height="841"
      id="namedview5286"
      showgrid="false"
-     inkscape:zoom="12.673186"
-     inkscape:cx="3.3082883"
-     inkscape:cy="25.613136"
+     inkscape:zoom="9.5865755"
+     inkscape:cx="9.4116923"
+     inkscape:cy="15.549366"
      inkscape:window-x="0"
-     inkscape:window-y="26"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg5278" />
-  <g
-     transform="translate(0 -1012.3622)"
-     id="g5280">
-    <rect
-       width="37.5"
-       x="1.429"
-       y="1013.791"
-       rx="1"
-       height="37.5"
-       style="fill:#f9f9f9"
-       id="rect5282" />
-  </g>
   <rect
-     style="fill:none;stroke:#c8c8c8;stroke-width:2.33817387;stroke-opacity:1"
-     id="rect2993"
-     width="37.661789"
-     height="37.661861"
-     x="1.1691042"
-     y="1.1690706" />
+     style="opacity:1;fill:#fafafa;fill-opacity:1;stroke:#838383;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="rect4717"
+     width="37.5"
+     height="37.5"
+     x="1.25"
+     y="1.25"
+     rx="2.473068"
+     ry="2.473068" />
 </svg>

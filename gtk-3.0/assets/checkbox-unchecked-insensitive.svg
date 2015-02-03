@@ -10,7 +10,7 @@
    viewBox="0 0 16 16"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91+devel r13718 custom"
    width="100%"
    height="100%"
    sodipodi:docname="checkbox-unchecked-insensitive.svg">
@@ -37,21 +37,23 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1440"
-     inkscape:window-height="840"
+     inkscape:window-height="841"
      id="namedview10"
      showgrid="false"
-     inkscape:zoom="38.142578"
-     inkscape:cx="4.6703876"
-     inkscape:cy="8"
+     inkscape:zoom="30.498755"
+     inkscape:cx="8.1375637"
+     inkscape:cy="6.8863868"
      inkscape:window-x="0"
-     inkscape:window-y="26"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2" />
   <rect
-     style="fill:#e1e1e1;fill-opacity:1;stroke:#c8c8c8;stroke-width:0.93526953;stroke-opacity:1"
-     id="rect2993"
-     width="15.06473"
-     height="15.064731"
-     x="0.46763515"
-     y="0.46763468" />
+     style="opacity:1;fill:#fafafa;fill-opacity:1;stroke:#bdbdbd;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="rect4717"
+     width="15"
+     height="15"
+     x="0.5"
+     y="0.5"
+     rx="0.98922724"
+     ry="0.98922724" />
 </svg>

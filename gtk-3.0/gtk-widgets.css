@@ -188,6 +188,11 @@ GtkComboBox.combobox-entry .button:insensitive {
     border-radius: 0;
 }
 
+
+.frame.flat {
+	border: none;
+}
+
 /*******************
  * scrolled window *
  *******************/

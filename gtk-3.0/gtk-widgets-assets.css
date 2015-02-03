@@ -14,7 +14,7 @@
 .check:insensitive,
 .check row:selected:insensitive,
 .check row:selected:focus:insensitive {
-    -gtk-image-effect: dim;
+    -gtk-icon-source: url("assets/checkbox-unchecked-insensitive.svg");
 }
 
 .check:active,
@@ -24,7 +24,16 @@
     -gtk-icon-source: url("assets/checkbox-checked.svg");
 }
 
+.check:active:hover,
+.check:checked:hover,
+.check row:selected:active:hover,
+.check row:selected:focus:active:hover {
+    -gtk-icon-source: url("assets/checkbox-checked-hover.svg");
+}
+
+
 .check:active:insensitive,
+.check:checked:insensitive,
 .check row:selected:active:insensitive,
 .check row:selected:focus:active:insensitive {
     -gtk-icon-source: url("assets/checkbox-checked-insensitive.svg");

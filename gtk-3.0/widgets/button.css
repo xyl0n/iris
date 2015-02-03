@@ -132,14 +132,16 @@ EvSidebar GtkToggleButton.button:active {
 .toolbar .button.flat,
 .toolbar .button.flat:focus {
     transition: all 150ms linear;
-    border: 1px solid @toolbar_bg_color;
+    border: solid 1px @toolbar_bg_color;
     background-color: @toolbar_bg_color;
 }
 
 .toolbar .button.flat:hover {
     transition: all 150ms linear;
-    border: 1px solid alpha(@theme_fg_color, 0.3);
     background-color: shade(@toolbar_bg_color, 0.96);
+    border: solid 1px @toolbar_bg_color;
+    box-shadow: inset 1px 1px shade(@toolbar_bg_color, 0.76),
+                inset -1px -1px shade(@toolbar_bg_color, 0.76);
     color: @theme_text_color;
 }
 
@@ -157,22 +159,24 @@ EvSidebar GtkToggleButton.button:active {
     background-color: transparent;
 }
 
+.button.flat:active:hover,
+.action-bar .button:active:hover {
+    transition: color 150ms ease-in;
+    border: none;
+    color: shade (@theme_selected_fg_color, 1.15);
+}
+
 .toolbar .button.flat:active,
 .toolbar .button.flat:active:focus,
 .toolbar .button.flat:checked,
 .toolbar .button.flat:active:checked:focus,
 .toolbar .button.flat:active:hover {
     transition: all 150ms linear;
-    border: 1px solid alpha(@theme_fg_color, 0.4);
+    border: solid 1px @toolbar_bg_color;
+    box-shadow: inset 1px 1px shade(@toolbar_bg_color, 0.76),
+                inset -1px -1px shade(@toolbar_bg_color, 0.76);
     background-color: shade(@toolbar_bg_color, 0.92);
     color: @theme_text_color;
-}
-
-.button.flat:active:hover,
-.action-bar .button:active:hover {
-    transition: color 150ms ease-in;
-    border: none;
-    color: shade (@theme_selected_fg_color, 1.15);
 }
 
 .button.flat:insensitive,
