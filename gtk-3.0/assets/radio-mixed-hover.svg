@@ -13,7 +13,7 @@
    inkscape:version="0.91 r13725"
    width="100%"
    height="100%"
-   sodipodi:docname="radio-mixed.svg">
+   sodipodi:docname="radio-mixed-hover.svg">
   <metadata
      id="metadata16">
     <rdf:RDF>
@@ -40,9 +40,9 @@
      inkscape:window-height="841"
      id="namedview12"
      showgrid="false"
-     inkscape:zoom="24.241214"
-     inkscape:cx="3.109773"
-     inkscape:cy="5.4191119"
+     inkscape:zoom="22.73208"
+     inkscape:cx="4.6180452"
+     inkscape:cy="4.8270398"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -62,11 +62,11 @@
        r="8" />
     <path
        inkscape:connector-curvature="0"
-       style="opacity:1;fill:#f2535e;fill-opacity:1;stroke:none;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill:#ff646f;fill-opacity:1;stroke:none;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 8,1036.3622 a 8,8 0 0 0 -7.99999985,8 8,8 0 0 0 7.99999985,8 8,8 0 0 0 8,-8 8,8 0 0 0 -7.9999998,-8 z m 0,2 a 6,6 0 0 1 6,6 6,6 0 0 1 -5.9999999,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-6 z"
        id="path4181" />
     <rect
-       style="opacity:1;fill:#f2535e;fill-opacity:1;stroke:none;stroke-width:2.26771665;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill:#ff646f;fill-opacity:1;stroke:none;stroke-width:2.26771665;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect5815"
        width="8"
        height="2"

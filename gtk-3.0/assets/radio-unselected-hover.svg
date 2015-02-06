@@ -11,9 +11,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   width="100%"
-   height="100%"
-   sodipodi:docname="radio-unselected-insensitive.svg">
+   sodipodi:docname="radio-unselected-hover.svg">
   <metadata
      id="metadata14">
     <rdf:RDF>
@@ -40,21 +38,25 @@
      inkscape:window-height="841"
      id="namedview10"
      showgrid="false"
-     inkscape:zoom="48.482428"
-     inkscape:cx="8.2012007"
-     inkscape:cy="8.5474654"
+     inkscape:zoom="23.521866"
+     inkscape:cx="-0.41618999"
+     inkscape:cy="7.4212441"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg2" />
-  <path
-     inkscape:connector-curvature="0"
-     style="opacity:0.25;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="M 8,0 A 8,8 0 0 0 0,8 8,8 0 0 0 8,16 8,8 0 0 0 16,8 8,8 0 0 0 8,0 Z M 8,2 A 6,6 0 0 1 14,8 6,6 0 0 1 8,14 6,6 0 0 1 2,8 6,6 0 0 1 8,2 Z"
-     id="path4181-4" />
-  <path
-     inkscape:connector-curvature="0"
-     style="fill:#fafafa;fill-opacity:1"
-     d="m 15,8 c 0,3.865993 -3.134007,7 -7,7 C 4.134007,15 1,11.865993 1,8 1,4.1340068 4.134007,0.99999998 8,0.99999998 c 3.865993,0 7,3.13400682 7,7.00000002 z"
-     id="path6" />
+     inkscape:current-layer="g4" />
+  <g
+     transform="translate(0 -1036.3622)"
+     id="g4">
+    <path
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:#f2535e;fill-opacity:1;stroke:none;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 8.0000002,1036.3622 a 8,8 0 0 0 -8.00000035,8 8,8 0 0 0 8.00000035,8 8,8 0 0 0 7.9999998,-8 8,8 0 0 0 -7.9999998,-8 z m 0,2 a 6,6 0 0 1 5.9999998,6 6,6 0 0 1 -5.9999998,6 6,6 0 0 1 -6.0000004,-6 6,6 0 0 1 6.0000004,-6 z"
+       id="path4181" />
+    <path
+       style="fill:#fafafa;fill-opacity:1"
+       d="m 15,8 c 0,3.865993 -3.134007,7 -7,7 C 4.1340068,15 1,11.865993 1,8 1,4.1340068 4.1340068,1 8,1 c 3.865993,0 7,3.1340068 7,7 z"
+       id="path6"
+       transform="translate(0 1036.3622)" />
+  </g>
 </svg>

@@ -45,6 +45,13 @@
     -gtk-icon-source: url("assets/checkbox-mixed.svg");
 }
 
+.check:inconsistent:hover,
+.check row:selected:inconsistent:hover,
+.check row:selected:focus:inconsistent:hover {
+    -gtk-icon-source: url("assets/checkbox-mixed-hover.svg");
+}
+
+
 .check:inconsistent:insensitive,
 .check row:selected:inconsistent:insensitive,
 .check row:selected:focus:inconsistent:insensitive {
@@ -55,6 +62,12 @@
 .radio row:selected,
 .radio row:selected:focus {
     -gtk-icon-source: url("assets/radio-unselected.svg");
+}
+
+.radio:hover,
+.radio row:selected:hover,
+.radio row:selected:focus:hover {
+    -gtk-icon-source: url("assets/radio-unselected-hover.svg");
 }
 
 .radio:insensitive,
@@ -70,7 +83,15 @@
     -gtk-icon-source: url("assets/radio-selected.svg");
 }
 
+.radio:active:hover,
+.radio:checked:hover,
+.radio row:selected:active:hover,
+.radio row:selected:focus:active:hover {
+    -gtk-icon-source: url("assets/radio-selected-hover.svg");
+}
+
 .radio:active:insensitive,
+.radio:checked:insensitive,
 .radio row:selected:active:insensitive,
 .radio row:selected:focus:active:insensitive {
     -gtk-icon-source: url("assets/radio-selected-insensitive.svg");
@@ -81,6 +102,13 @@
 .radio row:selected:focus:inconsistent {
     -gtk-icon-source: url("assets/radio-mixed.svg");
 }
+
+.radio:inconsistent:hover,
+.radio row:selected:inconsistent:hover,
+.radio row:selected:focus:inconsistent:hover {
+    -gtk-icon-source: url("assets/radio-mixed-hover.svg");
+}
+
 
 .radio:inconsistent:insensitive,
 .radio row:selected:inconsistent:insensitive,
