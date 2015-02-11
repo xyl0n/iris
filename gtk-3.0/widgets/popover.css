@@ -20,7 +20,7 @@ GtkPopover.osd {
 
 .popover .button {
     background-color: transparent;
-    border: none;
+    border: solid 1px @theme_bg_color;
 }
 
 GtkPopover > .list,
