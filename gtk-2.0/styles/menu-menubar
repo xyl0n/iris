@@ -85,6 +85,7 @@ style "tearoffmenuitem"	= "menuitem"
 style "menubar"		
 
 {
+	bg[NORMAL] = @text_color
     text[NORMAL] = @bg_color
 	text[PRELIGHT] = @bg_color
 	text[SELECTED] = @bg_color
