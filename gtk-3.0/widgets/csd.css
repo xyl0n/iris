@@ -6,7 +6,6 @@
     background-image: none;
     background-color: @menubar_bg_color;
     color: @menubar_fg_color;
-    text-shadow: none;
 }
 
 .titlebar:insensitive {
@@ -24,6 +23,13 @@
 .titlebar.default-decoration {
     border: none;
     box-shadow: none;
+    padding: 0;
+}
+
+.titlebar.default-decoration {
+    border: none;
+    box-shadow: none;
+    padding: 0;
 }
 
 .titlebar .title {
@@ -135,3 +141,4 @@
 .window-frame:backdrop {
     box-shadow: 0 3px 4px 1px alpha(black, 0.4);
 }
+
