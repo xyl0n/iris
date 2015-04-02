@@ -1,5 +1,5 @@
 gtk-toolbar-icon-size = large-toolbar
-gtk-color-scheme = "base_color:#ffffff\nbg_color:#FAFAFA\ntooltip_bg_color:#656D78\nselected_bg_color:#df253f\ntext_color:#333333\nfg_color:#555555\ntooltip_fg_color:#ffffff\nselected_fg_color:#ffffff"
+gtk-color-scheme = "base_color:#ffffff\nbg_color:#FAFAFA\ntooltip_bg_color:#656D78\nselected_bg_color:#333333\ntext_color:#333333\nfg_color:#555555\ntooltip_fg_color:#ffffff\nselected_fg_color:#df253f"
 gtk-icon-sizes = "panel-menu=16,16:panel=8,8:gtk-button=16,16:gtk-large-toolbar=24,24:gtk-small-toolbar=16,16"
 gtk-button-images	= 0
 gtk-menu-images	= 0					
