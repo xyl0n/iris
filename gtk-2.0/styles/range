@@ -4,7 +4,7 @@ style "range"			= "default"
 	ythickness = 0
 	bg[NORMAL] = @bg_color
 	bg[ACTIVE] = shade (0.96, @bg_color)
-	bg[SELECTED] = @selected_bg_color
+	bg[SELECTED] = @selected_fg_color
 	bg[INSENSITIVE] = shade (0.95, @bg_color)        
   engine "murrine"
   {

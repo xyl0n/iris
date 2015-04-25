@@ -104,7 +104,7 @@ widget_class "*Combo*"		style "combo"
 style "combobutton" 
 {
 	text[NORMAL] = @text_color
-	text[PRELIGHT] = @selected_bg_color
+	text[PRELIGHT] = @selected_fg_color
 	text[ACTIVE] = @fg_color
 	text[INSENSITIVE] = mix (0.3, @base_color, @text_color)
 }

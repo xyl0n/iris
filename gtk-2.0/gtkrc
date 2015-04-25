@@ -1,5 +1,5 @@
 gtk-toolbar-icon-size = large-toolbar
-gtk-color-scheme = "base_color:#ffffff\nbg_color:#FAFAFA\ntooltip_bg_color:#656D78\nselected_bg_color:#df253f\ntext_color:#333333\nfg_color:#555555\ntooltip_fg_color:#ffffff\nselected_fg_color:#ffffff"
+gtk-color-scheme = "base_color:#ffffff\nbg_color:#FAFAFA\ntooltip_bg_color:#656D78\nselected_fg_color:#df253f\ntext_color:#333333\nfg_color:#555555\ntooltip_fg_color:#ffffff\nselected_bg_color:#ffffff"
 gtk-icon-sizes = "panel-menu=16,16:panel=8,8:gtk-button=16,16:gtk-large-toolbar=24,24:gtk-small-toolbar=16,16"
 gtk-button-images	= 0
 gtk-menu-images	= 0					
@@ -175,10 +175,10 @@ style "default"
   #GtkTreeView::indent-expanders                 = 1
   #GtkTreeView::row-ending-details               = 1
 
-  GtkHTML::cite_color 				= @selected_bg_color 
+  GtkHTML::cite_color 				= @selected_fg_color 
 
-  GtkWidget::link-color = @selected_bg_color
-  GtkWidget::visited-link-color = shade (0.5, @selected_bg_color)
+  GtkWidget::link-color = @selected_fg_color
+  GtkWidget::visited-link-color = shade (0.5, @selected_fg_color)
   #GtkWidget::cursor-aspect-ratio                = 0.05
   GtkWidget::focus-line-width                   = 0
   #GtkWidget::scroll-arrow-hlength               = 16
@@ -212,14 +212,14 @@ style "default"
 
 	bg[NORMAL] = @bg_color
 	bg[PRELIGHT] = shade (0.98, @bg_color)
-	bg[SELECTED] = @selected_bg_color
+	bg[SELECTED] = @bg_color
 	bg[ACTIVE] = shade (0.9, @bg_color)
 	bg[INSENSITIVE] = @bg_color
 
 	base[NORMAL] = @base_color
 	base[PRELIGHT] = shade (0.98, @base_color)
-	base[SELECTED] = @selected_bg_color
-	base[ACTIVE] = @selected_bg_color
+	base[SELECTED] = @base_color
+	base[ACTIVE] = @base_color
 	base[INSENSITIVE] = shade (0.95, @base_color)
 
 	text[NORMAL] = @text_color
