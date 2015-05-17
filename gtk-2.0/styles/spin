@@ -272,6 +272,9 @@ widget_class "*<GimpToolOptionsEditor>*<GtkViewport>*<GtkSpinButton>*"	style "sp
 style "gimp"
 {
 
+	fg[SELECTED] = @selected_bg_color
+	bg[SELECTED] = shade (1.05, @selected_fg_color)
+
   engine "pixmap"
   {
     image
