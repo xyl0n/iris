@@ -1,12 +1,12 @@
 gtk-toolbar-icon-size = large-toolbar
-gtk-color-scheme = "base_color:#ffffff\nbg_color:#FAFAFA\ntooltip_bg_color:#656D78\nselected_fg_color:#df253f\ntext_color:#333333\nfg_color:#555555\ntooltip_fg_color:#ffffff\nselected_bg_color:#ffffff"
+gtk-color-scheme = "base_color:#ffffff\nbg_color:#FAFAFA\ntooltip_bg_color:#656D78\nselected_fg_color:#fafafa\ntext_color:#333333\nfg_color:#555555\ntooltip_fg_color:#ffffff\nselected_bg_color:#df253f"
 gtk-icon-sizes = "panel-menu=16,16:panel=8,8:gtk-button=16,16:gtk-large-toolbar=24,24:gtk-small-toolbar=16,16"
 gtk-button-images	= 0
-gtk-menu-images	= 0					
+gtk-menu-images	= 0
 #gtk-toolbar-style	= 0	# Disables text in toolbar
 gtk-auto-mnemonics	= 1 # Disables ugly lines under menu items
 
-gtk-enable-animations = 1  
+gtk-enable-animations = 1
 
 gtk-tooltip-timeout = 970
 
@@ -18,8 +18,8 @@ style "default"
   GtkWidget::tooltip-radius       = 5
   GtkWidget::tooltip-alpha        = 255
   GtkWidget::new-tooltip-style    = 1
-  GtkButton::child-displacement-x               = 0 
-  GtkButton::child-displacement-y               = 0 
+  GtkButton::child-displacement-x               = 0
+  GtkButton::child-displacement-y               = 0
   GtkButton::default_border			= { 0, 0, 0, 0 }
   GtkButton::default_outside_border		= { 0, 0, 0, 0 }
   GtkButton::focus-padding                      = 0
@@ -44,9 +44,9 @@ style "default"
 
   #GtkComboBoxEntry::appears-as-list             = 1
 
-  GtkNotebook::tab-overlap                      = 1 
+  GtkNotebook::tab-overlap                      = 1
   #GtkNotebook::tab-curvature                    = 5
-	
+
   #GimpColorNotebook::tab-border 	        = 1
   #GimpDockSeparator::height     	        = 10
 
@@ -72,7 +72,7 @@ style "default"
   #GtkHScale::arrow-displacement-y                = 0
   #GtkHScale::activate_slider                     = 0
   GtkScale::trough-side-details = 1
-  GtkArrow::arrow-scaling                       = 0.4 
+  GtkArrow::arrow-scaling                       = 0.4
 
   GtkPaned::handle_size				= 4
   #GtkPaned::handle_width                        = 6
@@ -86,8 +86,8 @@ style "default"
   #GtkRange::stepper-spacing                      = 0
   #GtkRange::trough-side-details                  = 0
   #GtkRange::trough-under-steppers                = 0
- 
-  #GtkScrollbar::fixed-slider-length              = 1 
+
+  #GtkScrollbar::fixed-slider-length              = 1
   GtkScrollbar::min_slider_length		= 50
   GtkScrollbar::slider_width                    = 10
   #GtkScrollbar::stepper_size                    = 24
@@ -105,9 +105,9 @@ style "default"
 
   GtkRadioButton::indicator_size		= 16
   #GtkRadioButton::focus-padding                 = 1
-  GtkMenuBar::window-dragging              = 1	
-  GtkMenuBar::shadow-type	                = GTK_SHADOW_NONE 
-  GtkMenuBar::internal-padding                  = 2	
+  GtkMenuBar::window-dragging              = 1
+  GtkMenuBar::shadow-type	                = GTK_SHADOW_NONE
+  GtkMenuBar::internal-padding                  = 2
   #GtkMenuBar::button-relief                     = GTK_RELIEF_NONE
 
   GtkMenu::horizontal-padding                   = 0
@@ -144,7 +144,7 @@ style "default"
   GtkToolButton::icon-spacing                    = 0
   GtkToolbar::window-dragging		        = 1
   GtkToolbar::internal-padding                  = 1
-  GtkToolbar::shadow-type	                = GTK_SHADOW_NONE 
+  GtkToolbar::shadow-type	                = GTK_SHADOW_NONE
   #GtkToolbar::button-relief                     = GTK_RELIEF_NORMAL
   #GtkToolbar::space-size                        = 2
   #GtkToolbar::max-child-expand                  = 0
@@ -163,7 +163,7 @@ style "default"
   GtkSpinButton::shadow_type 			= GTK_SHADOW_NONE
   #GtkSpinButton::focus-padding                  = 1
 
-  GtkScrolledWindow::scrollbar-spacing          = 5 
+  GtkScrolledWindow::scrollbar-spacing          = 5
   GtkScrolledWindow::scrollbars-within-bevel    = 0
   #GtkScrolledWindow::shadow_type                = GTK_SHADOW_NONE
 
@@ -175,7 +175,7 @@ style "default"
   #GtkTreeView::indent-expanders                 = 1
   #GtkTreeView::row-ending-details               = 1
 
-  GtkHTML::cite_color 				= @selected_fg_color 
+  GtkHTML::cite_color 				= @selected_fg_color
 
   GtkWidget::link-color = @selected_fg_color
   GtkWidget::visited-link-color = shade (0.5, @selected_fg_color)
@@ -193,7 +193,7 @@ style "default"
   WnckTasklist::fade-loop-time                  = 5.0
   #WnckTasklist::fade-max-loop                   = 50
   WnckTasklist::fade-opacity                    = 0.5
-	
+
   # The following line hints to gecko (and possibly other appliations)
   # that the entry should be drawn transparently on the canvas.
   # Without this, gecko will fill in the background of the entry.
@@ -212,15 +212,15 @@ style "default"
 
 	bg[NORMAL] = @bg_color
 	bg[PRELIGHT] = shade (0.98, @bg_color)
-	bg[SELECTED] = @bg_color
+	bg[SELECTED] = @selected_bg_color
 	bg[ACTIVE] = shade (0.9, @bg_color)
 	bg[INSENSITIVE] = @bg_color
 
 	base[NORMAL] = @base_color
-	base[PRELIGHT] = shade (0.98, @base_color)
-	base[SELECTED] = @base_color
+	base[PRELIGHT] = @base_color
+	base[SELECTED] = @selected_bg_color
 	base[ACTIVE] = @base_color
-	base[INSENSITIVE] = shade (0.95, @base_color)
+	base[INSENSITIVE] = @base_color
 
 	text[NORMAL] = @text_color
 	text[PRELIGHT] = @text_color
@@ -274,7 +274,7 @@ style "default"
        function		= SHADOW
        shadow			= ETCHED_IN
        recolorable		= TRUE
-       file				= "Shadows/shadow-etched-in.png"				
+       file				= "Shadows/shadow-etched-in.png"
       border			= { 4, 4, 4, 4 }
        stretch			= TRUE
     }
@@ -325,7 +325,7 @@ style "default"
       file				= "Others/focus.png"
       border			= { 6, 0, 6, 0 }
       stretch			= TRUE
-    }	
+    }
  # Arrows (all states)
       image
       {
@@ -337,7 +337,7 @@ style "default"
 		overlay_stretch		= FALSE
 		arrow_direction		= UP
       }
-      
+
       image
       {
 		function		= ARROW
@@ -348,7 +348,7 @@ style "default"
 		overlay_stretch		= FALSE
 		arrow_direction		= UP
       }
-     
+
      image
       {
 		function		= ARROW
@@ -359,7 +359,7 @@ style "default"
 		overlay_stretch		= FALSE
 		arrow_direction		= UP
       }
-      
+
       image
       {
 		function		= ARROW
@@ -370,7 +370,7 @@ style "default"
 		overlay_stretch		= FALSE
 		arrow_direction		= UP
       }
-      
+
       image
       {
      	 	function		= ARROW
@@ -381,7 +381,7 @@ style "default"
      		overlay_stretch		= FALSE
      		arrow_direction		= DOWN
       }
-   	 
+
       image
       {
 		function		= ARROW
@@ -392,7 +392,7 @@ style "default"
 		overlay_stretch		= FALSE
 		arrow_direction		= DOWN
      }
-    
+
      image
      {
 		function		= ARROW
@@ -425,7 +425,7 @@ style "default"
 		overlay_stretch		= FALSE
 		arrow_direction		= LEFT
       }
-      
+
       image
       {
 		function		= ARROW
@@ -436,7 +436,7 @@ style "default"
 		overlay_stretch		= FALSE
 		arrow_direction		= LEFT
       }
-      
+
       image
       {
 		function		= ARROW
@@ -447,7 +447,7 @@ style "default"
 		overlay_stretch		= FALSE
 		arrow_direction		= LEFT
       }
-      
+
       image
       {
 		function		= ARROW
@@ -458,7 +458,7 @@ style "default"
 		overlay_stretch		= FALSE
 		arrow_direction		= LEFT
       }
-      
+
       image
       {
 		function		= ARROW
@@ -469,7 +469,7 @@ style "default"
 		overlay_stretch		= FALSE
 		arrow_direction		= RIGHT
       }
-      
+
       image
       {
 		function		= ARROW
@@ -480,7 +480,7 @@ style "default"
 		overlay_stretch		= FALSE
 		arrow_direction		= RIGHT
       }
-      
+
       image
       {
 		function		= ARROW
@@ -491,7 +491,7 @@ style "default"
 		overlay_stretch		= FALSE
 		arrow_direction		= RIGHT
       }
-      
+
       image
       {
 		function		= ARROW
