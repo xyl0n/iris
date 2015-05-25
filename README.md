@@ -1,4 +1,4 @@
-iris
+Iris Dark GTK
 ====
 
 A simple, flat and bold GTK theme.
