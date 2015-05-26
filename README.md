@@ -19,6 +19,7 @@ Shell:
 Featured in screenshot:
 * [colorblocks.py](https://raw.githubusercontent.com/zzggbb/colorblocks/master/colorblocks.py)
 * [Flattr Icon Theme](https://github.com/NitruxSA/flattr-icons/archive/master.zip)
+* [Dark Pastels Colorscheme](https://raw.githubusercontent.com/pavanky/conf/master/dark-pastels.sh)
 
 ####Sister Theme
 
