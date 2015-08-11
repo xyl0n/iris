@@ -27,8 +27,8 @@
     -GtkRange-stepper-spacing: 0;
     -GtkRange-trough-border: 0;
     -GtkRange-trough-under-steppers: 1;
-    -GtkScrollbar-has-backward-stepper: false;
-    -GtkScrollbar-has-forward-stepper: false;
+    -GtkScrollbar-has-backward-stepper: 0;
+    -GtkScrollbar-has-forward-stepper: 0;
     -GtkScrolledWindow-scrollbar-spacing: 0;
     -GtkScrolledWindow-scrollbars-within-bevel: 1;
     -GtkStatusbar-shadow-type: none;
