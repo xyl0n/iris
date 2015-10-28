@@ -1,10 +1,10 @@
 /* default color scheme */
-@define-color bg_color #fafafa;
-@define-color fg_color #555555;
-@define-color base_color #fefefe;
-@define-color text_color #333333;
+@define-color bg_color #f4f5f6;
+@define-color fg_color #3f454f;
+@define-color base_color #ffffff;
+@define-color text_color #3f454f;
 @define-color selected_bg_color transparent;
-@define-color selected_fg_color #df253f;
+@define-color selected_fg_color #fb5666;
 @define-color tooltip_bg_color #fefefe;
 @define-color tooltip_fg_color #2d2d2d;
 
@@ -35,19 +35,25 @@
 @define-color success_color #53a93f;
 @define-color warning_color #f57900;
 @define-color error_color #cc0000;
-@define-color light_grey #dedede;
+
+@define-color light_grey #d0d0d1;
+
+@define-color confirmation_color #2fbb77;
+@define-color destructive_color #db523c;
 
 /* widget colors */
-@define-color button_bg_color #464646;
-@define-color menubar_bg_color @theme_text_color;
-@define-color menubar_fg_color @theme_bg_color;
+@define-color button_bg_color #41464f;
+@define-color combobox_bg_color #f8f8f8;
+
+@define-color menubar_bg_color #2e3237;
+@define-color menubar_fg_color #ebebeb;
 @define-color toolbar_bg_color @theme_bg_color;
 @define-color toolbar_fg_color @theme_text_color;
-@define-color menu_bg_color shade(@theme_text_color, 0.87);
+@define-color menu_bg_color @menubar_bg_color;
 @define-color menu_fg_color @theme_bg_color;
 @define-color panel_bg_color #222222;
 @define-color panel_fg_color #f2f2f2;
-@define-color menu_selected_fg_color shade(shade(mix(#ff0000, #df253f, 0.75), 1.35), 0.95);
+@define-color menu_selected_fg_color #fb4757;
 
 /* osd */
 @define-color osd_base #fafafa;
@@ -80,6 +86,7 @@
 @import url("widgets/dialogs.css");
 @import url("widgets/entry.css");
 @import url("widgets/infobar.css");
+@import url("widgets/listbox.css");
 @import url("widgets/menu.css");
 @import url("widgets/notebook.css");
 @import url("widgets/progress-scale.css");

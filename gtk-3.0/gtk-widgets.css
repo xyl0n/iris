@@ -396,6 +396,9 @@ GtkTreeView {
     -GtkTreeView-horizontal-separator: 6;
     -GtkWidget-focus-line-width: 1;
     -GtkWidget-focus-padding: 1;
+    
+    border-top-color: alpha (black, 0.15);
+
 }
 
 GtkTreeView.dnd {
@@ -413,9 +416,6 @@ GtkTreeView .entry {
     background-image: none;
 }
 
-/************
- * viewport *
- ************/
 GtkViewport.frame {
     border-width: 0;
 }
@@ -509,62 +509,6 @@ GtkBubbleWindow.osd.background {
 
 GtkBubbleWindow .toolbar {
     background-color: transparent;
-}
-
-/**************
- * List boxes *
- **************/
-
-/*Blatantly stolen code from Vertex theme*/
-
-.list-row {
-	font-weight: normal;
-}
-
-.list-row.button {
-    
-    font-weight: normal;
-	background-color: @theme_bg_color; 
-	color: @theme_fg_color; 
-}
-
-.list-row.button:hover {
-	transition: none;
-    background-color: shade(@theme_bg_color, 0.92);
-}
-    
-.list-row.button:active, 
-.list-row.button:active:hover {
-    color: @theme_fg_color;
-    background-color: shade(@theme_bg_color, 0.92);
-}
-    
-.list-row.button:checked {
-    color: @theme_selected_fg_color;
-}
-    
-.list-row.button:selected, 
-.list-row.button:selected:hover, 
-.list-row.button:focus, 
-.list-row.button:focus:hover {
-    outline-color: alpha(@theme_selected_fg_color, 0.3);
-}
-    
-.list-row.button:selected, 
-.list-row:selected {
-    background-color: @theme_selected_bg_color;
-    color: @theme_selected_fg_color;
-    outline-color: alpha(@theme_selected_fg_color, 0.3); 
-}
-
-.list-row.button:selected:hover {
-    background-color: shade(@theme_selected_bg_color, 1.05);
-    color: @theme_selected_fg_color;
-}
-    
-.list-row.button:selected:active:hover {
-    color: @theme_selected_fg_color;
-    background-color: shade(@theme_selected_bg_color, 0.97); 
 }
 
 /************

@@ -191,3 +191,75 @@ GtkIconView.content-view.cell.check:active {
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+
+/**********
+ * Switch *
+ **********/
+ 
+GtkSwitch.trough,
+.header-bar GtkSwitch.trough,
+.primary-toolbar GtkSwitch.trough {
+  background-image: -gtk-scaled(url("assets/switch.png"), url("assets/switch@2.png")); 
+}
+
+GtkSwitch.slider {
+    background-image: -gtk-scaled(url("assets/slider.png"), url("assets/slider@2.png")); 
+}
+
+GtkSwitch:active.slider {
+    background-image: -gtk-scaled(url("assets/slider-active.png"), url("assets/slider-active@2.png")); 
+}
+
+
+GtkSwitch.trough:active,
+.header-bar GtkSwitch.trough:active,
+.primary-toolbar GtkSwitch.trough:active  {
+  background-image: -gtk-scaled(url("assets/switch-active.png"), url("assets/switch-active@2.png")); 
+}
+
+/*TODO: Create assets for these*/
+
+
+/*
+.list-row:selected GtkSwitch.trough,
+GtkInfoBar GtkSwitch.trough {
+  background-image: -gtk-scaled(url("assets/switch-selected.png"), url("assets/switch-selected@2.png")); 
+}
+
+.list-row:selected GtkSwitch.trough:active,
+GtkInfoBar GtkSwitch.trough:active {
+  background-image: -gtk-scaled(url("assets/switch-active-selected.png"), url("assets/switch-active-selected@2.png")); 
+}
+
+GtkSwitch.trough:insensitive {
+  background-image: -gtk-scaled(url("assets/switch-insensitive.png"), url("assets/switch-insensitive@2.png")); 
+}
+  
+.list-row:selected GtkSwitch.trough:insensitive,
+GtkInfoBar GtkSwitch.trough:insensitive {
+  background-image: -gtk-scaled(url("assets/switch-insensitive-selected.png"), url("assets/switch-insensitive-selected@2.png")); 
+}
+
+.header-bar GtkSwitch.trough:insensitive,
+.primary-toolbar GtkSwitch.trough:insensitive {
+  background-image: -gtk-scaled(url("assets/switch-insensitive-header.png"), url("assets/switch-insensitive-header@2.png")); 
+}
+*/
+
+.header-bar GtkSwitch.trough
+.primary-toolbar GtkSwitch.trough {
+  background-image: -gtk-scaled(url("assets/switch-header.png"), url("assets/switch-header@2.png")); 
+}
+
+GtkSwitch.trough:active:insensitive,
+.header-bar GtkSwitch.trough:active:insensitive,
+.primary-toolbar GtkSwitch.trough:active:insensitive {
+  background-image: -gtk-scaled(url("assets/switch-active-insensitive.png"), url("assets/switch-active-insensitive@2.png")); 
+}
+/*
+.list-row:selected GtkSwitch.trough:active:insensitive,
+GtkInfoBar GtkSwitch.trough:active:insensitive {
+  background-image: -gtk-scaled(url("assets/switch-active-insensitive-selected.png"), url("assets/switch-active-insensitive-selected@2.png")); 
+}
+*/

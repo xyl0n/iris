@@ -7,11 +7,9 @@
     -GtkWidget-focus-line-width: 0;
 
     padding: 4px 12px;
-    font: bold;
 }
 
 .button *{
-	transition: 150ms ease-in;
 }
 
 BackgroundBox .button {
@@ -126,20 +124,17 @@ NautilusProgressInfoWidget .button {
 .button.flat:hover,
 .action-bar .button:hover,
 NautilusProgressInfoWidget .button:hover {
-    transition: color 150ms ease-in;
     border: none;
-    color: shade(@theme_selected_fg_color, 1.15);
+    color: shade(@menu_selected_fg_color, 1.0);
 }
 
 .toolbar .button.flat,
 .toolbar .button.flat:focus {
-    transition: all 150ms linear;
     border: solid 1px @toolbar_bg_color;
     background-color: @toolbar_bg_color;
 }
 
 .toolbar .button.flat:hover {
-    transition: all 150ms linear;
     background-color: shade(@toolbar_bg_color, 0.96);
     border: solid 1px @toolbar_bg_color;
     box-shadow: inset 1px 1px shade(@toolbar_bg_color, 0.76),
@@ -159,16 +154,14 @@ NautilusProgressInfoWidget .button:active,
 NautilusProgressInfoWidget .button:active:focus,
 NautilusProgressInfoWidget .button:checked
 NautilusProgressInfoWidget .button:checked:focus {
-    transition: color 150ms ease-in;
     border: none;
-    color: shade(@theme_selected_fg_color, 0.97);
+    color: shade(@menu_selected_fg_color, 0.87);
     background-color: transparent;
 }
 
 .button.flat:active:hover,
 .action-bar .button:active:hover,
 NautilusProgressInfoWidget .button:active:hover {
-    transition: color 150ms ease-in;
     border: none;
     color: shade (@theme_selected_fg_color, 1.15);
 }
@@ -178,7 +171,6 @@ NautilusProgressInfoWidget .button:active:hover {
 .toolbar .button.flat:checked,
 .toolbar .button.flat:active:checked:focus,
 .toolbar .button.flat:active:hover {
-    transition: all 150ms linear;
     border: solid 1px @toolbar_bg_color;
     box-shadow: inset 1px 1px shade(@toolbar_bg_color, 0.76),
                 inset -1px -1px shade(@toolbar_bg_color, 0.76);
@@ -190,7 +182,6 @@ NautilusProgressInfoWidget .button:active:hover {
 .toolbar .button.flat:insensitive,
 .action-bar .button:insensitive,
 NautilusProgressInfoWidget .button:insensitive {
-    transition: color 150ms ease-in;
     border: none;
     color: shade (@theme_bg_color, 0.5);
 }

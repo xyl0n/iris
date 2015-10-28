@@ -26,3 +26,19 @@
 .sidebar .frame {
     border-width: 0;
 }
+
+.sidebar-button {
+background-color: transparent;
+color: @theme_fg_color;
+}
+
+.sidebar-button:hover {
+background-color: transparent;
+color: @theme_selected_fg_color;
+}
+
+.sidebar-button:active,
+.sidebar-button:checked {
+background-color: transparent;
+color: @theme_selected_fg_color;
+}

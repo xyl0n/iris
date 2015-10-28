@@ -30,7 +30,11 @@ GtkComboBox.combobox-entry .button:insensitive {
 GtkComboBox .button,
 .action-bar GtkComboBox .button {
     padding: 4px 10px;
-    background-color: shade(@theme_bg_color, 0.87);
+    /*background-color: shade(@theme_bg_color, 0.87);*/
+    background-color: @combobox_bg_color;
+    border-width: 1px;
+    border-style: solid;
+    border-color: @light_grey;
     color: shade(@theme_text_color, 1.10);
 }
 
@@ -44,4 +48,27 @@ GtkComboBox .button:active:hover,
 .action-bar GtkComboBox .button:active:hover  {
     background-color: shade(@theme_bg_color, 0.9);
     color: shade(@theme_text_color, 0.92); 
+}
+
+GtkComboBox .csd {
+    box-shadow: none;
+}
+
+GtkComboBox .popup {
+    box-shadow: #c6c7c9 0 1,
+	    		#c6c7c9 0 -1,
+	    		#c6c7c9 1 0,
+	    		#c6c7c9 -1 0;
+}
+
+GtkComboBox .popup {
+    box-shadow: alpha (#000, 0.15) 0 3 3;
+}
+
+GtkComboBox .menu {
+    background-color: #f8f8f8;
+}
+
+GtkComboBox .menu .menuitem {
+    color: @theme_fg_color;
 }
