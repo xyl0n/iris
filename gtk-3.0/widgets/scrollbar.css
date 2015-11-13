@@ -11,7 +11,7 @@
 .scrollbar.trough {
     border: solid 3px transparent;  
     border-radius: 0;
-    background-color:  shade(@theme_bg_color, 1.0);
+    background-color:  transparent;
     background-image: none;
 }
 
@@ -31,17 +31,17 @@
     border-color: transparent;
     border-radius: 0;
     border-style: solid;
-    background-color: mix(@theme_bg_color, @theme_fg_color, 0.3);
+    background-color: shade (alpha (mix (black, white, 0.6), 0.5), 0.75);
 }
 
 .scrollbar.slider:hover,
 .scrollbar.slider.vertical:hover {
-    background-color: mix(@theme_bg_color, @theme_fg_color, 0.4);
+    background-color: alpha (mix(@theme_bg_color, @theme_fg_color, 0.4), 0.8);
 }
 
 .scrollbar.slider:active,
 .scrollbar.slider.vertical:active {
-    background-color: shade(@theme_selected_fg_color, 1.35);
+    background-color: alpha(@theme_selected_fg_color, 0.8);
 }
 
 .scrollbar.slider.fine-tune:prelight:active {

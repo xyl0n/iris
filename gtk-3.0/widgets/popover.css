@@ -18,15 +18,24 @@ GtkPopover {
     box-shadow: alpha (#000, 0.15) 0 3 3;
 }
 
-.popover .button {
-    background-color: transparent;
+.popover .button,
+.popover .button.flat,
+.popover .list-row.button {
+    transition: 100ms ease-in;
+    background-color: @theme_bg_color;
+    color: @theme_text_color;
     border: solid 1px @theme_bg_color;
 }
 
 
-.popover .button.flat:hover {
-    transition: none;
+.popover .button.flat:hover,
+.popover .button:hover,
+.popover .list-row.button:hover,
+.popover .list-row.button.flat:hover {
+    transition: 100ms ease-in;
     color: @menu_selected_fg_color;
+    border: solid 1px alpha (black, 0.15);
+    background-color: alpha(@theme_base_color, 0.5);
 }
 
 .popover > .list,
@@ -50,15 +59,6 @@ GtkPopover {
     font-weight: bold;
 }
 
-.popover .list-row.button {
-    color: @theme_fg_color;
-}
-
-.popover .list-row.button:hover,
-.popover .list-row.button.flat:hover {
-    color: @menu_selected_fg_color;
-    background-color: transparent;
-}
 
 .popover .list-row.button:active,
 .popover .list-row.button:checked,

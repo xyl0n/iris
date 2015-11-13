@@ -28,17 +28,33 @@
 }
 
 .sidebar-button {
-background-color: transparent;
-color: @theme_fg_color;
+    border: none;
+    background-color: transparent;
+    color: @theme_fg_color;
+    box-shadow: none;
+    border-radius: 2px;
 }
 
 .sidebar-button:hover {
-background-color: transparent;
-color: @theme_selected_fg_color;
+    background-color: transparent;
+    color: @theme_selected_fg_color;
 }
 
 .sidebar-button:active,
+.sidebar-button:active:hover,
 .sidebar-button:checked {
-background-color: transparent;
-color: @theme_selected_fg_color;
+    background-color: transparent;
+    color: shade(@theme_selected_fg_color, 0.87);
+}
+
+.sidebar-row {
+    border-top: solid 1px @theme_bg_color;
+    border-bottom: solid 1px @theme_bg_color;    
+}
+
+.sidebar-row:selected {
+    background-color: alpha (@theme_base_color, 0.75);
+    border-top: solid 1px alpha (black, 0.07);
+    border-bottom: solid 1px alpha (black, 0.1);
+    box-shadow: 0 1 alpha (black, 0.03);
 }

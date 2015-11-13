@@ -27,56 +27,36 @@
     Titlebar
 */
  
-.titlebar {
+.titlebar,
+.titlebar.default-decoration {
     border-radius: 0 0 0 0;
     background-image: none;
     background-color: @menubar_bg_color;
     color: @menubar_fg_color;
 }
 
-.titlebar:insensitive {
+.titlebar:insensitive,
+.titlebar.default-decoration:insensitive {
     border-radius: 0 0 0 0;
     background-image: none;
     background-color: @menubar_bg_color;
     color: @menubar_fg_color;
     text-shadow: none;
-}
-
-/* this is the default titlebar that is added by GTK
- * when client-side decorations are in use and the application
- * did not set a custom titlebar.
- */
-.titlebar.default-decoration {
-    border: none;
-    box-shadow: none;
-    padding: 2px 2px;
-}
-
-.titlebar.default-decoration {
-    border: none;
-    box-shadow: none;
-    padding: 0;
 }
 
 .titlebar .title {
     font: bold;
 }
 
-.titlebar:backdrop {
+/*.titlebar:backdrop {
     background-image: none;
     background-color: @menubar_bg_color;
     color: mix(@menubar_fg_color, @wm_bg, 0.4);
     text-shadow: none;
-}
+}*/
 
-.titlebar:backdrop:insensitive {
-    background-image: none;
-    background-color: @menubar_bg_color;
-    color: mix(@menubar_fg_color, @wm_bg, 0.4);
-    text-shadow: none;
-}
-
-.titlebar .titlebutton {
+.titlebar .titlebutton,
+.titlebar.default-decoration .titlebutton {
     border-style: none;
     background: none;
     color: @menubar_fg_color;
@@ -110,11 +90,25 @@
     color: @wm_title_focused;
 }
 
+.header-bar.default-decoration,
+.csd .header-bar.default-decoration {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-bottom-width: 0; 
+}
+
+.header-bar.default-decoration .button.titlebutton,
+.titlebar.default-decoration .button.titlebutton {
+  padding-left: 0px; 
+}
+
 .titlebar .button:hover,
+.titlebar .button.flat:hover,
 .maximized .header-bar .button:hover,
-.header-bar .button:hover {
+.header-bar .button:hover,
+.header-bar .button.flat:hover  {
     background-color: alpha (#fff, 0.07);
-    /*color: @menu_selected_fg_color;*/
+    color: @wm_title_focused;
 }
 
 .titlebar .button:active:hover,
@@ -123,7 +117,7 @@
 .maximized .header-bar .button:active,
 .header-bar .button:active,
 .header-bar .button:active:hover {
-    background-color: #25292c;
+    background-color: alpha (black, 0.35);
     /*color: shade(@menu_selected_fg_color, 0.87);*/
 }
 
@@ -132,7 +126,7 @@
 .maximized .header-bar .button:checked,
 .header-bar .button:checked  {
     background-color: alpha (black, 0.35);
-    color: @menu_selected_fg_color;
+    color: @theme_selected_fg_color;
     font: bold;
 }
 
@@ -157,6 +151,9 @@
 .header-bar .button.titlebutton.close,
 .header-bar .button.titlebutton.maximize,
 .header-bar .button.titlebutton.minimize,
+.maximized .header-bar .button.titlebutton.close,
+.maximized .header-bar .button.titlebutton.maximize,
+.maximized .header-bar .button.titlebutton.minimize,
 .titlebar .button.titlebutton.close, 
 .titlebar .button.titlebutton.maximize, 
 .titlebar .button.titlebutton.minimize {
@@ -168,14 +165,15 @@
 }
 
 .header-bar .button.titlebutton.close,
-.titlebar .button.titlebutton.close {
+.titlebar .button.titlebutton.close,
+.titlebar.default-decoration .button.titlebutton.close {
     background-image: -gtk-scaled(url("../assets/titlebar/titlebutton-close.png"), url("../assets/titlebar/titlebutton-close@2.png")); 
 }
 
-.header-bar .button.titlebutton.close:backdrop,
+/*.header-bar .button.titlebutton.close:backdrop,
 .titlebar .button.titlebutton.close:backdrop {
     background-image: -gtk-scaled(url("../assets/titlebar/titlebutton-close-backdrop.png"), url("../assets/titlebar/titlebutton-close-backdrop@2.png")); 
-}
+}*/
 
 .header-bar .button.titlebutton.close:hover,
 .titlebar .button.titlebutton.close:hover {
@@ -192,10 +190,10 @@
     background-image: -gtk-scaled(url("../assets/titlebar/titlebutton-max.png"), url("../assets/titlebar/titlebutton-max@2.png")); 
 }
 
-.header-bar .button.titlebutton.maximize:backdrop,
+/*.header-bar .button.titlebutton.maximize:backdrop,
 .titlebar .button.titlebutton.maximize:backdrop {
     background-image: -gtk-scaled(url("../assets/titlebar/titlebutton-max-backdrop.png"), url("../assets/titlebar/titlebutton-max-backdrop@2.png")); 
-}
+}*/
 
 .header-bar .button.titlebutton.maximize:hover,
 .titlebar .button.titlebutton.maximize:hover {
@@ -211,10 +209,11 @@
 .titlebar .button.titlebutton.minimize {
     background-image: -gtk-scaled(url("../assets/titlebar/titlebutton-min.png"), url("../assets/titlebar/titlebutton-min@2.png")); 
 }
-.header-bar .button.titlebutton.minimize:backdrop,
+
+/*.header-bar .button.titlebutton.minimize:backdrop,
 .titlebar .button.titlebutton.minimize:backdrop {
     background-image: -gtk-scaled(url("../assets/titlebar/titlebutton-min-backdrop.png"), url("../assets/titlebar/titlebutton-min-backdrop@2.png")); 
-}
+}*/
 
 .header-bar .button.titlebutton.minimize:hover,
 .titlebar .button.titlebutton.minimize:hover {

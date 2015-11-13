@@ -86,7 +86,7 @@
 }
 
 .notebook tab.top:active {
-    box-shadow: inset 0 -2px shade (@theme_selected_fg_color, 1.4),
+    box-shadow: inset 0 -3px shade (@theme_selected_fg_color, 1.1),
                 inset 1px 0 shade(@theme_base_color, 0.87),
                 inset -1px 0 shade(@theme_base_color, 0.87);
 	/*background-position: center bottom;
@@ -95,7 +95,7 @@
 }
 
 .notebook tab:first-child.top:active {
-    box-shadow: inset 0 -2px shade (@theme_selected_fg_color, 1.4),
+    box-shadow: inset 0 -3px shade (@theme_selected_fg_color, 1.1),
                 inset -1px 0 shade(@theme_base_color, 0.87);
 	/*background-position: center bottom;
 	background-repeat: no-repeat;
