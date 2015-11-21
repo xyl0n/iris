@@ -500,13 +500,24 @@ BaconVideoWidget .toolbar .button:first-child {
  ********************/
 
 MathButtons .button {
-    background-color: @theme_base_color;
+    background-color: shade (@theme_bg_color, 1.02);
     color: @theme_fg_color;
     border: solid 1px alpha (black, 0.15);
 }
 
-MathButtons .button {
+MathButtons .button:hover {
+    background-color: shade (@theme_bg_color, 1.15);
+    box-shadow: none;
+    border: solid 1px alpha (black, 0.22);
     background-color: @theme_base_color;
-    color: @theme_fg_color;
-    border: solid 1px alpha (black, 0.15);
+    color: @theme_selected_fg_color;
+}
+
+MathButtons .button:checked,
+MathButtons .button:active,
+MathButtons .button:active:hover {
+    box-shadow: none;
+    border: solid 1px alpha (black, 0.22);
+    background-color: @theme_bg_color;
+    color: @theme_selected_fg_color;
 }

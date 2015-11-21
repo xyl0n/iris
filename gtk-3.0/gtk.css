@@ -43,7 +43,7 @@
 
 /* widget colors */
 @define-color button_bg_color #41464f;
-@define-color combobox_bg_color #f8f8f8;
+@define-color combobox_bg_color #f6f6f6;
 
 @define-color menubar_bg_color #2e3237;
 @define-color menubar_fg_color #ebebeb;

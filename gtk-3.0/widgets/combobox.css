@@ -46,8 +46,10 @@ GtkComboBox .button:active:hover,
 .action-bar GtkComboBox .button:active,
 .action-bar GtkComboBox .button:checked,
 .action-bar GtkComboBox .button:active:hover  {
-    background-color: shade(@theme_bg_color, 0.9);
+    background-color: shade(@combobox_bg_color, 1.03);
     color: shade(@theme_text_color, 0.92); 
+    border-color: shade (@light_grey, 0.95);
+    box-shadow: 0 1 alpha (black, 0.07);
 }
 
 GtkComboBox .csd {
