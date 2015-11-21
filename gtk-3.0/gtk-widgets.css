@@ -518,3 +518,116 @@ GtkBubbleWindow .toolbar {
 GtkCalendar.button {
    color: @theme_fg_color;
 }
+
+/**************
+ * Overshoots *
+ **************/
+
+.overshoot.top {
+  background-image: none;
+  background-size: 100% 60%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: alpha (@theme_selected_fg_color, 0.25);
+  border: none;
+  border-bottom: solid 1px alpha (@theme_selected_fg_color, 0.75);
+  box-shadow: none; 
+}
+
+.overshoot.bottom {
+  background-image: none;
+  background-size: 100% 60%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: alpha (@theme_selected_fg_color, 0.25);
+  border: none;
+  border-top: solid 1px alpha (@theme_selected_fg_color, 0.75);
+  box-shadow: none; 
+}
+
+.overshoot.left {
+  background-image: none;
+  background-size: 100% 60%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: alpha (@theme_selected_fg_color, 0.25);
+  border: none;
+  border-right: solid 1px alpha (@theme_selected_fg_color, 0.75);
+  box-shadow: none; 
+}
+
+.overshoot.right {
+  background-image: none;
+  background-size: 100% 60%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: alpha (@theme_selected_fg_color, 0.25);
+  border: none;
+  border-left: solid 1px alpha (@theme_selected_fg_color, 0.75);
+  box-shadow: none; 
+}
+
+
+.overshoot.top {
+  background-image: none;
+  background-size: 100% 60%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: alpha (@theme_selected_fg_color, 0.25);
+  border: none;
+  border-bottom: solid 1px alpha (@theme_selected_fg_color, 0.75);
+  box-shadow: none; 
+}
+
+.overshoot.bottom {
+  background-image: none;
+  background-size: 100% 60%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: alpha (@theme_selected_fg_color, 0.25);
+  border: none;
+  border-top: solid 1px alpha (@theme_selected_fg_color, 0.75);
+  box-shadow: none; 
+}
+
+.overshoot.left {
+  background-image: none;
+  background-size: 100% 60%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: alpha (@theme_selected_fg_color, 0.25);
+  border: none;
+  border-right: solid 1px alpha (@theme_selected_fg_color, 0.75);
+  box-shadow: none; 
+}
+
+.overshoot.right {
+  background-image: none;
+  background-size: 100% 60%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: alpha (@theme_selected_fg_color, 0.25);
+  border: none;
+  border-left: solid 1px alpha (@theme_selected_fg_color, 0.75);
+  box-shadow: none; 
+}
+
+.undershoot.top {
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, alpha (black, 0.2), transparent 25%);
+}
+
+.undershoot.bottom {
+    background-color: transparent;
+    background-image: linear-gradient(to top, alpha (black, 0.1), transparent 25%);
+}
+
+.undershoot.left {
+    background-color: transparent;
+    background-image: linear-gradient(to right, alpha (black, 0.2), transparent 25%);
+}
+
+.undershoot.right {
+    background-color: transparent;
+    background-image: linear-gradient(to left, alpha (black, 0.2), transparent 25%);
+}
