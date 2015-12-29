@@ -174,18 +174,15 @@ TerminalWindow GtkNotebook.notebook tab.top {
     border-width: 1px;
     background-color: @menubar_bg_color;
     background-image: none;
-    border-top: 1px solid shade(@theme_text_color, 0.78);
     border-bottom: solid 1px shade (@menubar_bg_color, 0.8);
 }
 
 TerminalWindow GtkNotebook.notebook tab:first-child.top {
-    border-left: 1px solid shade(@theme_text_color, 0.78);     
+    border-left: 1px solid shade(@theme_text_color, 0.78);
 }
 
 TerminalWindow GtkNotebook.notebook tab:first-child.top:active {
-    box-shadow: inset 0 -3px shade (@theme_selected_fg_color, 1.05),
-                inset 1px 0 shade(@theme_text_color, 0.87),
-                inset -1px 0 shade(@theme_text_color, 0.87);
+    box-shadow: inset 0 -3px shade (@theme_selected_fg_color, 1.05);
 }
 
 TerminalWindow GtkNotebook.notebook tab:active,
@@ -195,10 +192,10 @@ TerminalWindow GtkNotebook.notebook tab.top:active {
     background-image: none;
     color: transparent;
     border: none;
-    
+
     box-shadow: inset 0 -3px shade (@theme_selected_fg_color, 1.05),
-                inset 1px 0 shade(@theme_text_color, 0.87),
-                inset -1px 0 shade(@theme_text_color, 0.87);
+                inset 1px 0 @menubar_bg_color,
+                inset -1px 0 @menubar_bg_color;
 }
 
 TerminalWindow GtkNotebook.notebook .active-page,
@@ -208,7 +205,7 @@ TerminalWindow GtkNotebook.notebook tab .active-page GtkLabel {
 
 TerminalWindow GtkNotebook.notebook .prelight-page,
 TerminalWindow GtkNotebook.notebook .prelight-page GtkLabel {
-    color: shade(@theme_selected_fg_color, 1.25);
+    color: shade(@theme_selected_fg_color, 1.1);
 }
 
 TerminalWindow GtkNotebook.notebook tab GtkLabel {
@@ -216,7 +213,7 @@ TerminalWindow GtkNotebook.notebook tab GtkLabel {
 }
 
 TerminalWindow GtkNotebook.notebook tab:hover {
-	background-color: shade(@theme_text_color, 0.92);
+	background-color: shade(@menubar_bg_color, 0.75);
 }
 
 TerminalWindow .scrollbars-junction,
@@ -255,10 +252,14 @@ TerminalWindow GtkNotebook.notebook .header *{
     border-bottom: solid 1px shade (@menubar_bg_color, 1.8);
 }
 
+TerminalWindow GtkNotebook.notebook .button:hover {
+    color: shade (@theme_selected_fg_color, 1.1);
+}
+
 /*********
  * gedit *
  *********/
-GeditWindow .pane-separator, 
+GeditWindow .pane-separator,
 GeditWindow .pane-separator:hover {
     border-width: 0 1px 1px 1px;
     border-style: solid;
@@ -434,7 +435,7 @@ GthToolbox .button:focus {
     border-style: solid;
     border-width: 1px;
     border-color: alpha(@theme_fg_color, 0.25);
-}   
+}
 
 GthToolbox .button:hover {
     background-color: @theme_bg_color;
@@ -454,7 +455,7 @@ GthToolbox .button:active {
 GtkFileChooserWidget .action-bar {
 padding: 8px 6px;
 }
- 
+
 GtkFileChooserWidget .path-bar .button {
     background-color: @theme_bg_color;
     border: 1px solid shade (@theme_bg_color, 0.8);
@@ -487,9 +488,9 @@ GtkFileChooserWidget .path-bar .button:checked {
 /*********
  * Totem *
  *********/
- 
+
 /*NEEDS FIXING*/
- 
+
 BaconVideoWidget .toolbar .button {
     box-shadow: none;
     border: solid 1px shade(@theme_bg_color, 0.81);
