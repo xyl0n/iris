@@ -27,13 +27,13 @@ BackgroundBox .button:active {
     -GtkWidget-focus-line-width: 0;
 
     padding: 4px 12px;
-    
+
     border-style: none;
     border-radius: 0;
     background-color: @button_bg_color;
     background-image: none;
     color: @theme_base_color;
-    
+
     border-bottom: solid 1px alpha (black, 0.1);
     box-shadow: 0 1px alpha (black, 0.05);
 }
@@ -61,6 +61,19 @@ BackgroundBox .button:active {
     color: shade (@button_bg_color, 1.15);
 }
 
+.button.destructive-action {
+    background-color: @destructive_color;
+    border: none;
+}
+
+.button.destructive-action:hover {
+    background-color: shade()@destructive_color, 1.05);
+}
+
+.button.destructive-action:checked {
+    background-color: shade()@destructive_color, 0.92);
+}
+
 /* default button */
 .button.default {
     color: @confirmation_color;
@@ -68,7 +81,7 @@ BackgroundBox .button:active {
 
 /*Fix for Evince*/
 
-EvSidebar GtkToggleButton.button { 
+EvSidebar GtkToggleButton.button {
     color: @theme_fg_color;
     background-color: @theme_bg_color;
 }
@@ -186,7 +199,7 @@ NautilusProgressInfoWidget .button:insensitive {
     border-width: 1px;
     border-right-width: 0;
     border-radius: 0;
-    
+
 }
 
 /* leftmost button */

@@ -169,12 +169,13 @@ TerminalWindow GtkNotebook.notebook {
 
 TerminalWindow GtkNotebook.notebook tab,
 TerminalWindow GtkNotebook.notebook tab.top {
-    border-color: @theme_text_color;
+    border-color: @menubar_bg_color;
     border-style: solid;
     border-width: 1px;
-    background-color: @theme_text_color;
+    background-color: @menubar_bg_color;
     background-image: none;
     border-top: 1px solid shade(@theme_text_color, 0.78);
+    border-bottom: solid 1px shade (@menubar_bg_color, 0.8);
 }
 
 TerminalWindow GtkNotebook.notebook tab:first-child.top {
@@ -189,8 +190,8 @@ TerminalWindow GtkNotebook.notebook tab:first-child.top:active {
 
 TerminalWindow GtkNotebook.notebook tab:active,
 TerminalWindow GtkNotebook.notebook tab.top:active {
-    border-color: @theme_text_color;
-    background-color: @theme_text_color;
+    border-color: @menubar_bg_color;
+    background-color: @menubar_bg_color;
     background-image: none;
     color: transparent;
     border: none;
@@ -243,6 +244,15 @@ TerminalWindow .scrollbar.slider.vertical:hover {
 TerminalWindow .scrollbar.slider:active,
 TerminalWindow .scrollbar.slider.vertical:active {
     background-color: @theme_selected_fg_color;
+}
+
+TerminalWindow GtkNotebook.notebook .header {
+    background-color: @menubar_bg_color;
+}
+
+TerminalWindow GtkNotebook.notebook .header *{
+    background-color: @menubar_bg_color;
+    border-bottom: solid 1px shade (@menubar_bg_color, 1.8);
 }
 
 /*********

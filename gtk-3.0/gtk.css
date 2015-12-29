@@ -39,7 +39,7 @@
 @define-color light_grey #d0d0d1;
 
 @define-color confirmation_color #2fbb77;
-@define-color destructive_color #db523c;
+@define-color destructive_color mix (mix (#db523c, #f00, 0.5), #888, 0.2);
 
 /* widget colors */
 @define-color button_bg_color #41464f;
