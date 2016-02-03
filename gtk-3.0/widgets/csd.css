@@ -280,3 +280,15 @@
     padding-left: 6px;
     padding-right: 6px;
 }
+
+NautilusToolbar.header-bar .right .button.titlebutton.close {
+    background-position: center;
+}
+
+NautilusToolbar.header-bar .right .button.titlebutton.maximize {
+    background-position: center;
+}
+
+NautilusToolbar.header-bar .right .button.titlebutton.minimize {
+    background-position: center;
+}
