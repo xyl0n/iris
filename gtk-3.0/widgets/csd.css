@@ -173,19 +173,28 @@
 .titlebar .button.titlebutton.close,
 .titlebar .button.titlebutton.maximize,
 .titlebar .button.titlebutton.minimize {
-    padding: 4px;
     color: transparent;
     background-color: transparent;
     background-repeat: no-repeat;
+    padding: 6px;
 }
 
 .header-bar .button.titlebutton.close,
-.titlebar .button.titlebutton.close,
-.titlebar.default-decoration .button.titlebutton.close {
+.titlebar .button.titlebutton.close {
     background-image: -gtk-scaled(url("../assets/titlebar/titlebutton-close.png"), url("../assets/titlebar/titlebutton-close@2.png"));
-	padding-right: 12px;
+    background-position: center;
+}
+
+.header-bar:first-child .button.titlebutton.close,
+.titlebar:first-child .button.titlebutton.close {
+    background-position: right;
+}
+
+.header-bar:last-child .button.titlebutton.close,
+.titlebar:last-child .button.titlebutton.close {
 	background-position: left;
 }
+
 
 /*.header-bar .button.titlebutton.close:backdrop,
 .titlebar .button.titlebutton.close:backdrop {
@@ -205,7 +214,17 @@
 .header-bar .button.titlebutton.maximize,
 .titlebar .button.titlebutton.maximize {
     background-image: -gtk-scaled(url("../assets/titlebar/titlebutton-max.png"), url("../assets/titlebar/titlebutton-max@2.png"));
-	background-position: left;
+	background-position: center;
+}
+
+.header-bar:first-child .button.titlebutton.maximize,
+.titlebar:first-child .button.titlebutton.maximize {
+    background-position: right;
+}
+
+.header-bar:last-child .button.titlebutton.maximize,
+.titlebar:last-child .button.titlebutton.maximize {
+    background-position: left;
 }
 
 /*.header-bar .button.titlebutton.maximize:backdrop,
@@ -226,9 +245,19 @@
 .header-bar .button.titlebutton.minimize,
 .titlebar .button.titlebutton.minimize {
     background-image: -gtk-scaled(url("../assets/titlebar/titlebutton-min.png"), url("../assets/titlebar/titlebutton-min@2.png"));
-	background-position: left;
-	padding-right: 4px;
+	background-position: center;
 }
+
+.header-bar:first-child .button.titlebutton.minimize,
+.titlebar:first-child .button.titlebutton.minimize {
+    background-position: right;
+}
+
+.header-bar:last-child .button.titlebutton.minimize,
+.titlebar:last-child .button.titlebutton.minimize {
+    background-position: left;   
+}
+
 
 /*.header-bar .button.titlebutton.minimize:backdrop,
 .titlebar .button.titlebutton.minimize:backdrop {
@@ -243,4 +272,11 @@
 .header-bar .button.titlebutton.minimize:active,
 .titlebar .button.titlebutton.minimize:active {
     background-image: -gtk-scaled(url("../assets/titlebar/titlebutton-min-active.png"), url("../assets/titlebar/titlebutton-min-active@2.png"));
+}
+
+
+.titlebar.default-decoration .button.titlebutton {
+    background-position: center;
+    padding-left: 6px;
+    padding-right: 6px;
 }
