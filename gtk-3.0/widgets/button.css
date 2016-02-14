@@ -67,11 +67,11 @@ BackgroundBox .button:active {
 }
 
 .button.destructive-action:hover {
-    background-color: shade()@destructive_color, 1.05);
+    background-color: shade(@destructive_color, 1.05);
 }
 
 .button.destructive-action:checked {
-    background-color: shade()@destructive_color, 0.92);
+    background-color: shade(@destructive_color, 0.92);
 }
 
 /* default button */

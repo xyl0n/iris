@@ -5,7 +5,8 @@
 .header-bar,
 .header-bar:insensitive {
 	border-width: 0 0 1px;
-	border-style: solid;
+        border-radius: 0 0 0 0;
+        border-style: solid;
 	border-color: shade(@menubar_bg_color, 0.90);
 
 	background-color: @menubar_bg_color;
@@ -155,6 +156,7 @@
 
 .window-frame {
     border: none;
+    border-radius: 0 0 0 0;
     box-shadow: 0 5px 6px alpha(black, 0.35);
     margin: 10px;
 }

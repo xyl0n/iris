@@ -35,3 +35,6 @@
     border: solid 1px shade (@theme_selected_fg_color, 1.15);
 }
  
+GtkDialog .header-bar .right .button.titlebutton.close {
+    background-position: center;
+}

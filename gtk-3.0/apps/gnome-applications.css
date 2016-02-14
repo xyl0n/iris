@@ -351,6 +351,10 @@ GeditFileBrowserWidget .primary-toolbar.toolbar  {
 GdTaggedEntry *{
 	color: @theme_fg_color;
 }
+
+GeditPreferencesDialog .header-bar .right .button.titlebutton.close {
+    background-position: center;
+}
 /***************
  * font-viewer *
  ***************/
