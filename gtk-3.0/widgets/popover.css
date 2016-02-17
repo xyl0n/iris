@@ -15,7 +15,7 @@ GtkPopover {
 }
 
 .popover {
-    box-shadow: alpha (#000, 0.15) 0 3 3;
+    box-shadow: alpha (#000, 0.15) 0 3px 3px;
 }
 
 .popover .button,

@@ -55,5 +55,5 @@
     background-color: alpha (@theme_base_color, 0.75);
     border-top: solid 1px alpha (black, 0.07);
     border-bottom: solid 1px alpha (black, 0.1);
-    box-shadow: 0 1 alpha (black, 0.03);
+    box-shadow: 0 1px alpha (black, 0.03);
 }

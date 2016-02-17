@@ -421,7 +421,8 @@ GtkViewport.frame {
 }
 
 .view {
-    background-color: shade (@theme_bg_color, 1.02  );
+    background-color: shade (@theme_bg_color, 1.02);
+    background-color: shade (@theme_bg_color, 1.02);
     color: @theme_text_color;
 }
 
