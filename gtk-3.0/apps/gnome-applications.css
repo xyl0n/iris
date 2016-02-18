@@ -536,3 +536,9 @@ MathButtons .button:active:hover {
     background-color: @theme_bg_color;
     color: @theme_selected_fg_color;
 }
+
+/*Calendar*/
+
+.year-naviagtor *{
+    color: @theme_fg_color;
+}

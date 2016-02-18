@@ -86,7 +86,7 @@
 .maximized .header-bar .button,
 .header-bar .button {
     padding: 10px;
-    background-color: @wm_bg; /*makes it practically transparent*/
+    background-color: transparent;
     color: @wm_title_focused;
     box-shadow: none;
 }
@@ -292,5 +292,9 @@ NautilusToolbar.header-bar .right .button.titlebutton.maximize {
 }
 
 NautilusToolbar.header-bar .right .button.titlebutton.minimize {
+    background-position: center;
+}
+
+.header-bar .right .titlebutton.button {
     background-position: center;
 }
