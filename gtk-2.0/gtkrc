@@ -571,3 +571,29 @@ include "styles/murrine-style-images-and-labels"
 include"styles/menu-menubar"
 
 include"styles/panel"
+
+style "xfdesktop-icon-view" {
+    XfdesktopIconView::label-alpha = 75
+    XfdesktopIconView::selected-label-alpha = 100
+    XfdesktopIconView::ellipsize-icon-labels = 1
+    XfdesktopIconView::tooltip-size = 128
+
+    XfdesktopIconView::shadow-x-offset = 0
+    XfdesktopIconView::shadow-y-offset = 1
+    XfdesktopIconView::shadow-color = "#000000"
+    XfdesktopIconView::selected-shadow-x-offset = 0
+    XfdesktopIconView::selected-shadow-y-offset = 0
+    XfdesktopIconView::selected-shadow-color = "#000000"
+
+    XfdesktopIconView::cell-spacing = 0
+    XfdesktopIconView::cell-padding = 0
+    XfdesktopIconView::cell-text-width-proportion = 2.5
+    
+    fg[NORMAL] = "#ffffff"
+    text[NORMAL] = "#ffffff"
+    base[NORMAL] = "#000000"
+    base[SELECTED] = @selected_fg_color
+    fg[SELECTED] = @selected_bg_color
+}
+
+widget_class "*XfdesktopIconView*" style "xfdesktop-icon-view"

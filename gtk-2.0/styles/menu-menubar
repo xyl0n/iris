@@ -146,8 +146,8 @@ style "menubar-item"
 	fg[NORMAL] = @bg_color
 	fg[PRELIGHT] = @bg_color
 	fg[SELECTED] = @bg_color
-  xthickness			= 1
-  ythickness			= 1
+    xthickness			= 1
+    ythickness			= 1
 }
 
 style "chrome_menu"
@@ -171,6 +171,13 @@ style "chrome_menu_item"
         }
 }
 
+style "chrome_separator" 
+{
+    bg[NORMAL] = @text_color
+    fg[NORMAL] = @text_color
+    text[NORMAL] = @text_color
+}
+
 widget_class "*<GtkSeparatorMenuItem>*" style "menuitem"
 class "GtkMenu"       			style "menu"
 widget_class "*<GtkMenu>*"              style "menu"
@@ -182,3 +189,4 @@ widget_class "*<GtkMenuBar>*"		style "menubar"
 widget_class "*<GtkMenuBar>.<GtkMenuItem>*"	style "menubar-item"
 widget_class "*<GtkCustomMenu>*" style "chrome_menu"
 widget_class "*<GtkCustomMenu>*<GtkCustomMenuItem>*" style "chrome_menu_item"
+widget_class "*<GtkCustomMenu>*<GtkCustomMenuItem>*<GtkSeparatorMenuItem>*" style "chrome_separator"
